@@ -1,0 +1,53 @@
+{
+  "Vision": {
+    "title:": "Vision",
+    "body": "To be an educational institution recognized for its technical and academic excellence. The comprehensive training of human talent with a global approach, the management of information technologies and its commitment to social and environmental responsibility"
+  },
+
+  "Mission": {
+    "title": "Mission",
+
+    "body": "The {{CTPName}} its objective is to train middle and high school technical professionals in competitive secondary education with leadership capabilities committed to work excellence and the presentation of the environment.",
+
+    "btn":"Visit our facilities"
+  },
+
+  "History": {
+    "title": "History",
+
+    "body-1": "The {{CTPName}} it is much more than an educational center; It is the result of a community dream come true. Born from the need to provide technical training opportunities to young people in the area, the CTP has been a fundamental pillar in the development of our community.",
+
+    "body-2": "Since its inception, the Santo Domingo Professional Technical College has been the result of a joint effort between the community and the educational authorities. Thanks to the vision of its founders and the commitment of its teachers, the school has managed to consolidate itself as an institution of academic excellence and train highly trained professionals.",
+
+    "body-3": "Today, the Santo Domingo Professional Technical College continues to be a benchmark in technical education in the region. With a diversified and modern academic offering, the school adapts to the demands of the labor market and prepares its students to face the challenges of the future."
+  },
+
+  "EO": {
+    "title": "Our Educational Offer",
+
+    "body": "The Santo Domingo Professional Technical College focuses primarily on diversified education, offering a wide range of technical and professional specialties such as:"
+
+  },
+
+  "PEYM": {
+    "title": "Study Plan and Methodologies",
+
+    "body-1": "The study plan is designed so that students acquire theoretical and practical knowledge in their respective specialties.",
+
+    "body-2": "Equipped laboratories and workshops: The school has modern laboratories and workshops where students can put into practice what they have learned.",
+
+    "body-3": "Active learning is promoted through projects that allow students to apply their knowledge to real situations."
+  },
+
+  "Contact": {
+    "title": "Contact",
+
+    "name": "Name",
+
+    "mail": "Mail",
+
+    "message": "Message",
+
+    "send": "Send"
+  }
+}

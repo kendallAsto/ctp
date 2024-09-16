@@ -1,0 +1,56 @@
+{
+  "Socialmedia": {
+		"Facebook": {
+			"url": ""
+		}
+	},
+  "Vision": {
+    "title:": "Visión",
+    "body": "Ser una institución educativa reconocida por su excelencia técnica y académica.La formación integral de talento humano con enfoque global, manejo de las tecnologías de información y por su compromiso con la responsabilidad social y ambiental"
+  },
+
+  "Mission": {
+    "title": "Misión",
+    "body": "El {{CTPName}} tiene como objetivo formar profesionales técnicos medios y bachilleres en educación media competitiva con capacidades de liderazgo comprometidas con la excelencia laboral y la presentación del ambiente.",
+
+    "btn": "Visitar nuestras instalaciones"
+  },
+
+  "History": {
+    "title": "Historia",
+
+    "body-1": "El {{CTPName}} es mucho más que un centro educativo; es el resultado de un sueño comunitario hecho realidad. Nacido de la necesidad de brindar oportunidades de formación técnica a los jóvenes de la zona, el CTP ha sido un pilar fundamental en el desarrollo de nuestra comunidad.",
+
+    "body-2": "Desde sus inicios, el Colegio Técnico Profesional de Santo Domingo ha sido el fruto de un esfuerzo conjunto entre la comunidad y las autoridades educativas, gracias a la visión de sus fundadores y al compromiso de sus docentes, el colegio ha logrado consolidarse como una institución de excelencia académica y formar profesionales altamente capacitados.",
+
+    "body-3": "Hoy en día, el Colegio Técnico Profesional de Santo Domingo continúa siendo un referente en la educación técnica de la región. Con una oferta académica diversificada y moderna, el colegio se adapta a las demandas del mercado laboral y prepara a sus estudiantes para enfrentar los desafíos del futuro."
+  },
+
+  "EO": {
+    "title": "Nuestra Oferta Educativa",
+
+    "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:"
+  },
+
+  "PEYM": {
+    "title": "Plan de Estudios y Metodologías",
+
+    "body-1": "El plan de estudios está diseñado para que los estudiantes adquieran conocimientos teóricos y prácticos en sus respectivas especialidades.",
+
+    "body-2": "El colegio cuenta con laboratorios y talleres modernos donde los estudiantes pueden poner en práctica lo aprendido.",
+
+    "body-3": "Se promueve el aprendizaje activo a través de proyectos que permiten a los estudiantes aplicar sus conocimientos a situaciones reales."
+  },
+
+  "Contact": {
+    "title": "Contacto",
+
+    "name": "Nombre",
+
+    "mail": "Email",
+
+    "message": "Mensaje",
+
+    "send": "Enviar"
+  }
+}
