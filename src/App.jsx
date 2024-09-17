@@ -6,6 +6,7 @@ import IMG3 from "./Assets/IMGS/Carrousel/Perrito.webp";
 import Informacion from "./Components/Informacion";
 import { useTranslation } from "react-i18next";
 import BTNS from "./Components/BTNS";
+import Danger from "./Assets/IMGS/Danger.webp"
 
 const Especialidades = [
   "Diseño publicitario",
@@ -101,6 +102,18 @@ function App() {
             CTPName: "Colegio Tecnico Profesional de Santo Domingo",
           })}
         />
+
+        <section>
+          <h1 className="font-bold font-Poppins text-Atlantis md:text-4xl">{t('Contact.title')}</h1>
+          <div>
+            <form action="#" className="flex flex-col flex-wrap">
+              <input type="text" placeholder={t('Contact.name')} className="p-2 bg-Blue-Dianne my-2 rounded-lg text-xl"/>
+              <input type="text" placeholder={t('Contact.mail')} className="p-2 bg-Blue-Dianne my-2 rounded-lg text-xl"/>
+              <textarea name="message" id="Message" placeholder={t('Contact.message')} className="p-2 bg-Blue-Dianne my-2 rounded-lg text-xl"></textarea>
+            </form>
+            <img src={Danger} alt="Foto del perro de la institucion" />
+          </div>
+        </section>
       </section>
     </div>
   );

@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import Logo from "../Assets/IMGS/logo.png";
 export default function Nav() {
   const { t, i18n } = useTranslation("Nav");
+  function changeLanguage(){
+    i18n.changeLanguage("en")
+  }
   return (
     <nav className="flex lg:gap-4 justify-center py-10 items-center font-Poppins">
       <img src={Logo} alt="Logo del CTP Santo Domingo" className="w-[10%]" />
@@ -38,7 +41,7 @@ export default function Nav() {
       </a>
         <div className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 items-center justify-center">
         <i class="fa-solid fa-flag"></i>
-        <button>{t("CL")}</button>
+        <button onClick={changeLanguage}>{t("CL")}</button>
       </div>
     </nav>
   );
