@@ -7,20 +7,25 @@ import Informacion from "./Components/Informacion";
 import { useTranslation } from "react-i18next";
 import BTNS from "./Components/BTNS";
 import Danger from "./Assets/IMGS/Danger.webp";
-import Contact from "./Components/contact"
+import Contact from "./Components/contact";
 import Map from "./Components/Map";
 import Footer from "./Components/Footer";
-import Video from "./Assets/Videos/videoCTP.mp4"
+import Video from "./Assets/Videos/videoCTP.mp4";
 
 function App() {
   const { t, i18n } = useTranslation("information");
 
   return (
     <div className="App font-Lato">
+      <section className="Container w-[90%] md:w-[90%] lg:w-[70%] m-auto">
         <Nav />
-      <video src={Video} id="video" autoplay muted controls></video>
-      <section className="Container md:w-[70%] m-auto">
-        <section className="flex m-auto gap-3 rounded-xl overflow-hidden mb-14">
+        <video
+          src={Video}
+          autoPlay
+          controls
+          className="rounded-xl mb-12"
+        ></video>
+        {/* <section className="flex m-auto gap-3 rounded-xl overflow-hidden mb-14">
           <img src={IMG1} alt="Imagen por fuera del CTP" className="w-1/3" />
           <img
             src={IMG3}
@@ -32,7 +37,7 @@ function App() {
             alt="Imagen del grupo Folclorico 2024"
             className="w-1/3"
           />
-        </section>
+        </section> */}
 
         <Informacion title={t("Vision.title")} body={t("Vision.body")} />
 
@@ -47,32 +52,32 @@ function App() {
           title={t("Valores.title")}
           extra={
             <section>
-              <div className="grid grid-cols-3 gap-4 mb-4">
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+              <div className="grid md:grid-cols-3 gap-4 mb-4">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Honesty")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Respect")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Commitment")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Responsabity")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Trust")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.Solidarity")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.FACT")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.TW")}
                 </p>
-                <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
                   {t("Valores.listValores.DAE")}
                 </p>
               </div>
@@ -101,7 +106,7 @@ function App() {
           })}
           extra={
             <div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <section id="Especialidades-Diurno">
                   <div className="flex justify-center">
                     <h2 className="text-2xl bg-Fuscous text-White p-2 lg:w-1/3 rounded-full text-center cursor-pointer transition-colors duration-200 hover:bg-Blue-Dianne">
@@ -165,55 +170,61 @@ function App() {
           }
         />
 
-        <section className="grid grid-cols-2 gap-4">
+        <section className=" flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
           <div>
-            <h1 className="font-bold font-Poppins text-Atlantis md:text-4xl mb-8">
+            <h1 className=" text-3xl font-bold font-Poppins text-Atlantis md:text-4xl mb-8">
               {t("Contact.title")}
             </h1>
-              <form action="#" className="flex flex-col flex-wrap gap-4">
-                <input
-                  type="text"
-                  placeholder={t("Contact.name")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
-                />
-                <input
-                  type="text"
-                  placeholder={t("Contact.mail")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
-                />
-                <textarea
-                  name="message"
-                  id="Message"
-                  placeholder={t("Contact.message")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl h-[250px]"
-                ></textarea>
-                <div className="flex  justify-center items-center gap-3 bg-Atlantis text-White p-2 w-1/3 text-xl rounded-xl">
-                  <i class="fa-solid fa-paper-plane text-White"></i>
-                  <button type="submit">Enviar</button>
-                </div>
-              </form>
-            </div>
+            <form action="#" className="flex flex-col flex-wrap gap-4">
+              <input
+                type="text"
+                placeholder={t("Contact.name")}
+                className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
+              />
+              <input
+                type="text"
+                placeholder={t("Contact.mail")}
+                className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
+              />
+              <textarea
+                name="message"
+                id="Message"
+                placeholder={t("Contact.message")}
+                className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl h-[250px] md:h-[160px] lg:h-[250px]"
+              ></textarea>
+              <div className="flex items-center justify-center gap-3 m-auto bg-Atlantis text-White p-3 w-1/3 text-xl rounded-xl">
+                <i class="fa-solid fa-paper-plane text-White"></i>
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
 
-            <img
-              src={Danger}
-              alt="Foto del perro de la institucion"
-              className="w-[70%] m-auto rounded-xl"
-            />
+          <img
+            src={Danger}
+            alt="Foto del perro de la institucion"
+            className="md:w-[80%] lg:w-[70%] m-auto rounded-xl"
+          />
         </section>
 
         <section className="flex flex-col gap-4 my-24">
-          <Contact clase='fa-solid fa-phone text-3xl' body='(+506) 2244-3190'/>
-          <Contact clase='fa-solid fa-envelope text-3xl' body='ctp.santodomingo@mep.go.cr'/>
-          <Contact clase='fa-solid fa-map text-3xl' body='300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica'/>
+          <Contact clase="fa-solid fa-phone text-3xl" body="(+506) 2244-3190" />
+          <Contact
+            clase="fa-solid fa-envelope text-3xl"
+            body="ctp.santodomingo@mep.go.cr"
+          />
+          <Contact
+            clase="fa-solid fa-map text-3xl"
+            body="300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica"
+          />
         </section>
       </section>
       <section>
-          <Map/>
-        </section>
+        <Map />
+      </section>
 
-        <section className="md:w-[90%] m-auto mt-12">
-          <Footer/>
-        </section>
+      <section className="md:w-[90%] m-auto mt-12">
+        <Footer />
+      </section>
     </div>
   );
 }
