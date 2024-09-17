@@ -1,58 +1,85 @@
-{"Socialmedia": {
-		"Facebook": {
-			"url": ""
-		}
-	},
+{
+  "Socialmedia": {
+    "Facebook": {
+      "url": ""
+    }
+  },
   "Vision": {
     "title": "Vision",
-    
+
     "body": "To be an educational institution recognized for its technical and academic excellence. The comprehensive training of human talent with a global approach, the management of information technologies and its commitment to social and environmental responsibility"
   },
 
-  "Mission": {
-    "title": "Mission",
+  "Valores": {
+    "title": "Vision",
+    "body": "To be an educational institution recognized for its technical and academic excellence. The integral formation of human talent with a global focus, management of information technologies, and a commitment to social and environmental responsibility",
 
-    "body": "The {{CTPName}} its objective is to train middle and high school technical professionals in competitive secondary education with leadership capabilities committed to work excellence and the presentation of the environment.",
+    "listValores": {
+      "Honesty": "Honesty",
+      "Respect": "Respect",
+      "Commitment": "Commitment",
+      "Responsabity": "Responsibility",
+      "Trust": "Trust",
+      "Solidarity": "Solidarity",
+      "FACT": "Friendly and cordial treatment",
+      "TW": "Teamwork",
+      "DAE": "Dedication and effort"
+    }},
 
-    "btn":"Visit our facilities"
-  },
+    "Mission": {
+      "title": "Mission",
 
-  "History": {
-    "title": "History",
+      "body": "The {{CTPName}} its objective is to train middle and high school technical professionals in competitive secondary education with leadership capabilities committed to work excellence and the presentation of the environment.",
 
-    "body-1": "The {{CTPName}} it is much more than an educational center; It is the result of a community dream come true. Born from the need to provide technical training opportunities to young people in the area, the CTP has been a fundamental pillar in the development of our community.",
+      "btn": "Visit our facilities"
+    },
 
-    "body-2": "Since its inception, the Santo Domingo Professional Technical College has been the result of a joint effort between the community and the educational authorities. Thanks to the vision of its founders and the commitment of its teachers, the school has managed to consolidate itself as an institution of academic excellence and train highly trained professionals.",
+    "History": {
+      "title": "History",
 
-    "body-3": "Today, the Santo Domingo Professional Technical College continues to be a benchmark in technical education in the region. With a diversified and modern academic offering, the school adapts to the demands of the labor market and prepares its students to face the challenges of the future."
-  },
+      "body-1": "In 2009, a bold vision began to take shape. Councilors Neftalí Moreira Ramírez and Hilda Villalobos Palma, with a deep commitment to education, included in their government program the creation of a technical college. This idea, supported by the community and local authorities, found fertile ground to grow.",
 
-  "EO": {
-    "title": "Our Educational Offer",
+      "body-2": "With the support of Congresswoman Sianny Villalobos Arguello and the then President of the Republic, the project came to life. Local leaders, businessmen, the church and the government joined forces to make this dream come true. After arduous planning and management work, a commission was formed to promote the creation of the school.",
 
-    "body": "The Santo Domingo Professional Technical College focuses primarily on diversified education, offering a wide range of technical and professional specialties such as:"
+      "body-3": "Finally, in 2011, the City Council approved the proposal, ushering in a new era for education in Santo Domingo. Thanks to the joint effort of the entire community, the {{CTPName}} opened its doors, offering young people a quality education and opportunities for a promising future."
+    },
 
-  },
+    "EO": {
+      "title": "Our Educational Offer",
+      "timeDiurno": "Daytime",
+      "timeNocturna": "Night",
 
-  "PEYM": {
-    "title": "Study Plan and Methodologies",
+      "body": "The Santo Domingo Professional Technical College focuses primarily on diversified education, offering a wide range of technical and professional specialties such as:",
 
-    "body-1": "The study plan is designed so that students acquire theoretical and practical knowledge in their respective specialties.",
+      "specialities": {
+        "DP": "Advertising design",
+        "ECYSA": "Sales and Customer Service Executive",
+        "CyF": "Accounting and finance",
+        "DDAM": "Mobile application development",
+        "DyMDE": "Drawing and modeling of buildings",
+        "EET": "Electronics in telecommunications",
+        "GDLP": "Production management",
+        "RDLVL": "Repair of light vehicles"
+      },
+      "specialities-2": {
+        "ECYSA": "Sales and Customer Service Executive",
+        "CySDRySO": "Network and operating system configuration and support",
+        "Contabilidad": "Accounting",
+        "ADLOA": "Administration of Customs operations",
+        "RDLVL": "Repair of light vehicles"
+      }
+    },
 
-    "body-2": "Equipped laboratories and workshops: The school has modern laboratories and workshops where students can put into practice what they have learned.",
+    "Contact": {
+      "title": "Contact",
 
-    "body-3": "Active learning is promoted through projects that allow students to apply their knowledge to real situations."
-  },
+      "name": "Name",
 
-  "Contact": {
-    "title": "Contact",
+      "mail": "Mail",
 
-    "name": "Name",
+      "message": "Message",
 
-    "mail": "Mail",
-
-    "message": "Message",
-
-    "send": "Send"
+      "send": "Send"
+    }
   }
-}
+

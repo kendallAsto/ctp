@@ -1,56 +1,83 @@
 {
   "Socialmedia": {
-		"Facebook": {
-			"url": ""
-		}
-	},
+    "Facebook": {
+      "url": ""
+    }
+  },
   "Vision": {
     "title": "Visión",
+
     "body": "Ser una institución educativa reconocida por su excelencia técnica y académica.La formación integral de talento humano con enfoque global, manejo de las tecnologías de información y por su compromiso con la responsabilidad social y ambiental"
   },
 
-  "Mission": {
-    "title": "Misión",
-    "body": "El {{CTPName}} tiene como objetivo formar profesionales técnicos medios y bachilleres en educación media competitiva con capacidades de liderazgo comprometidas con la excelencia laboral y la presentación del ambiente.",
+  "Valores": {
+    "title": "Visión",
 
-    "btn": "Visitar nuestras instalaciones"
-  },
+    "listValores": {
+      "Honesty": "Honestidad",
+      "Respect": "Respeto",
+      "Commitment": "Compromiso",
+      "Responsabity": "Responsabilidad",
+      "Trust": "Confianza",
+      "Solidarity": "Solidaridad",
+      "FACT": "Trato familiar y cordial",
+      "TW": "Trabajo en equipo",
+      "DAE": "Dedicacion y esfuerzo"
+    }},
 
-  "History": {
-    "title": "Historia",
+    "Mission": {
+      "title": "Misión",
+      "body": "El {{CTPName}} tiene como objetivo formar profesionales técnicos medios y bachilleres en educación media competitiva con capacidades de liderazgo comprometidas con la excelencia laboral y la presentación del ambiente.",
 
-    "body-1": "El {{CTPName}} es mucho más que un centro educativo; es el resultado de un sueño comunitario hecho realidad. Nacido de la necesidad de brindar oportunidades de formación técnica a los jóvenes de la zona, el CTP ha sido un pilar fundamental en el desarrollo de nuestra comunidad.",
+      "btn": "Visitar nuestras instalaciones"
+    },
 
-    "body-2": "Desde sus inicios, el Colegio Técnico Profesional de Santo Domingo ha sido el fruto de un esfuerzo conjunto entre la comunidad y las autoridades educativas, gracias a la visión de sus fundadores y al compromiso de sus docentes, el colegio ha logrado consolidarse como una institución de excelencia académica y formar profesionales altamente capacitados.",
+    "History": {
+      "title": "Historia",
 
-    "body-3": "Hoy en día, el Colegio Técnico Profesional de Santo Domingo continúa siendo un referente en la educación técnica de la región. Con una oferta académica diversificada y moderna, el colegio se adapta a las demandas del mercado laboral y prepara a sus estudiantes para enfrentar los desafíos del futuro."
-  },
+      "body-1": "En el año 2009, una visión audaz comenzó a tomar forma. Los regidores Neftalí Moreira Ramírez e Hilda Villalobos Palma, con un profundo compromiso con la educación, incluyeron en su programa de gobierno la creación de un colegio técnico. Esta idea, respaldada por la comunidad y autoridades locales, encontró un fértil terreno para crecer.",
 
-  "EO": {
-    "title": "Nuestra Oferta Educativa",
+      "body-2": "Con el apoyo de la diputada Sianny Villalobos Arguello y la entonces presidenta de la República, el proyecto cobró vida. Líderes locales, empresarios, la iglesia y el gobierno unieron fuerzas para hacer realidad este sueño. Tras un arduo trabajo de planificación y gestión, se logró conformar una comisión encargada de impulsar la creación del colegio.",
 
-    "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:"
-  },
+      "body-3": "Finalmente, en el 2011, el Concejo Municipal aprobó la propuesta, dando inicio a una nueva era para la educación en Santo Domingo. Gracias al esfuerzo conjunto de toda la comunidad, el {{CTPName}} abrió sus puertas, ofreciendo a los jóvenes una educación de calidad y oportunidades para un futuro prometedor."
+    },
 
-  "PEYM": {
-    "title": "Plan de Estudios y Metodologías",
+    "EO": {
+      "title": "Nuestra Oferta Educativa",
+      "timeDiurno": "Diurno",
+      "timeNocturna": "Nocturno",
 
-    "body-1": "El plan de estudios está diseñado para que los estudiantes adquieran conocimientos teóricos y prácticos en sus respectivas especialidades.",
+      "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:",
 
-    "body-2": "El colegio cuenta con laboratorios y talleres modernos donde los estudiantes pueden poner en práctica lo aprendido.",
+      "specialities": {
+        "DP": "Diseño publicitario",
+        "ECYSA": "Ejecutivo comercial y servicio al cliente",
+        "CyF": "Contabilidad y finanzas",
+        "DDAM": "Desarrollo de aplicaciones móviles",
+        "DyMDE": "Dibujo y modelado de edificaciones",
+        "EET": "Electrónica en telecomunicaciones",
+        "GDLP": "Gestión de la producción",
+        "RDLVL": "Reparación de los vehículos livianos"
+      },
+      "specialities-2": {
+        "ECYSA": "Ejecutivo comercial y servicio al cliente",
+        "CySDRySO": "Configuración y soporte de redes y sistemas operativos",
+        "Contabilidad": "Contabilidad",
+        "ADLOA": "Administración de las operaciones Aduaneras",
+        "RDLVL": "Reparación de los vehículos livianos"
+      }
+    },
 
-    "body-3": "Se promueve el aprendizaje activo a través de proyectos que permiten a los estudiantes aplicar sus conocimientos a situaciones reales."
-  },
+    "Contact": {
+      "title": "Contacto",
 
-  "Contact": {
-    "title": "Contacto",
+      "name": "Nombre",
 
-    "name": "Nombre",
+      "mail": "Email",
 
-    "mail": "Email",
+      "message": "Mensaje",
 
-    "message": "Mensaje",
-
-    "send": "Enviar"
-  }
+      "send": "Enviar"
+    }
+  
 }

@@ -7,7 +7,7 @@ export default function BTNS() {
 
   return (
     <div>
-      <a  className='bg-Blue-Dianne text-2xl text-White p-3 rounded-lg hover:bg-Atlantis hover:text-White' href="/facilities">{t('Mission.btn')}</a>
+      <a  className='bg-Blue-Dianne text-2xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White' href="/facilities">{t('Mission.btn')}</a>
     </div>
   )
 }
