@@ -43,11 +43,11 @@ function App() {
           />
         </section>
 
-        <Informacion title={t("Vision.title")} body={t("Vision.body")} />
+        <Informacion title={t('Vision.title')} body={t("Vision.body")} />
 
         <div>
           <Informacion
-            title={t("Mission.title")}
+            title={t('Mission.title')}
             body={t("Mission.body", {
               CTPName: "Colegio Tecnico Profesional de Santo Domingo",
             })}
@@ -81,7 +81,7 @@ function App() {
                     key={index}
                     className="text-2xl bg-Atlantis p-2 m-2 rounded text-white "
                   >
-                    <span className="font-bold">{especialidad}</span>
+                    <span className="font-Poppins">{especialidad}</span>
                   </li>
                 </a>
               ))}

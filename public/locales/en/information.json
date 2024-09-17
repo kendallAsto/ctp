@@ -1,6 +1,11 @@
-{
+{"Socialmedia": {
+		"Facebook": {
+			"url": ""
+		}
+	},
   "Vision": {
-    "title:": "Vision",
+    "title": "Vision",
+    
     "body": "To be an educational institution recognized for its technical and academic excellence. The comprehensive training of human talent with a global approach, the management of information technologies and its commitment to social and environmental responsibility"
   },
 
