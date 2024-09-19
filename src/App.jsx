@@ -1,8 +1,4 @@
-import "./App.css";
 import Nav from "./Components/Nav";
-import IMG1 from "./Assets/IMGS/Carrousel/Afuera.webp";
-import IMG2 from "./Assets/IMGS/Carrousel/Folklor.webp";
-import IMG3 from "./Assets/IMGS/Carrousel/Perrito.webp";
 import Informacion from "./Components/Informacion";
 import { useTranslation } from "react-i18next";
 import BTNS from "./Components/BTNS";
@@ -10,34 +6,41 @@ import Danger from "./Assets/IMGS/Danger.webp";
 import Contact from "./Components/contact";
 import Map from "./Components/Map";
 import Footer from "./Components/Footer";
-import Video from "./Assets/Videos/videoCTP.mp4";
-
+import Video from "./Assets/Videos/videoCTP.webm";
+import ContabilidadModal from "./Components/Modals/ContabilidadModal";
+import DesarrolloModal from "./Components/Modals/DesarrolloModal";
+import DisenoModal from "./Components/Modals/DisenoModal";
+import { useState } from "react";
+import EjecutivoModal from "./Components/Modals/EjecutivoModal";
+import ElectronicaModal from "./Components/Modals/Electronica";
+import GestionModal from "./Components/Modals/GestionModal";
+import MecanicaModal from "./Components/Modals/Mecanica";
 function App() {
   const { t, i18n } = useTranslation("information");
 
+  const [estadoModal, cambiarEstadoModal1] = useState(false);
+  const [estadoModal2, cambiarEstadoModal2] = useState(false);
+  const [estadoModal3, cambiarEstadoModal3] = useState(false);
+  const [estadoModal4, cambiarEstadoModal4] = useState(false);
+  const [estadoModal5, cambiarEstadoModal5] = useState(false);
+  const [estadoModal6, cambiarEstadoModal6] = useState(false);
+  const [estadoModal7, cambiarEstadoModal7] = useState(false);
+  const [estadoModal8, cambiarEstadoModal8] = useState(false);
+  const [estadoModal9, cambiarEstadoModal9] = useState(false);
+  const [estadoModal10, cambiarEstadoModal10] = useState(false);
+  const [estadoModal11, cambiarEstadoModal11] = useState(false);
+
   return (
-    <div className="App font-Lato">
-      <section className="Container w-[90%] md:w-[90%] lg:w-[70%] m-auto">
+    <div className="App font-Lato relative">
         <Nav />
+
+      <section className="Container w-[90%] md:w-[90%] lg:w-[80%] m-auto">
         <video
           src={Video}
           autoPlay
           controls
           className="rounded-xl mb-12"
         ></video>
-        {/* <section className="flex m-auto gap-3 rounded-xl overflow-hidden mb-14">
-          <img src={IMG1} alt="Imagen por fuera del CTP" className="w-1/3" />
-          <img
-            src={IMG3}
-            alt="Imagen evento dia de las mascotas"
-            className="w-1/3"
-          />
-          <img
-            src={IMG2}
-            alt="Imagen del grupo Folclorico 2024"
-            className="w-1/3"
-          />
-        </section> */}
 
         <Informacion title={t("Vision.title")} body={t("Vision.body")} />
 
@@ -114,30 +117,86 @@ function App() {
                     </h2>
                   </div>
                   <ul>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <p
+                      onClick={() => cambiarEstadoModal1(!estadoModal)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.DP")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <DisenoModal
+                      estado={estadoModal}
+                      cambiarEstado={cambiarEstadoModal1}
+                    />
+
+                    <p
+                      onClick={() => cambiarEstadoModal2(!estadoModal2)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.ECYSA")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <EjecutivoModal
+                      estado={estadoModal2}
+                      cambiarEstado={cambiarEstadoModal2}
+                    />
+
+                    <p
+                      onClick={() => cambiarEstadoModal3(!estadoModal3)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.CyF")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <ContabilidadModal
+                      estado={estadoModal3}
+                      cambiarEstado={cambiarEstadoModal3}
+                    />
+                    <p
+                      onClick={() => cambiarEstadoModal4(!estadoModal4)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.DDAM")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <DesarrolloModal
+                      estado={estadoModal4}
+                      cambiarEstado={cambiarEstadoModal4}
+                    />
+
+                    <p
+                      onClick={() => cambiarEstadoModal5(!estadoModal5)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.DyMDE")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+
+                    <p
+                      onClick={() => cambiarEstadoModal6(!estadoModal6)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.EET")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <ElectronicaModal
+                      estado={estadoModal6}
+                      cambiarEstado={cambiarEstadoModal6}
+                    />
+                    <p
+                      onClick={() => cambiarEstadoModal7(!estadoModal7)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.GDLP")}
                     </p>
-                    <p className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg">
+                    <GestionModal
+                      estado={estadoModal7}
+                      cambiarEstado={cambiarEstadoModal7}
+                    />
+                    <p
+                      onClick={() => cambiarEstadoModal8(!estadoModal8)}
+                      className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                    >
                       {t("EO.specialities.RDLVL")}
                     </p>
+                    <MecanicaModal
+                      estado={estadoModal8}
+                      cambiarEstado={cambiarEstadoModal8}
+                    />
                   </ul>
                 </section>
 
@@ -217,13 +276,13 @@ function App() {
             body="300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica"
           />
         </section>
-      </section>
-      <section>
-        <Map />
-      </section>
+        <section>
+          <Map />
+        </section>
 
-      <section className="md:w-[90%] m-auto mt-12">
-        <Footer />
+        <section className="m-auto mt-12">
+          <Footer />
+        </section>
       </section>
     </div>
   );

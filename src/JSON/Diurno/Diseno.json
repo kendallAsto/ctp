@@ -1,0 +1,81 @@
+{
+    "title": "Diseño publicitario",
+    "Subarea": [
+      {
+        "DP": "Diseño publicitario",
+        "Horas": {
+          "Decimo": 16,
+          "Undecimo": 8,
+          "Duodecimo": 10
+        }
+      },
+
+      {
+        "DT": "Dibujo técnico",
+        "Horas": {
+          "Decimo": 2,
+          "Undecimo": 2,
+          "Duodecimo": "-"
+        }
+      },
+
+      {
+        "Fotografia": "Fotografia",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+
+      {
+        "DD": "Diseño digital",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+
+      {
+        "SDI": "Sistemas de impresión",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "EFC": "English for communication",
+        "Horas": {
+          "Decimo": 2,
+          "Undecimo": 2,
+          "Duodecimo": 2
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+
+    "posiblesPuestos": [
+      "Freelancer",
+      "Visual presentation",
+      "Designer",
+      "Tecnico en diseño",
+      "Productor audiovisual",
+      "Tecnico en fotografia",
+      "Gestión empresarial"
+    ],
+    "posiblesEmpresas": [
+      "Agencias de publicidad",
+      "Walmart",
+      "ICE",
+      "Instituciones públicas",
+      "Municipalidades",
+      "Serigrafias",
+      "Imprentas"
+    ]
+  }

@@ -12,6 +12,7 @@ export default {
          "Blue-Dianne": "#224D5C",
          "Pumice": "#D0D3D0",
          "White": "#fff",
+         "Sycamore": "#74943C"
       },
       fontFamily:{
         "Lato": "Lato",
