@@ -21,7 +21,7 @@ export default function Nav() {
   }]
 
   return (
-    <nav className="flex lg:gap-4 justify-center py-10 items-center font-Poppins">
+    <nav className="hidden md:flex lg:gap-4 justify-center py-10 items-center font-Poppins">
       <img src={Logo} alt="Logo del CTP Santo Domingo" className="w-[10%]" />
       <a
         href="/"

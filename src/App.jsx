@@ -34,7 +34,7 @@ function App() {
     <div className="App font-Lato relative">
         <Nav />
 
-      <section className="Container w-[90%] md:w-[90%] lg:w-[80%] m-auto">
+      <section className="Container w-[90%] md:w-[90%] lg:w-[80%] m-auto overflow-hidden">
         <video
           src={Video}
           autoPlay
