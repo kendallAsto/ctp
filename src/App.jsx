@@ -9,8 +9,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route index element={<Home />} />
           <Route path="/UP" element={<UP />} />
+          <Route index element={<Home />} />
           <Route path="/Events" element={<Events />} />
         </Route>
       </Routes>

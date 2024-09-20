@@ -8,7 +8,7 @@ export default function Nav() {
   let estadoNav = false;
   const { t, i18n } = useTranslation("Nav");
   const [idiomaActual, setIdiomaActual] = useState("es");
-  const {cambiarEstadoNav } = useState(false);
+  const { cambiarEstadoNav } = useState(false);
 
   const navigate = useNavigate();
   function changeLanguage() {
@@ -23,7 +23,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="hidden md:flex lg:gap-4 justify-center py-10 items-center font-Poppins">
+      <nav className="hidden md:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
         <img src={Logo} alt="Logo del CTP Santo Domingo" className="w-[10%]" />
         <Link
           to="/"
@@ -36,6 +36,18 @@ export default function Nav() {
           className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
         >
           {t("AU")}
+        </Link>
+        <Link
+          to="/Posts"
+          className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+        >
+          Coordinaciones
+        </Link>
+        <Link
+          to="/Posts"
+          className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+        >
+          Servicios
         </Link>
         <Link
           to="/Posts"
@@ -70,7 +82,10 @@ export default function Nav() {
 
       <nav className="flex flex-col lg:hidden w-[90%] m-auto">
         <div className="flex gap-4 justify-between py-10 items-center font-Poppins text-pretty">
-          <i onClick={()=> estadoNav == true} className="fa-solid fa-bars text-3xl"></i>
+          <i
+            onClick={() => estadoNav == true}
+            className="fa-solid fa-bars text-3xl"
+          ></i>
           <img
             src={Logo}
             alt="Logo del CTP Santo Domingo"
@@ -96,7 +111,10 @@ export default function Nav() {
               <h1 className="text-md text-White">
                 Colegio Tecnico Profesional de Santo Domingo
               </h1>
-              <i onClick={()=> estadoNav == false} className="fa-sharp fa-solid fa-xmark text-4xl text-White"></i>
+              <i
+                onClick={() => estadoNav == false}
+                className="fa-sharp fa-solid fa-xmark text-4xl text-White"
+              ></i>
             </div>
             <Link
               to="/"
@@ -109,6 +127,12 @@ export default function Nav() {
               className=" text-White text-lg p-2 rounded-lg transition-all duration-200 lg:text-xl bg-Sycamore w-[100%] m-2"
             >
               {t("AU")}
+            </Link>
+            <Link
+              to="/Posts"
+              className=" text-White text-lg p-2 rounded-lg transition-all duration-200 lg:text-xl bg-Sycamore w-[100%] m-2"
+            >
+              Coordinacion
             </Link>
             <Link
               to="/Posts"

@@ -33,7 +33,7 @@ function UP() {
   const { t, i18n } = useTranslation("danger");
 
   return (
-    <Suspense fallback="Cargando datos">
+
       <section className="flex w-[80%] flex-wrap md:w-[70%] m-auto">
         <section>
           <h1 className="text-3xl font-bold font-Poppins text-Atlantis lg:text-4xl">{t("Danger.title")}</h1>
@@ -75,7 +75,6 @@ function UP() {
         <IMG src={fotoDanger27} alt="Foto de danger" />
         </section>
       </section>
-    </Suspense>
   );
 }
 

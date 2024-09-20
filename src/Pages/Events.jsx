@@ -6,7 +6,7 @@ import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import BTNS from "../Components/BTNS";
 let loginAdmin = false;
-let estadoAdd = false;
+let estadoAdd = true;
 
 const Eventos = [
   {
