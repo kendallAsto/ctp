@@ -1,18 +1,18 @@
 import React from "react";
-import Desarrollo from "../../JSON/Diurno/Desarrollo.json";
+import Contabilidad from "../../../JSON/Diurno/Contabilidad.json";
 
-export default function DesarrolloModal({ estado, cambiarEstado }) {
+export default function ContabilidadModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
+        <section className=" rounded-xl h-[200vh] w-[100vw] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
           <div className="text-md h-[180vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
-              {Desarrollo.title}
+              {Contabilidad.title}
             </h1>
-            <div className="flex flex-col items-center justify-center md:grid grid-cols-2 md:text-lg">
+            <div className="flex flex-col items-center justify-centermd:grid grid-cols-2 md:text-lg">
               <div>
-                <table className="md:m-4 rounded-xl overflow-hidden">
+                <table className=" text-md md:m-4 rounded-xl overflow-hidden">
                   <tr className="bg-Atlantis">
                     <td className="text-White text-center md:py-2 md:px-12">
                       Sub-Área
@@ -22,14 +22,14 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                     <td className="text-White text-center md:py-2 md:px-12">XII</td>
                   </tr>
                   <tbody className="text-center">
-                    {Desarrollo.Subarea.map((subarea, index) => (
+                    {Contabilidad.Subarea.map((subarea, index) => (
                       <tr key={index}>
                         <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
-                        {subarea.TDLIALDDAM ||
-                            subarea.EeIAADDAM ||
-                            subarea.DDAMyBDD ||
-                            subarea.SySDAM ||
-                            subarea.EOTAP}
+                          {subarea.CF ||
+                            subarea.GETDOEF ||
+                            subarea.GEPF ||
+                            subarea.GDC ||
+                            subarea.EOTAaF}
                         </td>
                         <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
@@ -46,12 +46,12 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
 
                   <tr className="text-center bg-Atlantis text-white">
                     <td className="md:py-2 md:px-12">Horas totales</td>
-                    <td className="md:py-2 md:px-12">{Desarrollo.Total.Decimo} </td>
+                    <td className="md:py-2 md:px-12">{Contabilidad.Total.Decimo} </td>
                     <td className="md:py-2 md:px-12">
-                      {Desarrollo.Total.Undecimo}{" "}
+                      {Contabilidad.Total.Undecimo}{" "}
                     </td>
                     <td className="md:py-2 md:px-12">
-                      {Desarrollo.Total.Duodecimo}{" "}
+                      {Contabilidad.Total.Duodecimo}{" "}
                     </td>
                   </tr>
                 </table>
@@ -59,11 +59,11 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
 
               <section className="flex flex-col md:flex-row md:justify-evenly">
                 <section>
-                  <h2 className="font-bold text-Atlantis text-2xl">
+                  <h2 className="font-bold text-Atlantis">
                     Posibles Puestos de Trabajo
                   </h2>
                   <ul>
-                    {Desarrollo.posiblesPuestos.map((puesto, index) => (
+                    {Contabilidad.posiblesPuestos.map((puesto, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}
@@ -77,7 +77,7 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                 <section>
                   <h2 className="font-bold text-Atlantis">Posibles Empresas</h2>
                   <ul>
-                    {Desarrollo.posiblesEmpresas.map((empresa, index) => (
+                    {Contabilidad.posiblesEmpresas.map((empresa, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}

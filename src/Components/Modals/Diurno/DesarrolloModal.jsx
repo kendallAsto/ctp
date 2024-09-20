@@ -1,14 +1,14 @@
 import React from "react";
-import Electronica from "../../JSON/Diurno/Electronica.json";
+import Desarrollo from "../../../JSON/Diurno/Desarrollo.json";
 
-export default function ElectronicaModal({ estado, cambiarEstado }) {
+export default function DesarrolloModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
         <section className=" rounded-xl h-[200vh] w-[100%] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
           <div className="text-md h-[180vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
-              {Electronica.title}
+              {Desarrollo.title}
             </h1>
             <div className="flex flex-col items-center justify-center md:grid grid-cols-2 md:text-lg">
               <div>
@@ -22,18 +22,14 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                     <td className="text-White text-center md:py-2 md:px-12">XII</td>
                   </tr>
                   <tbody className="text-center">
-                    {Electronica.Subarea.map((subarea, index) => (
+                    {Desarrollo.Subarea.map((subarea, index) => (
                       <tr key={index}>
                         <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
-                          {subarea.SDIPE ||
-                            subarea.DT ||
-                            subarea.FDE ||
-                            subarea.FDEL||
-                            subarea.CL||
-                            subarea.ED||
-                            subarea.Telecomunicaciones||
-                            subarea.ED2||
-                            subarea.EFC}
+                        {subarea.TDLIALDDAM ||
+                            subarea.EeIAADDAM ||
+                            subarea.DDAMyBDD ||
+                            subarea.SySDAM ||
+                            subarea.EOTAP}
                         </td>
                         <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
@@ -50,12 +46,12 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
 
                   <tr className="text-center bg-Atlantis text-white">
                     <td className="md:py-2 md:px-12">Horas totales</td>
-                    <td className="md:py-2 md:px-12">{Electronica.Total.Decimo} </td>
+                    <td className="md:py-2 md:px-12">{Desarrollo.Total.Decimo} </td>
                     <td className="md:py-2 md:px-12">
-                      {Electronica.Total.Undecimo}{" "}
+                      {Desarrollo.Total.Undecimo}{" "}
                     </td>
                     <td className="md:py-2 md:px-12">
-                      {Electronica.Total.Duodecimo}{" "}
+                      {Desarrollo.Total.Duodecimo}{" "}
                     </td>
                   </tr>
                 </table>
@@ -67,7 +63,7 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                     Posibles Puestos de Trabajo
                   </h2>
                   <ul>
-                    {Electronica.posiblesPuestos.map((puesto, index) => (
+                    {Desarrollo.posiblesPuestos.map((puesto, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}
@@ -81,7 +77,7 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                 <section>
                   <h2 className="font-bold text-Atlantis">Posibles Empresas</h2>
                   <ul>
-                    {Electronica.posiblesEmpresas.map((empresa, index) => (
+                    {Desarrollo.posiblesEmpresas.map((empresa, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}

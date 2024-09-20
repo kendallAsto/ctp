@@ -80,6 +80,14 @@
       "message": "Message",
 
       "send": "Send"
+    },
+
+    "Events": "Events",
+
+    "Buttons": {
+      "Delete": "Delete",
+      "Edit": "Edit",
+      "Add": "Add"
     }
   }
 

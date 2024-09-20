@@ -1,5 +1,5 @@
 import React from "react";
-import Ejecutivo from "../../JSON/Diurno/Ejecutivo.json";
+import Ejecutivo from "../../../JSON/Diurno/Ejecutivo.json";
 
 export default function EjecutivoModal({ estado, cambiarEstado }) {
   return (

@@ -23,61 +23,68 @@
       "FACT": "Trato familiar y cordial",
       "TW": "Trabajo en equipo",
       "DAE": "Dedicacion y esfuerzo"
-    }},
-
-    "Mission": {
-      "title": "Misión",
-      "body": "El {{CTPName}} tiene como objetivo formar profesionales técnicos medios y bachilleres en educación media competitiva con capacidades de liderazgo comprometidas con la excelencia laboral y la presentación del ambiente.",
-
-      "btn": "Visitar nuestras instalaciones"
-    },
-
-    "History": {
-      "title": "Historia",
-
-      "body-1": "En el año 2009, una visión audaz comenzó a tomar forma. Los regidores Neftalí Moreira Ramírez e Hilda Villalobos Palma, con un profundo compromiso con la educación, incluyeron en su programa de gobierno la creación de un colegio técnico. Esta idea, respaldada por la comunidad y autoridades locales, encontró un fértil terreno para crecer.",
-
-      "body-2": "Con el apoyo de la diputada Sianny Villalobos Arguello y la entonces presidenta de la República, el proyecto cobró vida. Líderes locales, empresarios, la iglesia y el gobierno unieron fuerzas para hacer realidad este sueño. Tras un arduo trabajo de planificación y gestión, se logró conformar una comisión encargada de impulsar la creación del colegio.",
-
-      "body-3": "Finalmente, en el 2011, el Concejo Municipal aprobó la propuesta, dando inicio a una nueva era para la educación en Santo Domingo. Gracias al esfuerzo conjunto de toda la comunidad, el {{CTPName}} abrió sus puertas, ofreciendo a los jóvenes una educación de calidad y oportunidades para un futuro prometedor."
-    },
-
-    "EO": {
-      "title": "Nuestra Oferta Educativa",
-      "timeDiurno": "Diurno",
-      "timeNocturna": "Nocturno",
-
-      "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:",
-
-      "specialities": {
-        "DP": "Diseño publicitario",
-        "ECYSA": "Ejecutivo comercial y servicio al cliente",
-        "CyF": "Contabilidad y finanzas",
-        "DDAM": "Desarrollo de aplicaciones móviles",
-        "DyMDE": "Dibujo y modelado de edificaciones",
-        "EET": "Electrónica en telecomunicaciones",
-        "GDLP": "Gestión de la producción",
-        "RDLVL": "Reparación de los vehículos livianos"
-      },
-      "specialities-2": {
-        "ECYSA": "Ejecutivo comercial y servicio al cliente",
-        "CySDRySO": "Configuración y soporte de redes y sistemas operativos",
-        "Contabilidad": "Contabilidad",
-        "ADLOA": "Administración de las operaciones Aduaneras",
-        "RDLVL": "Reparación de los vehículos livianos"
-      }
-    },
-
-    "Contact": {
-      "title": "Contacto",
-
-      "name": "Nombre",
-
-      "mail": "Email",
-
-      "message": "Mensaje",
-
-      "send": "Enviar"
     }
-  
+  },
+
+  "Mission": {
+    "title": "Misión",
+    "body": "El {{CTPName}} tiene como objetivo formar profesionales técnicos medios y bachilleres en educación media competitiva con capacidades de liderazgo comprometidas con la excelencia laboral y la presentación del ambiente.",
+
+    "btn": "Visitar nuestras instalaciones"
+  },
+
+  "History": {
+    "title": "Historia",
+
+    "body-1": "En el año 2009, una visión audaz comenzó a tomar forma. Los regidores Neftalí Moreira Ramírez e Hilda Villalobos Palma, con un profundo compromiso con la educación, incluyeron en su programa de gobierno la creación de un colegio técnico. Esta idea, respaldada por la comunidad y autoridades locales, encontró un fértil terreno para crecer.",
+
+    "body-2": "Con el apoyo de la diputada Sianny Villalobos Arguello y la entonces presidenta de la República, el proyecto cobró vida. Líderes locales, empresarios, la iglesia y el gobierno unieron fuerzas para hacer realidad este sueño. Tras un arduo trabajo de planificación y gestión, se logró conformar una comisión encargada de impulsar la creación del colegio.",
+
+    "body-3": "Finalmente, en el 2011, el Concejo Municipal aprobó la propuesta, dando inicio a una nueva era para la educación en Santo Domingo. Gracias al esfuerzo conjunto de toda la comunidad, el {{CTPName}} abrió sus puertas, ofreciendo a los jóvenes una educación de calidad y oportunidades para un futuro prometedor."
+  },
+
+  "EO": {
+    "title": "Nuestra Oferta Educativa",
+    "timeDiurno": "Diurno",
+    "timeNocturna": "Nocturno",
+
+    "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:",
+
+    "specialities": {
+      "DP": "Diseño publicitario",
+      "ECYSA": "Ejecutivo comercial y servicio al cliente",
+      "CyF": "Contabilidad y finanzas",
+      "DDAM": "Desarrollo de aplicaciones móviles",
+      "DyMDE": "Dibujo y modelado de edificaciones",
+      "EET": "Electrónica en telecomunicaciones",
+      "GDLP": "Gestión de la producción",
+      "RDLVL": "Reparación de los vehículos livianos"
+    },
+    "specialities-2": {
+      "ECYSA": "Ejecutivo comercial y servicio al cliente",
+      "CySDRySO": "Configuración y soporte de redes y sistemas operativos",
+      "Contabilidad": "Contabilidad",
+      "ADLOA": "Administración de las operaciones Aduaneras",
+      "RDLVL": "Reparación de los vehículos livianos"
+    }
+  },
+
+  "Contact": {
+    "title": "Contacto",
+
+    "name": "Nombre",
+
+    "mail": "Email",
+
+    "message": "Mensaje",
+
+    "send": "Enviar"
+  },
+
+  "Events": "Eventos",
+  "Buttons": {
+    "Delete": "Eliminar",
+    "Edit": "Editar",
+    "Add": "Agregar"
+  }
 }
