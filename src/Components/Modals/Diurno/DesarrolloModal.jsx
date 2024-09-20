@@ -5,12 +5,12 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
-          <div className="text-md h-[180vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
+        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[180vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
+          <div className="text-md h-[180vh] w-[90vw] md:h-[150vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
               {Desarrollo.title}
             </h1>
-            <div className="flex flex-col items-center justify-center md:grid grid-cols-2 md:text-lg">
+            <div className="flex flex-col items-center justify-center lg:grid grid-cols-2 md:text-lg">
               <div>
                 <table className="md:m-4 rounded-xl overflow-hidden">
                   <tr className="bg-Atlantis">
@@ -57,7 +57,7 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                 </table>
               </div>
 
-              <section className="flex flex-col md:flex-row md:justify-evenly">
+              <section className="flex flex-col gap-8 md:flex-row md:justify-evenly">
                 <section>
                   <h2 className="font-bold text-Atlantis text-2xl">
                     Posibles Puestos de Trabajo
@@ -75,7 +75,7 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                 </section>
 
                 <section>
-                  <h2 className="font-bold text-Atlantis">Posibles Empresas</h2>
+                  <h2 className="font-bold text-Atlantis text-2xl">Posibles Empresas</h2>
                   <ul>
                     {Desarrollo.posiblesEmpresas.map((empresa, index) => (
                       <li

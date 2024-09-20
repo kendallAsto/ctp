@@ -10,7 +10,7 @@ export default function EjecutivoModal({ estado, cambiarEstado }) {
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
               {Ejecutivo.title}
             </h1>
-            <div className="flex flex-col items-center justify-center md:grid grid-cols-2 md:text-lg">
+            <div className="flex flex-col items-center justify-center lg:grid grid-cols-2 md:text-lg">
               <div>
                 <table className="md:m-4 rounded-xl overflow-hidden">
                   <tr className="bg-Atlantis">
@@ -56,7 +56,7 @@ export default function EjecutivoModal({ estado, cambiarEstado }) {
                 </table>
               </div>
 
-              <section className="flex flex-col md:flex-row md:justify-evenly">
+              <section className="flex flex-col  gap-8 md:flex-row md:justify-evenly">
                 <section>
                   <h2 className="font-bold text-Atlantis text-2xl">
                     Posibles Puestos de Trabajo
@@ -74,7 +74,7 @@ export default function EjecutivoModal({ estado, cambiarEstado }) {
                 </section>
 
                 <section>
-                  <h2 className="font-bold text-Atlantis">Posibles Empresas</h2>
+                  <h2 className="font-bold text-Atlantis text-2xl">Posibles Empresas</h2>
                   <ul>
                     {Ejecutivo.posiblesEmpresas.map((empresa, index) => (
                       <li

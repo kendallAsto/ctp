@@ -54,11 +54,10 @@
     },
 
     "posiblesPuestos": [
-      "Asistente de Gerencia",
-      "Secretaria/o",
-      "Oficinista",
-      "Ejecutivo en servicio al cliente"
+      "Mecánico/a automotriz",
+      "Mantenimiento de autos",
+      "Revisiones técnicas"
     ],
-    "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
+    "posiblesEmpresas": ["Talleres de automotriz", "Suzuki","Grupo purdy","Grupo Q","Veinsa","Dekra y muchos más"]
   }
 

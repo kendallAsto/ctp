@@ -6,8 +6,6 @@ import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import BTNS from "../Components/BTNS";
 let loginAdmin = false;
-let estadoAdd = true;
-
 const Eventos = [
   {
     start: dayjs("2024-12-3").toDate(),
@@ -20,47 +18,51 @@ function deleteEvents() {}
 
 export default function Events() {
   const localizer = dayjsLocalizer(dayjs);
-  const { t, i18n } = useTranslation("information");
+  const { t } = useTranslation("information");
+  const [estadoAdd, setEstadoAdd] = useState(false);
+  function manejarEstadoAdd() {
+    setEstadoAdd(!estadoAdd);
+  }
 
   return (
     <div className="relative">
       {loginAdmin && (
         <div className="flex gap-8 absolute top-0 right-[15%]">
-          <BTNS tipo="Add" href="#" texto={t("Buttons.Add")} />
-          <BTNS tipo="Edit" href="#" texto={t("Buttons.Edit")} />
-          <BTNS tipo="Delete" href="#" texto={t("Buttons.Delete")} />
+          <button onClick={manejarEstadoAdd} className="bg-Atlantis md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White">{t("Buttons.Add")}</button>
+          <button className="bg-yellow-500 md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White">{t("Buttons.Edit")}</button>
+          <button className="bg-red-500 md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White">{t("Buttons.Delete")}</button>
         </div>
       )}
 
-      {estadoAdd && (
-        <section className="bg-White border-Atlantis border-8 rounded-xl md:w-[20%] m-auto z-50">
+      {estadoAdd && loginAdmin && (
+        <section className="bg-White border-Atlantis border-8 rounded-xl md:w-[20%] m-auto z-50 transition-transform duration-200">
           <form action="#" className="flex flex-col p-4 text-xl">
             <label htmlFor="Titulo">Titulo del evento</label>
-            <input className="bg-Atlantis text-White p-2" type="text" />
+            <input className="bg-Atlantis text-White p-2 rounded-xl" type="text" />
             <label htmlFor="fechaInicio">Fecha inicial del evento</label>
             <input
-              className="bg-Atlantis text-White p-2"
+              className="bg-Atlantis text-White p-2 rounded-xl"
               type="date"
               name="fechaInicio"
               id="fechaInicio"
             />
             <label htmlFor="Fecha">Fecha final del evento</label>
             <input
-              className="bg-Atlantis text-White p-2"
+              className="bg-Atlantis text-White p-2 rounded-xl"
               type="date"
               name="fechaInicio"
               id="fechaInicio"
             />
             <div className="flex my-8 justify-center gap-8">
-              <BTNS
-                tipo="Add"
-                texto="Aceptar"
-              />
-              <BTNS tipo="Delete" texto="Cancelar" />
+              <BTNS tipo="Accept" texto="Aceptar" />
+              <BTNS tipo="Cancel" texto="Cancelar" />
             </div>
           </form>
         </section>
       )}
+
+      <div>
+      </div>
       <h1 className=" text-2xl  pt-12 text-Atlantis md:text-3xl font-bold text-center">
         {t("Events")}
       </h1>
