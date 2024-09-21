@@ -1,0 +1,32 @@
+{
+    "Executive": {
+      "title": "Commercial Executive and Customer Service",
+      "functions": "This specialty aims to train technicians at the intermediate level in the commercial and service area to support the administrative, communication, and logistics tasks of companies, organizations, and public or private institutions, both national and international.",
+      "title2": "Graduates of the Commercial Executive and Customer Service specialty will be qualified to:",
+      "p": "Attend to internal and external customers using various management tools in physical and electronic support."
+    },
+    "ConfigurationAndSupport": {
+      "title": "Network and Operating System Configuration and Support",
+      "functions": "This specialty provides knowledge, skills, and abilities in concepts of quality, competitiveness, productivity, design, network administration, databases, and operating systems, maintenance and integration of software applications, in accordance with current regulations and policies.",
+      "title2": "Graduates of the Network and Operating System Configuration and Support specialty will be qualified to work in:",
+      "p": "Installation, configuration, and maintenance of the communication network and operating systems, configuration of communication networks, support for Operating Systems, Information security, and Maintenance"
+    },
+    "Accounting": {
+      "title": "Accounting",
+      "functions": "An accounting professional is qualified to perform basic administrative and accounting tasks in a company or institution. They are responsible for recording, processing, and analyzing financial information, as well as keeping accounting books up-to-date.",
+      "title2": "Graduates of the Accounting specialty will be qualified to work in:",
+      "p": "In the accounting, finance, budgeting, treasury areas, and to perform payroll, inventories, taxes, accounts payable, accounts payable for any company."
+    },
+    "Administration": {
+      "title": "Administration of Customs Operations",
+      "functions": "The objective of the Customs Operations Administration specialty is to meet the needs for qualified labor at the technical level in the customs field, considering the commercial openness faced by the Costa Rican economy.",
+      "title2": "The sub-areas developed in this specialty are:",
+      "p": "Merchandise and Customs procedures, Customs business management, Tariff classification, Customs legal regulations, International trade strategies, free trade agreements, and English for communication."
+    },
+    "Mechanics": {
+      "title": "Repair of light vehicles",
+      "functions": "An accounting professional is qualified to perform basic administrative and accounting tasks in a company or institution. They are responsible for recording, processing, and analyzing financial information, as well as keeping accounting books up-to-date.",
+      "title2": "Graduates of the Accounting specialty will be qualified to work in:",
+      "p": "In the accounting, finance, budgeting, treasury areas, and to perform payroll, inventories, taxes, accounts payable, accounts payable for any company."
+    }
+  }

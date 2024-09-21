@@ -1,0 +1,32 @@
+{
+  "Ejecutivo": {
+    "title": "Ejecutivo comercial y servicio al cliente",
+    "functions": "Esta especialidad tiene como propósito formar técnicos en el nivel medio en el área comercial y de servicios como apoyo a las labores administrativas, de comunicación y logística de las empresas, organizaciones e instituciones públicas o privadas, sean estas nacionales e internacionales",
+    "title2": "Los egresados de la especialidad de Ejecutivo comercial y servicio al cliente estarán capacitados para:",
+    "p": "Atender al cliente interno y externo utilizando diversos medios  de gestión en soporte físico y electrónico."
+  },
+  "ConfiguracionySoporte": {
+    "title": "Configuración y soporte de redes y sistemas operativos",
+    "functions": "Esta especialidad brinda los conocimientos ,habilidades y destrezas en conceptos de calidad, competitividad, productividad, diseño, administración de redes, bases de datos y sistemas operativos, mantenimiento e integración de aplicaciones de software, de acuerdo con la normativa y política actual.",
+    "title2": "Los egresados de la especialidad de Configuración y soporte de redes y sistemas operativos estarán capacitados para desempeñarse  en:",
+    "p": "Instalacion, configuracion y mantenimiento a la red de comunicación y sistemas operativos, configuración de redes de comunicación, soporte a sistemas Operativos, Seguridad informática y Mantenimiento"
+  },
+  "Contabilidad": {
+    "title": "Contabilidad",
+    "functions": "Un profesional en contabilidad esta capacitado para realizar tareas administrativas y contables básicas en una empresa o institución. Es responsable de registrar, procesar y analizar información financiera, así como de mantener actualizados los libros contables.",
+    "title2": "Los egresados de la especialidad de Contabilidad estarán capacitados para desempeñarse  en:",
+    "p": "En las áreas contable, financiera, presupuestaria, tesorería, y realizar nóminas, inventarios, impuestos, cuentas por pagar, cuentas por pagar para cualquier empresa."
+  },
+  "Administracion": {
+    "title": "Administración de las operaciones Aduaneras",
+    "functions": "El objetivo de la especialidad de Administración de las operaciones Aduaneras es dar respuesta a las necesidades de mano de obra calificada en el nivel técnico y en el campo aduanero considerando la apertura comercial a la cual se enfrenta la economía costarricense.",
+    "title2": "Las sub áreas que se desarrollan en esta especialidad son:",
+    "p": "Merceología y trámites Aduaneros,Gestión empresarial aduanera,Clasificación arancelaria,normativa legal aduanera,Estrategias de comercio internacional,tratados de libre comercio y English for communication."
+  },
+  "Mecanica": {
+    "title": "Reparación de los vehículos livianos",
+    "functions": "Un profesional en contabilidad esta capacitado para realizar tareas administrativas y contables básicas en una empresa o institución. Es responsable de registrar, procesar y analizar información financiera, así como de mantener actualizados los libros contables.",
+    "title2": "Los egresados de la especialidad de Contabilidad estarán capacitados para desempeñarse  en:",
+    "p": "En las áreas contable, financiera, presupuestaria, tesorería, y realizar nóminas, inventarios, impuestos, cuentas por pagar, cuentas por pagar para cualquier empresa."
+  }
+}
