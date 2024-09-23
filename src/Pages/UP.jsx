@@ -34,7 +34,7 @@ function UP() {
 
   return (
     <Suspense>
-      <section className="flex w-[80%] flex-wrap md:w-[70%] m-auto">
+      <section className="flex w-[90%] flex-wrap lg:w-[80%] m-auto">
         <section>
           <h1 className="text-3xl font-bold font-Poppins text-Atlantis lg:text-4xl">
             {t("Danger.title")}

@@ -5,6 +5,11 @@
   "Contact": "Contacto",
   "Events": "Eventos",
   "CL": "ES",
-  "icon" : "{<esFlag/>}",
+  "Services" : "Servicios",
+  "Coordinations":{
+    "title": "Coordinaciones",
+    "Technical": "Coordinacion tecnica",
+    "Academic" : "Coordinacion academica"
+  },
   "UP" : "Nuestra mascota"
 }

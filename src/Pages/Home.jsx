@@ -62,31 +62,31 @@ function Home() {
             extra={
               <section>
                 <div className="grid md:grid-cols-3 gap-4 mb-4">
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Honesty")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Respect")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Commitment")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Responsabity")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Trust")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Solidarity")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.FACT")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.TW")}
                   </p>
-                  <p className=" text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg text-center">
+                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.DAE")}
                   </p>
                 </div>
@@ -221,28 +221,54 @@ function Home() {
                       >
                         {t("EO.specialities-2.ECYSA")}
                       </p>
-                      <EjecutivoModalN estado={estadoModal9} cambiarEstado={cambiarEstadoModal9} />
+                      <EjecutivoModalN
+                        estado={estadoModal9}
+                        cambiarEstado={cambiarEstadoModal9}
+                      />
 
-                      <p onClick={() => cambiarEstadoModal10(!estadoModal10)} className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg">
+                      <p
+                        onClick={() => cambiarEstadoModal10(!estadoModal10)}
+                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                      >
                         {t("EO.specialities-2.CySDRySO")}
                       </p>
-                      <CySModalN estado={estadoModal10} cambiarEstado={cambiarEstadoModal10} />
+                      <CySModalN
+                        estado={estadoModal10}
+                        cambiarEstado={cambiarEstadoModal10}
+                      />
 
-                      <p onClick={() => cambiarEstadoModal11(!estadoModal11)} className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg">
+                      <p
+                        onClick={() => cambiarEstadoModal11(!estadoModal11)}
+                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                      >
                         {t("EO.specialities-2.Contabilidad")}
                       </p>
-                      <ContabilidadModalN estado={estadoModal11} cambiarEstado={cambiarEstadoModal11} />
+                      <ContabilidadModalN
+                        estado={estadoModal11}
+                        cambiarEstado={cambiarEstadoModal11}
+                      />
 
-                      <p onClick={() => cambiarEstadoModal12(!estadoModal12)} className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg">
+                      <p
+                        onClick={() => cambiarEstadoModal12(!estadoModal12)}
+                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                      >
                         {t("EO.specialities-2.ADLOA")}
                       </p>
-                      <AdministracionModal estado={estadoModal12} cambiarEstado={cambiarEstadoModal12} />
+                      <AdministracionModal
+                        estado={estadoModal12}
+                        cambiarEstado={cambiarEstadoModal12}
+                      />
 
-                      <p onClick={() => cambiarEstadoModal13(!estadoModal13)}className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg">
+                      <p
+                        onClick={() => cambiarEstadoModal13(!estadoModal13)}
+                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                      >
                         {t("EO.specialities-2.RDLVL")}
                       </p>
-                      <MecanicaModalN estado={estadoModal13} cambiarEstado={cambiarEstadoModal13} />
-
+                      <MecanicaModalN
+                        estado={estadoModal13}
+                        cambiarEstado={cambiarEstadoModal13}
+                      />
                     </ul>
                   </section>
                 </div>

@@ -24,7 +24,7 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {Electronica.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore text-White md:px-6 py-1 md:p-2">
                           {subarea.SDIPE ||
                             subarea.DT ||
                             subarea.FDE ||

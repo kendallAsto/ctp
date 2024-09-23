@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <>
       <p className="text-center md:text-3xl text-Atlantis">{t("title")}</p>
-      <section className="text-lg flex flex-col  lg:flex-row gap-4 justify-center my-12 lg:text-xl w-[90%] lg:w-[70%] m-auto">
+      <section className="text-lg flex flex-col  lg:flex-row gap-4 justify-center my-12 lg:text-xl w-[90%] lg:w-[80%] m-auto">
         <div className="rounded-xl overflow-hidden">
           <h2 className="bg-Sycamore text-White p-2 text-center">{t("title2")}</h2>
           <ul className="bg-Atlantis text-White list-decimal">

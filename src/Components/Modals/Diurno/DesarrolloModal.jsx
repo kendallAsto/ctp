@@ -5,8 +5,8 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[180vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
-          <div className="text-md h-[180vh] w-[90vw] md:h-[150vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
+        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
+          <div className="text-md h-[180vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
               {Desarrollo.title}
             </h1>
@@ -24,20 +24,20 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {Desarrollo.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore text-White md:px-6 py-1 md:p-2">
                         {subarea.TDLIALDDAM ||
                             subarea.EeIAADDAM ||
                             subarea.DDAMyBDD ||
                             subarea.SySDAM ||
                             subarea.EOTAP}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore text-White px-5 md:px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore text-White px-5 md:px-6 py-1 md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore text-White px-5 md:px-6 py-1 md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>

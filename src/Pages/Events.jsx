@@ -5,6 +5,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import BTNS from "../Components/BTNS";
+dayjs.locale('es');
 let loginAdmin = false;
 const Eventos = [
   {
@@ -67,7 +68,7 @@ export default function Events() {
         {t("Events")}
       </h1>
 
-      <section className="text-lg w-[80%] h-[75vh] md:h-[95vh] md:w-[70%] m-auto my-12 rounded-xl overflow-hidden md:text-2xl">
+      <section className="text-lg w-[90%] h-[75vh] md:h-[95vh] lg:w-[80%] m-auto my-12 rounded-xl overflow-hidden md:text-2xl">
         <Calendar
           localizer={localizer}
           // views={["month","week","day"]}

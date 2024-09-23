@@ -5,7 +5,12 @@
   "Contact": "Contact",
   "Events": "Events",
   "CL": "EN",
-  "icon" : "{<enFlag/>}",
+  "Services" : "Services",
+  "Coordinations":{
+    "title": "Coordinations",
+    "Technical": "Technical coordination",
+    "Academic" : "Academic coordination"
+  },
   "UP" : "Our mascot"
 
 }

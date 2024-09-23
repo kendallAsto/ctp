@@ -6,12 +6,16 @@ export default function ContabilidadModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className="rounded-xl h-[100vh] w-[100vw] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
-          <div className="text-md h-[80vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl flex gap-4 flex-col flex-wrap">
-            <h1 className="text-2xl text-Atlantis lg:text-3xl text-center">{t("Contabilidad.title")}</h1>
-            <p className="text-xl">{t("Contabilidad.functions")}</p>
-            <h2 className="text-xl">{t("Contabilidad.title2")}</h2>
-            <p className="text-xl">{t("Contabilidad.p")}</p>
+        <section className="rounded-xl h-[120vh] w-[100vw] md:h-[110vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
+          <div className="text-md h-[100vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl flex gap-4 flex-col lg:flex-row">
+            <div>
+            <h1 className="text-2xl md:text-3xl text-Atlantis lg:text-3xl text-center">{t("Contabilidad.title")}</h1>
+            <p className="text-xl md:text-2xl">{t("Contabilidad.functions")}</p>
+            </div>
+            <div>
+            <h2 className="text-xl md:text-2xl text-Atlantis font-bold">{t("Contabilidad.title2")}</h2>
+            <p className="text-xl md:text-2xl">{t("Contabilidad.p")}</p>
+            </div>
           </div>
           <i
             onClick={() => cambiarEstado(false)}
