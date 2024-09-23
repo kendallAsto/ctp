@@ -6,6 +6,8 @@ import Events from "./Pages/Events";
 import UP from "./Pages/UP";
 import Services from "./Pages/Services";
 import { Suspense } from "react";
+import CTechnical from "./Pages/CTechnical";
+import CAcademic from "./Pages/CAcademic";
 function App() {
   return (
     <Suspense>
@@ -16,6 +18,8 @@ function App() {
           <Route path="/Services" element={<Services />} />
           <Route index element={<Home />} />
           <Route path="/Events" element={<Events />} />
+          <Route path="/CTechnical" element={<CTechnical />} />
+          <Route path="/CAcademic" element={<CAcademic />} />
         </Route>
       </Routes>
     </>

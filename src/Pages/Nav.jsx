@@ -92,10 +92,10 @@ export default function Nav() {
             {estadoDropbox && (
               <div className="lg:text-xl absolute right-0 my-4 lg:w-92 z-50">
                 <ul className="bg-Atlantis text-White rounded-xl">
-                  <Link to="/" className="p-2 flex cursor-pointer">
+                  <Link to="/CTechnical" className="p-2 flex cursor-pointer">
                     {t('Coordinations.Technical')}
                   </Link>
-                  <Link to="/" className="p-2 flex cursor-pointer">
+                  <Link to="/CAcademic" className="p-2 flex cursor-pointer">
                     {t('Coordinations.Academic')}
                   </Link>
                 </ul>
