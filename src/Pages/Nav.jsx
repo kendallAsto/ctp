@@ -4,12 +4,15 @@ import Logo from "../Assets/IMGS/logo.png";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import enFlagIMG from "../Assets/Flags/en.png";
+import esFlagIMG from "../Assets/Flags/es.png";
+
 export default function Nav() {
-  const { t, i18n } = useTranslation("Nav");
+  const { t, i18n } = useTranslation("nav");
   const [idiomaActual, setIdiomaActual] = useState("es");
   const [estadoNav, setEstadoNav] = useState(false);
   const [estadoDropbox, setEstadoDropbox] = useState(false);
-
+  const Language = i18n.language;
   function manejarEstadoDropbox() {
     setEstadoDropbox(!estadoDropbox);
   }
@@ -34,6 +37,7 @@ export default function Nav() {
       <nav className="hidden lg:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
+          <esFlag1/>
         </Link>
         <ul className="hidden md:grid md:grid-cols-4 lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
           <li>
@@ -47,7 +51,7 @@ export default function Nav() {
 
           <li>
             <Link
-              to="/#About-Us"
+              to="#"
               className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
             >
               {t("AU")}
@@ -71,7 +75,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="/Posts"
+              to="#"
               className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
             >
               {t("Posts")}
@@ -120,11 +124,16 @@ export default function Nav() {
           </li>
         </ul>
 
-        <div className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 items-center justify-center">
-          <i class="fa-solid fa-flag"></i>
-          <button onClick={changeLanguage}>{t("CL")}</button>
+        <div onClick={changeLanguage} className="text-lg text-White bg-Atlantis p-2 rounded-lg flex w-[90px] gap-2 cursor-pointer">
+            {Language == "es" ? <img className="w-1/2" src={esFlagIMG}/> : <img className="w-1/2" src={enFlagIMG}/> }
+          <button className="font-bold">{t("CL")}</button>
         </div>
       </nav>
+
+
+
+
+
 
 
 
@@ -145,10 +154,10 @@ export default function Nav() {
             Colegio Tecnico Profesional de Santo Domingo
           </h1>
 
-          <div className="text-md w-1/3 text-White bg-Atlantis p-2 rounded-lg flex gap-2 items-center justify-center">
-            <i class="fa-solid fa-flag"></i>
-            <button onClick={changeLanguage}>{t("CL")}</button>
-          </div>
+          <div  onClick={changeLanguage} className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 justify-center cursor-pointer">
+            {Language == "es" ? <img className="w-1/2" src={esFlagIMG}/> : <img className="w-1/2" src={enFlagIMG}/> }
+          <button className="font-bold">{t("CL")}</button>
+        </div>
         </div>
         {estadoNav && (
           <div className="flex flex-col items-center px-8 py-2 bg-Atlantis absolute top-0 left-0 right-0 z-50 h-[100%]">
@@ -165,7 +174,10 @@ export default function Nav() {
               ></i>
             </div>
             <ul className="gap-4 justify-center py-10 items-center font-Poppins  w-[100%]">
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/"
                   className="text-lg text-white p-2 rounded-lg transition-all duration-200"
@@ -174,7 +186,10 @@ export default function Nav() {
                 </Link>
               </li>
 
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/#About-Us"
                   className="text-lg text-white p-2 rounded-lg transition-all duration-200"
@@ -182,7 +197,10 @@ export default function Nav() {
                   {t("AU")}
                 </Link>
               </li>
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/Events"
                   className="text-lg text-white p-2 rounded-lg transition-all duration-200"
@@ -190,7 +208,10 @@ export default function Nav() {
                   {t("Events")}
                 </Link>
               </li>
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/Services"
                   className="text-lg text-white p-2 rounded-lg transition-all duration-200"
@@ -198,7 +219,10 @@ export default function Nav() {
                   Servicios
                 </Link>
               </li>
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/Posts"
                   className="text-lg text-white p-2 rounded-lg transition-all duration-200"
@@ -206,7 +230,10 @@ export default function Nav() {
                   {t("Posts")}
                 </Link>
               </li>
-              <li onClick={manejarEstadoDropbox} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoDropbox}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="#"
                   className="text-lg text-White p-2 rounded-lg transition-all duration-200"
@@ -217,20 +244,32 @@ export default function Nav() {
                 {estadoDropbox && (
                   <div>
                     <ul className=" text-White rounded-xl flex flex-col text-lg">
-                      <Link to="/" className="ml-6 bg-Atlantis px-2 my-1 rounded-xl">
+                      <Link
+                        to="/"
+                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                      >
                         Coordinacion Tecnica
                       </Link>
-                      <Link to="/" className="ml-6 bg-Atlantis px-2 my-1 rounded-xl">
+                      <Link
+                        to="/"
+                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                      >
                         Coordinacion Academica
                       </Link>
-                      <Link to="/" className="ml-6 bg-Atlantis px-2 my-1 rounded-xl">
+                      <Link
+                        to="/"
+                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                      >
                         Coordinacion Orientacion
                       </Link>
                     </ul>
                   </div>
                 )}
               </li>
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="#Contact"
                   className="text-lg text-White p-2 rounded-lg transition-all duration-200"
@@ -239,7 +278,10 @@ export default function Nav() {
                 </Link>
               </li>
 
-              <li onClick={manejarEstadoNav} className="bg-Sycamore p-2 m-2 rounded-xl">
+              <li
+                onClick={manejarEstadoNav}
+                className="bg-Sycamore p-2 m-2 rounded-xl"
+              >
                 <Link
                   to="/UP"
                   className="text-lg text-White p-2 rounded-lg transition-all duration-200"

@@ -4,6 +4,7 @@
   "Posts": "Publicaciones",
   "Contact": "Contacto",
   "Events": "Eventos",
-  "CL": "Cambiar idioma",
+  "CL": "ES",
+  "icon" : "{<esFlag/>}",
   "UP" : "Nuestra mascota"
 }
