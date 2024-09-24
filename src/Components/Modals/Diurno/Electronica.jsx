@@ -5,56 +5,64 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[180vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
-          <div className="text-md h-[180vh] w-[90vw] md:h-[150vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
-            <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
+        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[180vh]">
+          <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90vw] rounded-xl bg-White p-12 md:h-[150vh] md:w-[90vw] md:text-2xl">
+            <h1 className="p-2 text-center text-3xl font-bold text-Sycamore md:p-4 md:text-4xl">
               {Electronica.title}
             </h1>
-            <div className="flex flex-col items-center justify-center lg:grid grid-cols-2 md:text-lg">
+            <div className="flex grid-cols-2 flex-col items-center justify-center md:text-lg lg:grid">
               <div>
-                <table className="md:m-4 rounded-xl overflow-hidden">
+                <table className="overflow-hidden rounded-xl md:m-4">
                   <tr className="bg-Atlantis">
-                    <td className="text-White text-center md:py-2 md:px-12">
+                    <td className="text-center text-White md:px-12 md:py-2">
                       Sub-Área
                     </td>
-                    <td className="text-White text-center py-1 px-6 md:py-2 md:px-12">X</td>
-                    <td className="text-White text-center md:py-2 md:px-12">XI</td>
-                    <td className="text-White text-center md:py-2 md:px-12">XII</td>
+                    <td className="px-6 py-1 text-center text-White md:px-12 md:py-2">
+                      X
+                    </td>
+                    <td className="text-center text-White md:px-12 md:py-2">
+                      XI
+                    </td>
+                    <td className="text-center text-White md:px-12 md:py-2">
+                      XII
+                    </td>
                   </tr>
                   <tbody className="text-center">
                     {Electronica.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore border-white border-2 text-White md:px-6 py-1 md:p-2">
+                        <td className="border-2 border-white bg-Sycamore py-1 text-White md:p-2 md:px-6">
                           {subarea.SDIPE ||
                             subarea.DT ||
                             subarea.FDE ||
-                            subarea.FDEL||
-                            subarea.CL||
-                            subarea.ED||
-                            subarea.Telecomunicaciones||
-                            subarea.ED2||
+                            subarea.FDEL ||
+                            subarea.CL ||
+                            subarea.ED ||
+                            subarea.Telecomunicaciones ||
+                            subarea.ED2 ||
                             subarea.EFC}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>
                     ))}
                   </tbody>
 
-                  <tr className="text-center bg-Atlantis text-white">
-                    <td className="md:py-2 md:px-12">Horas totales</td>
-                    <td className="md:py-2 md:px-12">{Electronica.Total.Decimo} </td>
-                    <td className="md:py-2 md:px-12">
+                  <tr className="bg-Atlantis text-center text-white">
+                    <td className="md:px-12 md:py-2">Horas totales</td>
+                    <td className="md:px-12 md:py-2">
+                      {Electronica.Total.Decimo}{" "}
+                    </td>
+                    <td className="md:px-12 md:py-2">
                       {Electronica.Total.Undecimo}{" "}
                     </td>
-                    <td className="md:py-2 md:px-12">
+                    <td className="md:px-12 md:py-2">
                       {Electronica.Total.Duodecimo}{" "}
                     </td>
                   </tr>
@@ -63,13 +71,13 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
 
               <section className="flex flex-col gap-8 md:flex-row md:justify-evenly">
                 <section>
-                  <h2 className="font-bold text-Atlantis text-2xl">
+                  <h2 className="text-2xl font-bold text-Atlantis">
                     Posibles Puestos de Trabajo
                   </h2>
                   <ul>
                     {Electronica.posiblesPuestos.map((puesto, index) => (
                       <li
-                        className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
+                        className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
                         key={index}
                       >
                         {puesto}
@@ -79,11 +87,13 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                 </section>
 
                 <section>
-                  <h2 className="font-bold text-Atlantis text-2xl">Posibles Empresas</h2>
+                  <h2 className="text-2xl font-bold text-Atlantis">
+                    Posibles Empresas
+                  </h2>
                   <ul>
                     {Electronica.posiblesEmpresas.map((empresa, index) => (
                       <li
-                        className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
+                        className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
                         key={index}
                       >
                         {empresa}
@@ -94,7 +104,7 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
               </section>
               <i
                 onClick={() => cambiarEstado(false)}
-                class="fa-sharp fa-solid fa-xmark  text-4xl md:text-5xl absolute  top-1 right-1 md:top-4 md:right-12 hover:bg-Atlantis hover:text-White px-6 py-1 md:p-2 rounded-full cursor-pointer"
+                class="fa-sharp fa-solid fa-xmark absolute right-1 top-1 cursor-pointer rounded-full px-6 py-1 text-4xl hover:bg-Atlantis hover:text-White md:right-12 md:top-4 md:p-2 md:text-5xl"
               ></i>
             </div>
           </div>

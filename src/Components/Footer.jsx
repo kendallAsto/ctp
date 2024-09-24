@@ -8,58 +8,62 @@ const year = date.getFullYear();
 export default function Footer() {
   const { t, i18n } = useTranslation("nav");
   return (
-    <div className="w-[90%] m-auto">
-      <div className="hidden lg:flex items-center justify-between">
+    <div className="m-auto w-[90%]">
+      <div className="hidden items-center justify-between lg:flex">
         <img src={logo} alt="Logo del CTP Santo Domingo" className="w-[7%]" />
         <div className="flex gap-12">
           <a
             href="/"
-            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="rounded-lg p-2 text-lg transition-all duration-200 lg:text-xl lg:hover:scale-90 lg:hover:bg-Atlantis lg:hover:text-White"
           >
             {t("Home")}
           </a>
           <a
             href="#About-us"
-            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="rounded-lg p-2 text-lg transition-all duration-200 lg:text-xl lg:hover:scale-90 lg:hover:bg-Atlantis lg:hover:text-White"
           >
             {t("AU")}
           </a>
           <a
             href="/Posts"
-            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="rounded-lg p-2 text-lg transition-all duration-200 lg:text-xl lg:hover:scale-90 lg:hover:bg-Atlantis lg:hover:text-White"
           >
             {t("Posts")}
           </a>
           <a
             href="#Contact"
-            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="rounded-lg p-2 text-lg transition-all duration-200 lg:text-xl lg:hover:scale-90 lg:hover:bg-Atlantis lg:hover:text-White"
           >
             {t("Contact")}
           </a>
           <a
             href="/Events"
-            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="rounded-lg p-2 text-lg transition-all duration-200 lg:text-xl lg:hover:scale-90 lg:hover:bg-Atlantis lg:hover:text-White"
           >
             {t("Events")}
           </a>
         </div>
       </div>
       <div>
-      <hr className="hidden lg:block lg:border-Atlantis md:border-2 md:my-4" />
-      <p className="hidden lg:block md:text-xl md:text-center md:mb-4">
-        &copy; {year} CTP Santo Domingo de Heredia
-      </p>
+        <hr className="hidden md:my-4 md:border-2 lg:block lg:border-Atlantis" />
+        <p className="hidden md:mb-4 md:text-center md:text-xl lg:block">
+          &copy; {year} CTP Santo Domingo de Heredia
+        </p>
       </div>
 
       <div className="lg:hidden">
         <div className="flex items-center justify-center gap-4">
-          <img src={logo} alt="Logo del CTP Santo Domingo" className="w-[15%]" />
-          <h1 className="text-2xl md:text-lg w-1/2">
+          <img
+            src={logo}
+            alt="Logo del CTP Santo Domingo"
+            className="w-[15%]"
+          />
+          <h1 className="w-1/2 text-2xl md:text-lg">
             Colegio Técnico Profesional de Santo Domingo
           </h1>
         </div>
-        <hr className="border-Atlantis border-2 my-4" />
-        <p className="text-xl text-center mb-4">
+        <hr className="my-4 border-2 border-Atlantis" />
+        <p className="mb-4 text-center text-xl">
           &copy; {year} CTP Santo Domingo de Heredia
         </p>
       </div>

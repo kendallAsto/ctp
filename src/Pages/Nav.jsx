@@ -35,16 +35,16 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="hidden lg:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[90%] m-auto">
+      <nav className="m-auto hidden items-center justify-center py-10 font-Poppins lg:flex lg:w-[90%] lg:gap-4">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
           <esFlag1 />
         </Link>
-        <ul className="hidden md:grid md:grid-cols-4 lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
+        <ul className="m-auto hidden items-center justify-center py-10 font-Poppins md:grid md:grid-cols-4 lg:w-[80%] lg:gap-4">
           <li>
             <Link
               to="/"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Home")}
             </Link>
@@ -53,7 +53,7 @@ export default function Nav() {
           <li>
             <Link
               to="#"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("AU")}
             </Link>
@@ -61,7 +61,7 @@ export default function Nav() {
           <li>
             <Link
               to="/Events"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Events")}
             </Link>
@@ -69,7 +69,7 @@ export default function Nav() {
           <li>
             <Link
               to="/Services"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Services")}
             </Link>
@@ -77,29 +77,29 @@ export default function Nav() {
           <li>
             <Link
               to="#"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Posts")}
             </Link>
           </li>
-          <li onClick={manejarEstadoDropbox} className="relative ">
+          <li onClick={manejarEstadoDropbox} className="relative">
             <Link
               to="#"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg  transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Coordinations.title")}
             </Link>
 
             {estadoDropbox && (
-              <div className="lg:text-xl absolute right-0 my-4 lg:w-92 z-50">
-                <ul className="bg-Atlantis text-White rounded-xl">
-                  <Link to="/CTechnical" className="p-2 flex cursor-pointer">
+              <div className="lg:w-92 absolute right-0 z-50 my-4 lg:text-xl">
+                <ul className="rounded-xl bg-Atlantis text-White">
+                  <Link to="/CTechnical" className="flex cursor-pointer p-2">
                     {t("Coordinations.Technical")}
                   </Link>
-                  <Link to="/CAcademic" className="p-2 flex cursor-pointer">
+                  <Link to="/CAcademic" className="flex cursor-pointer p-2">
                     {t("Coordinations.Academic")}
                   </Link>
-                  <Link to="/CCompany" className="p-2 flex cursor-pointer">
+                  <Link to="/CCompany" className="flex cursor-pointer p-2">
                     {t("Coordinations.Company")}
                   </Link>
                 </ul>
@@ -109,7 +109,7 @@ export default function Nav() {
           <li>
             <Link
               to="#Contact"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Contact")}
             </Link>
@@ -118,7 +118,7 @@ export default function Nav() {
           <li>
             <Link
               to="/UP"
-              className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("UP")}
             </Link>
@@ -127,7 +127,7 @@ export default function Nav() {
 
         <div
           onClick={changeLanguage}
-          className="text-lg text-White bg-Atlantis p-2 rounded-lg flex w-[90px] gap-2 cursor-pointer transition-transform duration-200"
+          className="flex w-[90px] cursor-pointer gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White transition-transform duration-200"
         >
           {Language === "es" ? (
             <div className="flex gap-2">
@@ -151,8 +151,8 @@ export default function Nav() {
         </div>
       </nav>
 
-      <nav className="flex flex-col lg:hidden w-[90%] m-auto">
-        <div className="flex gap-4 justify-between py-10 items-center font-Poppins text-pretty">
+      <nav className="m-auto flex w-[90%] flex-col lg:hidden">
+        <div className="flex items-center justify-between gap-4 text-pretty py-10 font-Poppins">
           <i
             onClick={manejarEstadoNav}
             className="fa-solid fa-bars text-3xl"
@@ -166,7 +166,7 @@ export default function Nav() {
 
           <div
             onClick={changeLanguage}
-            className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 justify-center cursor-pointer"
+            className="flex cursor-pointer justify-center gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White"
           >
             {Language === "es" ? (
               <img
@@ -185,12 +185,12 @@ export default function Nav() {
           </div>
         </div>
         {estadoNav && (
-          <div className="flex flex-col items-center px-8 py-2 bg-Atlantis absolute top-0 left-0 right-0 z-50 h-[100%]">
-            <div className="flex gap-4 pt-10 justify-center font-Poppins text-pretty transition-all duration-200 items-center transition-transform duration-200">
+          <div className="absolute left-0 right-0 top-0 z-50 flex h-[100%] flex-col items-center bg-Atlantis px-8 py-2">
+            <div className="flex items-center justify-center gap-4 text-pretty pt-10 font-Poppins transition-all transition-transform duration-200">
               <Link to="/" className="w-[20%]">
                 <img src={Logo} alt="Logo del CTP Santo Domingo" />
               </Link>
-              <h1 className="text-md md:text-xl text-pretty text-White md:w-1/2">
+              <h1 className="text-md text-pretty text-White md:w-1/2 md:text-xl">
                 Colegio Técnico Profesional de Santo Domingo
               </h1>
               <i
@@ -198,14 +198,14 @@ export default function Nav() {
                 className="fa-sharp fa-solid fa-xmark text-4xl text-White"
               ></i>
             </div>
-            <ul className="gap-4 justify-center py-10 items-center font-Poppins  w-[100%]">
+            <ul className="w-[100%] items-center justify-center gap-4 py-10 font-Poppins">
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/"
-                  className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   {t("Home")}
                 </Link>
@@ -213,80 +213,80 @@ export default function Nav() {
 
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/#About-Us"
-                  className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   {t("AU")}
                 </Link>
               </li>
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/Events"
-                  className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   {t("Events")}
                 </Link>
               </li>
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/Services"
-                  className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   {t("Services")}
                 </Link>
               </li>
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/Posts"
-                  className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   {t("Posts")}
                 </Link>
               </li>
               <li
                 onClick={manejarEstadoDropbox}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="#"
-                  className="text-lg md:text-xl text-White p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
                 >
                   {t("Coordinations.title")}
                 </Link>
 
                 {estadoDropbox && (
                   <div>
-                    <ul className=" text-White rounded-xl flex flex-col text-lg md:text-xl">
+                    <ul className="flex flex-col rounded-xl text-lg text-White md:text-xl">
                       <Link
                         onClick={manejarEstadoNav}
                         to="/CTechnical"
-                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
                       >
                         {t("Coordinations.Technical")}
                       </Link>
                       <Link
                         onClick={manejarEstadoNav}
                         to="/CAcademic"
-                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
                       >
                         {t("Coordinations.Academic")}
                       </Link>
                       <Link
                         onClick={manejarEstadoNav}
                         to="/CCompany"
-                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
                       >
                         {t("Coordinations.Company")}
                       </Link>
@@ -296,11 +296,11 @@ export default function Nav() {
               </li>
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="#Contact"
-                  className="text-lg md:text-xl text-White p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
                 >
                   {t("Contact")}
                 </Link>
@@ -308,11 +308,11 @@ export default function Nav() {
 
               <li
                 onClick={manejarEstadoNav}
-                className="bg-Sycamore p-2 m-2 rounded-xl"
+                className="m-2 rounded-xl bg-Sycamore p-2"
               >
                 <Link
                   to="/UP"
-                  className="text-lg md:text-xl text-White p-2 rounded-lg transition-all duration-200"
+                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
                 >
                   {t("UP")}
                 </Link>

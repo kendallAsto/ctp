@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Suspense, useState} from "react";
+import { Suspense, useState } from "react";
 import Informacion from "../Components/Informacion";
 import BTNS from "../Components/BTNS";
 import Danger from "../Assets/IMGS/Danger.webp";
@@ -41,13 +41,13 @@ function Home(ref) {
 
   return (
     <Suspense fallback="Cargando informacion">
-      <div className="font-Lato relative">
-        <section className="Container w-[90%] m-auto overflow-hidden">
+      <div className="relative font-Lato">
+        <section className="Container m-auto w-[90%] overflow-hidden">
           <video
             src={Video}
             autoPlay
             controls
-            className="rounded-xl mb-24"
+            className="mb-24 rounded-xl"
           ></video>
 
           <Informacion title={t("Vision.title")} body={t("Vision.body")} />
@@ -63,32 +63,32 @@ function Home(ref) {
             title={t("Valores.title")}
             extra={
               <section>
-                <div className="grid md:grid-cols-3 gap-4 mb-4">
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                <div className="mb-4 grid gap-4 md:grid-cols-3">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Honesty")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Respect")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Commitment")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Responsability")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Trust")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Solidarity")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.FACT")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.TW")}
                   </p>
-                  <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
+                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.DAE")}
                   </p>
                 </div>
@@ -119,17 +119,17 @@ function Home(ref) {
             })}
             extra={
               <div>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid gap-4 md:grid-cols-2">
                   <section id="Especialidades-Diurno">
                     <div className="flex justify-center">
-                      <h2 className="text-2xl bg-Fuscous text-White p-2 lg:w-1/3 rounded-full text-center cursor-pointer transition-colors duration-200 hover:bg-Blue-Dianne">
+                      <h2 className="cursor-pointer rounded-full bg-Fuscous p-2 text-center text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne lg:w-1/3">
                         {t("EO.timeDiurno")}
                       </h2>
                     </div>
                     <ul>
                       <p
                         onClick={() => cambiarEstadoModal1(!estadoModal)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DP")}
                       </p>
@@ -140,7 +140,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal2(!estadoModal2)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.ECYSA")}
                       </p>
@@ -151,7 +151,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal3(!estadoModal3)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.CyF")}
                       </p>
@@ -161,7 +161,7 @@ function Home(ref) {
                       />
                       <p
                         onClick={() => cambiarEstadoModal4(!estadoModal4)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DDAM")}
                       </p>
@@ -172,17 +172,18 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal5(!estadoModal5)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DyMDE")}
                       </p>
                       <DyMModal
-                      estado={estadoModal5}
-                      cambiarEstado={cambiarEstadoModal5}/>
+                        estado={estadoModal5}
+                        cambiarEstado={cambiarEstadoModal5}
+                      />
 
                       <p
                         onClick={() => cambiarEstadoModal6(!estadoModal6)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.EET")}
                       </p>
@@ -192,7 +193,7 @@ function Home(ref) {
                       />
                       <p
                         onClick={() => cambiarEstadoModal7(!estadoModal7)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.GDLP")}
                       </p>
@@ -202,7 +203,7 @@ function Home(ref) {
                       />
                       <p
                         onClick={() => cambiarEstadoModal8(!estadoModal8)}
-                        className="bg-Atlantis p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Blue-Dianne transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.RDLVL")}
                       </p>
@@ -214,25 +215,33 @@ function Home(ref) {
                   </section>
 
                   <section className="Especialidades-Nocturno">
-                    <div className="flex justify-center flex-col items-center">
-                      <h2 className="text-2xl bg-Fuscous text-White p-2 lg:w-1/3 rounded-full text-center cursor-pointer transition-colors duration-200 hover:bg-Blue-Dianne">
+                    <div className="flex flex-col items-center justify-center">
+                      <h2 className="cursor-pointer rounded-full bg-Fuscous p-2 text-center text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne lg:w-1/3">
                         {t("EO.timeNocturna")}
                       </h2>
                       <div className="flex gap-8 pt-2">
-                      <p className="font-bold text-Fuscous">{t('EO.Requirements.title')}</p>
-                      <div>
-                        <ul>
-                      <li className="text-gray-500 list-disc">{t('EO.Requirements.1')}</li>
-                      <li className="text-gray-500 list-disc">{t('EO.Requirements.2')}</li>
-                      <li className="text-gray-500 list-disc">{t('EO.Requirements.3')}</li>
-                        </ul>
-                      </div>
+                        <p className="font-bold text-Fuscous">
+                          {t("EO.Requirements.title")}
+                        </p>
+                        <div>
+                          <ul>
+                            <li className="list-disc text-gray-500">
+                              {t("EO.Requirements.1")}
+                            </li>
+                            <li className="list-disc text-gray-500">
+                              {t("EO.Requirements.2")}
+                            </li>
+                            <li className="list-disc text-gray-500">
+                              {t("EO.Requirements.3")}
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <ul>
                       <p
                         onClick={() => cambiarEstadoModal9(!estadoModal9)}
-                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.ECYSA")}
                       </p>
@@ -243,7 +252,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal10(!estadoModal10)}
-                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.CySDRySO")}
                       </p>
@@ -254,7 +263,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal11(!estadoModal11)}
-                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.Contabilidad")}
                       </p>
@@ -265,7 +274,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal12(!estadoModal12)}
-                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.ADLOA")}
                       </p>
@@ -276,7 +285,7 @@ function Home(ref) {
 
                       <p
                         onClick={() => cambiarEstadoModal13(!estadoModal13)}
-                        className="bg-Blue-Dianne p-2 my-2 text-2xl text-White cursor-pointer hover:bg-Atlantis transition-colors duration-200 rounded-lg"
+                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.RDLVL")}
                       </p>
@@ -291,29 +300,29 @@ function Home(ref) {
             }
           />
 
-          <section className=" flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
+          <section className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
             <div>
-              <h1 className=" text-3xl font-bold font-Poppins text-Atlantis md:text-4xl mb-8">
+              <h1 className="mb-8 font-Poppins text-3xl font-bold text-Atlantis md:text-4xl">
                 {t("Contact.title")}
               </h1>
               <form action="#" className="flex flex-col flex-wrap gap-4">
                 <input
                   type="text"
                   placeholder={t("Contact.name")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
+                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <input
                   type="text"
                   placeholder={t("Contact.mail")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl"
+                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <textarea
                   name="message"
                   id="Message"
                   placeholder={t("Contact.message")}
-                  className="p-3 bg-Blue-Dianne my-2 rounded-lg text-white text-xl h-[250px] md:h-[160px] lg:h-[250px]"
+                  className="my-2 h-[250px] rounded-lg bg-Blue-Dianne p-3 text-xl text-white md:h-[160px] lg:h-[250px]"
                 ></textarea>
-                <div className="flex items-center justify-center gap-3 m-auto bg-Atlantis text-White p-3 w-1/3 text-xl rounded-xl">
+                <div className="m-auto flex w-1/3 items-center justify-center gap-3 rounded-xl bg-Atlantis p-3 text-xl text-White">
                   <i class="fa-solid fa-paper-plane text-White"></i>
                   <button type="submit">Enviar</button>
                 </div>
@@ -323,11 +332,11 @@ function Home(ref) {
             <img
               src={Danger}
               alt="Foto del perro de la institucion"
-              className="md:w-[80%] lg:w-[70%] m-auto rounded-xl"
+              className="m-auto rounded-xl md:w-[80%] lg:w-[70%]"
             />
           </section>
 
-          <section className="flex flex-col gap-4 my-24">
+          <section className="my-24 flex flex-col gap-4">
             <Contact
               clase="fa-solid fa-phone text-3xl"
               body="(+506) 2244-3190"
@@ -350,4 +359,4 @@ function Home(ref) {
   );
 }
 
-export default  forwardRef(Home);
+export default forwardRef(Home);

@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-let loginAdmin = true;
+let loginAdmin = false;
 dayjs.locale("es");
 
 export default function Events() {
@@ -15,6 +15,15 @@ export default function Events() {
   function manejarEstadoAdd() {
     setEstadoAdd(!estadoAdd);
   }
+
+  const [EventsDiurno, setEventsDiurno] = useState(true);
+  const [EventsNocturno, setEventsNocturno] = useState(false);
+
+  function cambiarHorario() {
+    setEventsDiurno(!EventsDiurno);
+    setEventsNocturno(!EventsNocturno);
+  }
+
   const [title, setTitle] = useState("");
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
@@ -42,7 +51,7 @@ export default function Events() {
       }
 
       const data = await response.json();
-      alert(`Evento guardado correctamente`,data);
+      alert(`Evento guardado correctamente`, data);
       setTitle(``);
       setStart(``);
       setEnd(``);
@@ -61,11 +70,13 @@ export default function Events() {
       }
 
       const data = await response.json();
-      setEventos(data.map(evento => ({
-        title: evento.title,
-        start: new Date(evento.start),
-        end: new Date(evento.end),
-      })));
+      setEventos(
+        data.map((evento) => ({
+          title: evento.title,
+          start: new Date(evento.start),
+          end: new Date(evento.end),
+        })),
+      );
     } catch (error) {
       console.log(`Error al obtener los eventos`);
     }
@@ -76,29 +87,28 @@ export default function Events() {
   }, []);
 
   console.log(eventos);
-  
 
   return (
     <div className="relative">
       {loginAdmin && (
-        <div className="flex gap-8 absolute top-0 right-[15%]">
+        <div className="absolute right-[15%] top-0 flex gap-8">
           <button
             onClick={manejarEstadoAdd}
-            className="bg-Atlantis md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White"
+            className="rounded-lg bg-Atlantis p-3 text-White transition-colors duration-200 hover:bg-Fuscous hover:text-White md:text-xl"
           >
             {t("Buttons.Add")}
           </button>
-          <button className="bg-yellow-500 md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White">
+          <button className="rounded-lg bg-yellow-500 p-3 text-White transition-colors duration-200 hover:bg-Fuscous hover:text-White md:text-xl">
             {t("Buttons.Edit")}
           </button>
-          <button className="bg-red-500 md:text-xl text-White p-3 rounded-lg hover:bg-Fuscous transition-colors duration-200 hover:text-White">
+          <button className="rounded-lg bg-red-500 p-3 text-White transition-colors duration-200 hover:bg-Fuscous hover:text-White md:text-xl">
             {t("Buttons.Delete")}
           </button>
         </div>
       )}
 
       {estadoAdd && loginAdmin && (
-        <section className="bg-White border-Atlantis border-8 rounded-xl md:w-[20%] m-auto z-50 transition-transform duration-200">
+        <section className="z-50 m-auto rounded-xl border-8 border-Atlantis bg-White transition-transform duration-200 md:w-[20%]">
           <form
             action="#"
             className="flex flex-col p-4 text-xl"
@@ -106,14 +116,14 @@ export default function Events() {
           >
             <label htmlFor="Titulo">Titulo del evento</label>
             <input
-              className="bg-Atlantis text-White p-2 rounded-xl"
+              className="rounded-xl bg-Atlantis p-2 text-White"
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
             <label htmlFor="fechaInicio">Fecha inicial del evento</label>
             <input
-              className="bg-Atlantis text-White p-2 rounded-xl"
+              className="rounded-xl bg-Atlantis p-2 text-White"
               type="date"
               name="fechaInicio"
               id="fechaInicio"
@@ -122,14 +132,14 @@ export default function Events() {
             />
             <label htmlFor="Fecha">Fecha final del evento</label>
             <input
-              className="bg-Atlantis text-White p-2 rounded-xl"
+              className="rounded-xl bg-Atlantis p-2 text-White"
               type="date"
               name="fechaInicio"
               id="fechaInicio"
               value={end}
               onChange={(e) => setEnd(e.target.value)}
             />
-            <div className="flex my-8 justify-center gap-8">
+            <div className="my-8 flex justify-center gap-8">
               <button type="submit">Enviar informacion</button>
             </div>
           </form>
@@ -137,43 +147,54 @@ export default function Events() {
       )}
 
       <div></div>
-      <h1 className=" text-2xl  pt-12 text-Atlantis md:text-3xl font-bold text-center">
+      <h1 className="pt-2 text-center text-2xl font-bold text-Atlantis md:text-3xl">
         {t("Events")}
       </h1>
 
-      <section className="text-lg w-[90%] h-[75vh] md:h-[100vh] m-auto my-12 rounded-xl overflow-hidden md:text-2xl lg:pt-8">
-        <Calendar
-          localizer={localizer}
-          events={eventos}
-          messages={
-            dayjs.locale() === "es"
-              ? {
-                  next: "Siguiente",
-                  previous: "Anterior",
-                  today: "Hoy",
-                  month: "Mes",
-                  week: "Semana",
-                  day: "Día",
-                }
-              : {
-                  next: "Next",
-                  previous: "Previous",
-                  today: "Today",
-                  month: "Month",
-                  week: "Week",
-                  day: "Day",
-                }
-          }
-          formats={{
-            dayHeaderFormat: (date) => {
-              return dayjs(date).format("ddd/DD/MM/YYYY");
-            },
-            monthHeaderFormat: (date) => {
-              return dayjs(date).format("ddd/D/MM/YYYY");
-            },
-          }}
-          className="bg-Sycamore p-4"
-        />
+      <div className="mt-4 flex items-center justify-center">
+        <button className="rounded-l-xl bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+          {t("EO.timeDiurno")}
+        </button>
+        <button className="rounded-r-xl bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+          {t("EO.timeNocturna")}
+        </button>
+      </div>
+
+      <section className="m-auto my-12 h-[75vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2">
+        {EventsDiurno && (
+          <Calendar
+            localizer={localizer}
+            events={eventos}
+            messages={
+              dayjs.locale() === "es"
+                ? {
+                    next: "Siguiente",
+                    previous: "Anterior",
+                    today: "Hoy",
+                    month: "Mes",
+                    week: "Semana",
+                    day: "Día",
+                  }
+                : {
+                    next: "Next",
+                    previous: "Previous",
+                    today: "Today",
+                    month: "Month",
+                    week: "Week",
+                    day: "Day",
+                  }
+            }
+            formats={{
+              dayHeaderFormat: (date) => {
+                return dayjs(date).format("ddd/DD/MM/YYYY");
+              },
+              monthHeaderFormat: (date) => {
+                return dayjs(date).format("ddd/D/MM/YYYY");
+              },
+            }}
+            className="bg-Sycamore p-4"
+          />
+        )}
       </section>
     </div>
   );

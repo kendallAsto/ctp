@@ -34,30 +34,30 @@ function UP() {
 
   return (
     <Suspense>
-      <section className="flex w-[90%] flex-col lg:w-[80%] m-auto">
+      <section className="m-auto flex w-[90%] flex-col lg:w-[80%]">
         <section>
-          <h1 className="text-3xl font-bold font-Poppins text-Atlantis lg:text-4xl">
+          <h1 className="font-Poppins text-3xl font-bold text-Atlantis lg:text-4xl">
             {t("Danger.title")}
           </h1>
-          <div className="bg-Sycamore text-White p-4 rounded-xl font-Lato">
-            <p className="text-lg md:text-2xl text-pretty mb-3">
+          <div className="rounded-xl bg-Sycamore p-4 font-Lato text-White">
+            <p className="mb-3 text-pretty text-lg md:text-2xl">
               {t("Danger.p1")}
             </p>
-            <p className="text-lg md:text-2xl text-pretty mb-3">
+            <p className="mb-3 text-pretty text-lg md:text-2xl">
               {t("Danger.p2")}
             </p>
-            <p className="text-lg md:text-2xl text-pretty mb-3">
+            <p className="mb-3 text-pretty text-lg md:text-2xl">
               {t("Danger.p3")}
             </p>
-            <p className="text-lg md:text-2xl text-pretty mb-3">
+            <p className="mb-3 text-pretty text-lg md:text-2xl">
               {t("Danger.p4")}
             </p>
-            <p className="text-lg md:text-2xl text-pretty mb-3">
+            <p className="mb-3 text-pretty text-lg md:text-2xl">
               {t("Danger.p5")}
             </p>
           </div>
         </section>
-        <section className=" grid grid-cols-2 md:flex flex-wrap justify-center items-center">
+        <section className="grid grid-cols-2 flex-wrap items-center justify-center md:flex">
           <IMG src={fotoDanger1} alt="Foto de danger" />
           <IMG src={fotoDanger2} alt="Foto de danger" />
           <IMG src={fotoDanger3} alt="Foto de danger" />
