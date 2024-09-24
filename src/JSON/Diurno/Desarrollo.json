@@ -1,63 +1,58 @@
 {
-    "title": "Desarrollo de aplicaciones móviles",
-    "Subarea": [
-      {
-        "TDLIALDDAM": "Tecnologías de la informacion aplicada al desarrollo de aplicaciones móviles",
-        "Horas": {
-          "Decimo": 160,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "EeIAADDAM": "Emprendimiento e innovación aplicada al desarrollo de aplicaciones móviles",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 160,
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "DDAMyBDD": "Desarrollo de aplicaciones móviles y bases de datos",
-        "Horas": {
-          "Decimo": 320,
-          "Undecimo": 320,
-          "Duodecimo": 300
-        }
-      },
-
-      {
-        "SySDAM": "Soporte y seguridad de aplicaciones móviles",
-        "Horas": {
-          "Decimo": 320,
-          "Undecimo": 320,
-          "Duodecimo": 200
-        }
-      },
-
-      {
-        "EOTAP": "English oriented to apps development",
-        "Horas": {
-          "Decimo": 160,
-          "Undecimo": 160,
-          "Duodecimo": 100
-        }
+  "title": "Desarrollo de aplicaciones móviles",
+  "Subarea": [
+    {
+      "TDLIALDDAM": "Tecnologías de la información aplicada al desarrollo de aplicaciones móviles",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": "-",
+        "Duodecimo": "-"
       }
-    ],
-    "Total": {
-      "Decimo": 960,
-      "Undecimo": 960,
-      "Duodecimo": 600
     },
-
-    "posiblesPuestos": [
-      "Tecnico en desarrollo de software",
-      "Programador",
-      "Operador de monitoreo",
-      "Tecnico en mantenimiento de computadoras",
-      "Desarrollador de aplicaciones móviles"
-    ],
-    "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
-  }
+    {
+      "EeIAADDAM": "Emprendimiento e innovación aplicada al desarrollo de aplicaciones móviles",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 160,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "DDAMyBDD": "Desarrollo de aplicaciones móviles y bases de datos",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 300
+      }
+    },
+    {
+      "SySDAM": "Soporte y seguridad de aplicaciones móviles",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 200
+      }
+    },
+    {
+      "EOTAP": "Inglés orientado al desarrollo de aplicaciones",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": 160,
+        "Duodecimo": 100
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 960,
+    "Undecimo": 960,
+    "Duodecimo": 600
+  },
+  "posiblesPuestos": [
+    "Técnico en desarrollo de software",
+    "Programador",
+    "Operador de monitoreo",
+    "Técnico en mantenimiento de computadoras",
+    "Desarrollador de aplicaciones móviles"
+  ],
+  "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
+}

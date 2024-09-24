@@ -1,64 +1,60 @@
 {
-    "title": "Gestión de la producción",
-    "Subarea": [
-      {
-        "GDLO": "Gestión de las operaciones",
-        "Horas": {
-          "Decimo": 8,
-          "Undecimo": 8,
-          "Duodecimo": 8
-        }
-      },
-
-      {
-        "PyCDLP": "Planeación y control de la producción",
-        "Horas": {
-          "Decimo": 8,
-          "Undecimo": 8,
-          "Duodecimo": 8
-        }
-      },
-
-      {
-        "MySEP": "Mantenimiento y seguridad en producción",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": 4,
-          "Duodecimo": 4
-        }
-      },
-
-      {
-        "EOTMP": "English oriented to management production",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": 4,
-          "Duodecimo": 4
-        }
+  "title": "Gestión de la producción",
+  "Subarea": [
+    {
+      "GDLO": "Gestión de las operaciones",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
       }
-    ],
-    "Total": {
-      "Decimo": 24,
-      "Undecimo": 24,
-      "Duodecimo": 24
     },
-
-    "posiblesPuestos": [
-      "Asistente de Gerencia",
-      "Control de calidad",
-      "Procesos industriales",
-      "Inspector de calidad",
-      "Gestór de calidad",
-      "Lineas de producción",
-      "Asistente de calidad"
-    ],
-    "posiblesEmpresas": [
-      "Confruit",
-      "Coopesa",
-      "Etipress",
-      "Amazon",
-      "Walmart",
-      "Bimbo",
-      "Empresas ortopedicas"
-    ]
-  }
+    {
+      "PyCDLP": "Planeación y control de la producción",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "MySEP": "Mantenimiento y seguridad en producción",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    },
+    {
+      "EOTMP": "English oriented to management production",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Asistente de Gerencia",
+    "Control de calidad",
+    "Procesos industriales",
+    "Inspector de calidad",
+    "Gestor de calidad",
+    "Líneas de producción",
+    "Asistente de calidad"
+  ],
+  "posiblesEmpresas": [
+    "Confruit",
+    "Coopesa",
+    "Etipress",
+    "Amazon",
+    "Walmart",
+    "Bimbo",
+    "Empresas ortopédicas"
+  ]
+}
