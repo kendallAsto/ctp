@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import Logo from "../Assets/IMGS/logo.png";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import enFlagIMG from "../Assets/Flags/en.png";
 import esFlagIMG from "../Assets/Flags/es.png";
+import dayjs from "dayjs";
 
 export default function Nav() {
   const { t, i18n } = useTranslation("nav");
@@ -21,14 +21,15 @@ export default function Nav() {
     setEstadoNav(!estadoNav);
   }
 
-  const navigate = useNavigate();
   function changeLanguage() {
     if (idiomaActual === "es") {
       i18n.changeLanguage("en");
-      setIdiomaActual("en"); // Update state
+      setIdiomaActual("en");
+      dayjs.locale("en");
     } else {
       i18n.changeLanguage("es");
-      setIdiomaActual("es"); // Update state
+      setIdiomaActual("es");
+      dayjs.locale("es");
     }
   }
 
@@ -37,7 +38,7 @@ export default function Nav() {
       <nav className="hidden lg:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
-          <esFlag1/>
+          <esFlag1 />
         </Link>
         <ul className="hidden md:grid md:grid-cols-4 lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
           <li>
@@ -70,7 +71,7 @@ export default function Nav() {
               to="/Services"
               className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
             >
-              {t('Services')}
+              {t("Services")}
             </Link>
           </li>
           <li>
@@ -86,17 +87,17 @@ export default function Nav() {
               to="#"
               className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg  transition-all duration-200 lg:text-xl"
             >
-              {t('Coordinations.title')}
+              {t("Coordinations.title")}
             </Link>
 
             {estadoDropbox && (
               <div className="lg:text-xl absolute right-0 my-4 lg:w-92 z-50">
                 <ul className="bg-Atlantis text-White rounded-xl">
                   <Link to="/CTechnical" className="p-2 flex cursor-pointer">
-                    {t('Coordinations.Technical')}
+                    {t("Coordinations.Technical")}
                   </Link>
                   <Link to="/CAcademic" className="p-2 flex cursor-pointer">
-                    {t('Coordinations.Academic')}
+                    {t("Coordinations.Academic")}
                   </Link>
                 </ul>
               </div>
@@ -121,22 +122,31 @@ export default function Nav() {
           </li>
         </ul>
 
-        <div onClick={changeLanguage} className="text-lg text-White bg-Atlantis p-2 rounded-lg flex w-[90px] gap-2 cursor-pointer transition-transform duration-200">
-            {Language == "es" ? <img className="w-1/2" src={esFlagIMG}/> : <img className="w-1/2" src={enFlagIMG}/> }
-          <button className="font-bold">{t("CL")}</button>
+        <div
+          onClick={changeLanguage}
+          className="text-lg text-White bg-Atlantis p-2 rounded-lg flex w-[90px] gap-2 cursor-pointer transition-transform duration-200"
+        >
+          {Language === "es" ? (
+            <div className="flex gap-2">
+              <img
+                className="w-1/2"
+                src={esFlagIMG}
+                alt="Spanish flag language"
+              />{" "}
+              <button className="font-bold">ES</button>
+            </div>
+          ) : (
+            <div className="flex gap-2">
+              <img
+                className="w-1/2"
+                src={enFlagIMG}
+                alt="English flag language"
+              />{" "}
+              <button className="font-bold">EN</button>
+            </div>
+          )}
         </div>
       </nav>
-
-
-
-
-
-
-
-
-
-
-
 
       <nav className="flex flex-col lg:hidden w-[90%] m-auto">
         <div className="flex gap-4 justify-between py-10 items-center font-Poppins text-pretty">
@@ -151,10 +161,25 @@ export default function Nav() {
             Colegio Tecnico Profesional de Santo Domingo
           </h1>
 
-          <div  onClick={changeLanguage} className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 justify-center cursor-pointer">
-            {Language == "es" ? <img className="w-1/2" src={esFlagIMG}/> : <img className="w-1/2" src={enFlagIMG}/> }
-          <button className="font-bold">{t("CL")}</button>
-        </div>
+          <div
+            onClick={changeLanguage}
+            className="text-lg text-White bg-Atlantis p-2 rounded-lg flex gap-2 justify-center cursor-pointer"
+          >
+            {Language === "es" ? (
+              <img
+                className="w-1/2"
+                src={esFlagIMG}
+                alt="Spanish flag language"
+              />
+            ) : (
+              <img
+                className="w-1/2"
+                src={enFlagIMG}
+                alt="English flag language"
+              />
+            )}
+            <button className="font-bold">{t("CL")}</button>
+          </div>
         </div>
         {estadoNav && (
           <div className="flex flex-col items-center px-8 py-2 bg-Atlantis absolute top-0 left-0 right-0 z-50 h-[100%]">
@@ -213,7 +238,7 @@ export default function Nav() {
                   to="/Services"
                   className="text-lg md:text-xl text-white p-2 rounded-lg transition-all duration-200"
                 >
-                  {t('Services')}
+                  {t("Services")}
                 </Link>
               </li>
               <li
@@ -235,7 +260,7 @@ export default function Nav() {
                   to="#"
                   className="text-lg md:text-xl text-White p-2 rounded-lg transition-all duration-200"
                 >
-                  {t('Coordinations.title')}
+                  {t("Coordinations.title")}
                 </Link>
 
                 {estadoDropbox && (
@@ -245,13 +270,13 @@ export default function Nav() {
                         to="/"
                         className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
                       >
-                        {t('Coordinations.Technical')}
+                        {t("Coordinations.Technical")}
                       </Link>
                       <Link
                         to="/"
                         className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
                       >
-                        {t('Coordinations.Academic')}
+                        {t("Coordinations.Academic")}
                       </Link>
                     </ul>
                   </div>

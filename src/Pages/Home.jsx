@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Suspense, useState } from "react";
+import { Suspense, useState} from "react";
 import Informacion from "../Components/Informacion";
 import BTNS from "../Components/BTNS";
 import Danger from "../Assets/IMGS/Danger.webp";
@@ -20,7 +20,8 @@ import ContabilidadModalN from "../Components/Modals/Nocturno/ContabilidadModalN
 import AdministracionModal from "../Components/Modals/Nocturno/AdministracionModalN.jsx";
 import MecanicaModalN from "../Components/Modals/Nocturno/MecanicaModalN.jsx";
 
-function Home() {
+import { forwardRef } from "react";
+function Home(ref) {
   const { t } = useTranslation("information");
 
   const [estadoModal, cambiarEstadoModal1] = useState(false);
@@ -209,10 +210,20 @@ function Home() {
                   </section>
 
                   <section className="Especialidades-Nocturno">
-                    <div className="flex justify-center">
+                    <div className="flex justify-center flex-col items-center">
                       <h2 className="text-2xl bg-Fuscous text-White p-2 lg:w-1/3 rounded-full text-center cursor-pointer transition-colors duration-200 hover:bg-Blue-Dianne">
                         {t("EO.timeNocturna")}
                       </h2>
+                      <div className="flex gap-8 pt-2">
+                      <p className="font-bold text-Fuscous">{t('EO.Requirements.title')}</p>
+                      <div>
+                        <ul>
+                      <li className="text-gray-500 list-disc">{t('EO.Requirements.1')}</li>
+                      <li className="text-gray-500 list-disc">{t('EO.Requirements.2')}</li>
+                      <li className="text-gray-500 list-disc">{t('EO.Requirements.3')}</li>
+                        </ul>
+                      </div>
+                      </div>
                     </div>
                     <ul>
                       <p
@@ -339,4 +350,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default  forwardRef(Home);

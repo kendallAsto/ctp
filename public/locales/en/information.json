@@ -48,6 +48,12 @@
       "title": "Our Educational Offer",
       "timeDiurno": "Daytime",
       "timeNocturna": "Night",
+      "Requirements" : {
+        "title": "Requirements",
+        "1":"Be of legal age",
+        "2" : "Have the title of Diversified Education or the Bachelor's Degree in Secondary Education",
+        "3":"Carry out and pass the enrollment process"
+      },
 
       "body": "The Santo Domingo Professional Technical College focuses primarily on diversified education, offering a wide range of technical and professional specialties such as:",
 

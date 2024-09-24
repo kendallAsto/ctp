@@ -1,9 +1,7 @@
 import React, { Children } from 'react'
-import { useTranslation } from "react-i18next";
 
 
 export default function Informacion({title,body,body2,body3,extra}) {
-  const { t, i18n } = useTranslation("information");
 
   return (
     <div className='mb-14'>

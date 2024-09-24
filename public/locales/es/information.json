@@ -47,6 +47,12 @@
     "title": "Nuestra Oferta Educativa",
     "timeDiurno": "Diurno",
     "timeNocturna": "Nocturno",
+    "Requirements": {
+      "title": "Requisitos:",
+      "1": "Ser mayor de edad ",
+      "2": "Contar con el título de Educación Diversificada o el de Bachiller en Educación media.",
+      "3": "Realizar y aprobar el proceso de matrícula"
+    },
 
     "body": "El Colegio Técnico Profesional de Santo Domingo se enfoca principalmente en la educación diversificada, ofreciendo una amplia gama de especialidades técnicas y profesionales tales como:",
 
