@@ -30,7 +30,7 @@ export default function Events() {
 
     try {
       console.log(nuevoEvento);
-      const response = await fetch(`http://localhost:3001/api/events`, {
+      const response = await fetch(`https://ctp-santodomingo.vercel.app/api/events`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,13 +55,17 @@ export default function Events() {
 
   const fetchEvents = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/events`);
+      const response = await fetch(`https://ctp-santodomingo.vercel.app/api/events`);
       if (!response.ok) {
         throw new Error("Error al obtener los datos del servidor!!");
       }
 
       const data = await response.json();
-      setEventos(data);
+      setEventos(data.map(evento => ({
+        title: evento.title,
+        start: new Date(evento.start),
+        end: new Date(evento.end),
+      })));
     } catch (error) {
       console.log(`Error al obtener los eventos`);
     }
@@ -72,6 +76,7 @@ export default function Events() {
   }, []);
 
   console.log(eventos);
+  
 
   return (
     <div className="relative">

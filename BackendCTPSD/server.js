@@ -16,7 +16,7 @@ const db = mysql.createConnection({
 
 db.connect((err) =>{
     if(err){
-        throw err
+        throw err;
     }
     console.log("Conexion establecida")
 })
@@ -41,14 +41,12 @@ app.post('/api/events', (req,res) =>{
         })
     }
 
-    const fechaCreacion = new Date().toISOString().slice(0,19).replace(`T`,``);
-
-    const SQL_QUERY = `insert into events (title,start,end,fechaCreacion) values (?,?,?,?)`
-    db.query(SQL_QUERY, [title,start,end,fechaCreacion],(err,result) =>{
+    const SQL_QUERY = `INSERT INTO events (title,start,end) values (?,?,?)`
+    db.query(SQL_QUERY, [title,start,end],(err,result) =>{
         if(err){
             return res.status(500).json({error: err.message})
         }
-        res.status(201).json({id: result.insertID,title,start,end,fechaCreacion:fechaCreacion})
+        res.status(201).json({title,start,end})
     })
 })
 
