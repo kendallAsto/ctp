@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="flex items-center justify-center gap-4">
           <img src={logo} alt="Logo del CTP Santo Domingo" className="w-[15%]" />
           <h1 className="text-2xl md:text-lg w-1/2">
-            Colegio Tècnico Profesional de Santo Domingo
+            Colegio Técnico Profesional de Santo Domingo
           </h1>
         </div>
         <hr className="border-Atlantis border-2 my-4" />
