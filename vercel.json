@@ -1,0 +1,9 @@
+{
+  "builds": [
+    {
+      "src": "./BackendCTPSD/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
+}
