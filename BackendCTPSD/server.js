@@ -8,10 +8,10 @@ app.use(cors())
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: "https://ctp-santodomingo.vercel.app",
-    user: "root",
-    password: "",
-    database: "ctpsd_events"
+    host: "%",
+    user: "CTPSD-Admin2024",
+    password: "P4ssw0rdCTPSD-Admin",
+    database: "ctpsd-admin2024"
 });
 
 db.connect((err) =>{
