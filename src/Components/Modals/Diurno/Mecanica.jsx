@@ -24,20 +24,20 @@ export default function MecanicaModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {Mecanica.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.OEEDB ||
                             subarea.ODEV ||
                             subarea.MDMDVL ||
                             subarea.Autotronica||
                             subarea.EOTAaF}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>

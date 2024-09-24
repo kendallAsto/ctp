@@ -21,6 +21,7 @@ import AdministracionModal from "../Components/Modals/Nocturno/AdministracionMod
 import MecanicaModalN from "../Components/Modals/Nocturno/MecanicaModalN.jsx";
 
 import { forwardRef } from "react";
+import DyMModal from "../Components/Modals/Diurno/DyMModal.jsx";
 function Home(ref) {
   const { t } = useTranslation("information");
 
@@ -175,6 +176,9 @@ function Home(ref) {
                       >
                         {t("EO.specialities.DyMDE")}
                       </p>
+                      <DyMModal
+                      estado={estadoModal5}
+                      cambiarEstado={cambiarEstadoModal5}/>
 
                       <p
                         onClick={() => cambiarEstadoModal6(!estadoModal6)}

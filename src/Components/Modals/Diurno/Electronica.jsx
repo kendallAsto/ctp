@@ -24,7 +24,7 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {Electronica.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore text-White md:px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White md:px-6 py-1 md:p-2">
                           {subarea.SDIPE ||
                             subarea.DT ||
                             subarea.FDE ||
@@ -35,13 +35,13 @@ export default function ElectronicaModal({ estado, cambiarEstado }) {
                             subarea.ED2||
                             subarea.EFC}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>

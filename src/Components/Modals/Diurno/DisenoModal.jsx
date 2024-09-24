@@ -24,7 +24,7 @@ export default function DisenoModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {Diseno.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.DP ||
                             subarea.DT ||
                             subarea.Fotografia ||
@@ -32,13 +32,13 @@ export default function DisenoModal({ estado, cambiarEstado }) {
                             subarea.SDI||
                             subarea.EFC}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore text-White px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>

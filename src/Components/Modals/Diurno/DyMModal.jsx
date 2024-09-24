@@ -1,14 +1,14 @@
 import React from "react";
-import Desarrollo from "../../../JSON/Diurno/Desarrollo.json";
+import DyM from "../../../JSON/Diurno/DyM.json";
 
-export default function DesarrolloModal({ estado, cambiarEstado }) {
+export default function DyMModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[100vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
-          <div className="text-md h-[180vh] w-[90vw] md:h-[90vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
+        <section className=" rounded-xl h-[200vh] w-[100%] md:h-[180vh] bg-[rgba(0,0,0,.5)] absolute left-0 right-0">
+          <div className="text-md h-[180vh] w-[90vw] md:h-[150vh] md:w-[90vw] m-auto bg-White absolute top-0 left-0 right-0 bottom-0 rounded-xl p-12 md:text-2xl">
             <h1 className=" text-3xl md:text-4xl text-center p-2 md:p-4 text-Sycamore font-bold">
-              {Desarrollo.title}
+              {DyM.title}
             </h1>
             <div className="flex flex-col items-center justify-center lg:grid grid-cols-2 md:text-lg">
               <div>
@@ -22,22 +22,22 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                     <td className="text-White text-center md:py-2 md:px-12">XII</td>
                   </tr>
                   <tbody className="text-center">
-                    {Desarrollo.Subarea.map((subarea, index) => (
+                    {DyM.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="bg-Sycamore border-white border-2 text-White md:px-6 py-1 md:p-2">
-                        {subarea.TDLIALDDAM ||
-                            subarea.EeIAADDAM ||
-                            subarea.DDAMyBDD ||
-                            subarea.SySDAM ||
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
+                          {subarea.MAAPC ||
+                            subarea.TDPYM ||
+                            subarea.DyDAyU ||
+                            subarea.EeIAADyMPE||
                             subarea.EOTAP}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-5 md:px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-5 md:px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="bg-Sycamore border-white border-2 text-White px-5 md:px-6 py-1 md:p-2">
+                        <td className="bg-Sycamore border-white border-2 text-White px-6 py-1 md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>
@@ -46,12 +46,12 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
 
                   <tr className="text-center bg-Atlantis text-white">
                     <td className="md:py-2 md:px-12">Horas totales</td>
-                    <td className="md:py-2 md:px-12">{Desarrollo.Total.Decimo} </td>
+                    <td className="md:py-2 md:px-12">{DyM.Total.Decimo} </td>
                     <td className="md:py-2 md:px-12">
-                      {Desarrollo.Total.Undecimo}{" "}
+                      {DyM.Total.Undecimo}{" "}
                     </td>
                     <td className="md:py-2 md:px-12">
-                      {Desarrollo.Total.Duodecimo}{" "}
+                      {DyM.Total.Duodecimo}{" "}
                     </td>
                   </tr>
                 </table>
@@ -63,7 +63,7 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                     Posibles Puestos de Trabajo
                   </h2>
                   <ul>
-                    {Desarrollo.posiblesPuestos.map((puesto, index) => (
+                    {DyM.posiblesPuestos.map((puesto, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}
@@ -77,7 +77,7 @@ export default function DesarrolloModal({ estado, cambiarEstado }) {
                 <section>
                   <h2 className="font-bold text-Atlantis text-2xl">Posibles Empresas</h2>
                   <ul>
-                    {Desarrollo.posiblesEmpresas.map((empresa, index) => (
+                    {DyM.posiblesEmpresas.map((empresa, index) => (
                       <li
                         className="bg-Atlantis text-white rounded-xl px-6 py-1 md:p-2 my-4"
                         key={index}

@@ -1,0 +1,58 @@
+{
+    "title": "Dibujo y modelado de edificaciones",
+    "Subarea": [
+      {
+        "MAAPC": "Modelado arquitectónico asistido por computadora ",
+        "Horas": {
+          "Decimo": 12,
+          "Undecimo": 12,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "TDPYM": "Técnicas de presentación y modelos",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "DyDAyU": "Dibujo y diseño arquitectónico y urbanístico",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      },
+      {
+        "EeIAADyMPE": "Emprendimiento e innovación aplicada al Dibujo y Modelado para Edificaciones",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "EOTAP": "English Oriented to Drawing and Modeling of Buildings",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      "Dibujante Arquitectónico",
+      "Modelador BIM (Building Information Modeling)",
+      "Diseñador de Interiores",
+      "Especialista en Visualización Arquitectónica",
+      "Consultor BIM Independiente (Building Information Modeling)"
+    ],
+    "posiblesEmpresas": ["3D View CR", "Occhio","Phoenix Consultores","Arkcon de Costa Rica"]
+  }
