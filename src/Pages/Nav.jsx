@@ -158,7 +158,7 @@ export default function Nav() {
             <img src={Logo} alt="Logo del CTP Santo Domingo" />
           </Link>
           <h1 className="text-sm md:text-lg">
-            Colegio Tecnico Profesional de Santo Domingo
+            Colegio Tècnico Profesional de Santo Domingo
           </h1>
 
           <div
@@ -188,7 +188,7 @@ export default function Nav() {
                 <img src={Logo} alt="Logo del CTP Santo Domingo" />
               </Link>
               <h1 className="text-md md:text-xl text-pretty text-White md:w-1/2">
-                Colegio Tecnico Profesional de Santo Domingo
+                Colegio Tècnico Profesional de Santo Domingo
               </h1>
               <i
                 onClick={manejarEstadoNav}
