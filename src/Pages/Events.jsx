@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../CSS/EventsToolbar.css"
 import { Calendar, dayjsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import dayjs from "dayjs";
@@ -23,6 +24,7 @@ export default function Events() {
     setEventsDiurno(!EventsDiurno);
     setEventsNocturno(!EventsNocturno);
   }
+
 
   const [title, setTitle] = useState("");
   const [start, setStart] = useState("");
@@ -152,10 +154,10 @@ export default function Events() {
       </h1>
 
       <div className="mt-4 flex items-center justify-center">
-        <button className="rounded-l-xl bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+        <button onClick={cambiarHorario} className="rounded-l-xl bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
           {t("EO.timeDiurno")}
         </button>
-        <button className="rounded-r-xl bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+        <button onClick={cambiarHorario} className="rounded-r-xl bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
           {t("EO.timeNocturna")}
         </button>
       </div>
@@ -192,7 +194,42 @@ export default function Events() {
                 return dayjs(date).format("ddd/D/MM/YYYY");
               },
             }}
-            className="bg-Sycamore p-4"
+            className="bg-Sycamore p-4 text-White rounded-xl"
+          />
+        )}
+
+        {EventsNocturno && (
+          <Calendar
+            localizer={localizer}
+            events=""
+            messages={
+              dayjs.locale() === "es"
+                ? {
+                    next: "Siguiente",
+                    previous: "Anterior",
+                    today: "Hoy",
+                    month: "Mes",
+                    week: "Semana",
+                    day: "Día",
+                  }
+                : {
+                    next: "Next",
+                    previous: "Previous",
+                    today: "Today",
+                    month: "Month",
+                    week: "Week",
+                    day: "Day",
+                  }
+            }
+            formats={{
+              dayHeaderFormat: (date) => {
+                return dayjs(date).format("ddd/DD/MM/YYYY");
+              },
+              monthHeaderFormat: (date) => {
+                return dayjs(date).format("ddd/D/MM/YYYY");
+              },
+            }}
+            className="bg-Blue-Dianne text-White p-4 rounded-xl"
           />
         )}
       </section>
