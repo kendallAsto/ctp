@@ -1,105 +1,96 @@
 {
-    "title": "Electrónica en telecomunicaciones",
-    "Subarea": [
-      {
-        "SDIPE": "Sistemas de informacion para electrónica",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "DT": "Dibujo técnico",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": 2,
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "FDE": "Fundamentos de electrónica",
-        "Horas": {
-          "Decimo": 8,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "FDEL": "Fundamentos de electricidad",
-        "Horas": {
-          "Decimo": 8,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "CL": "Circuitos lineales",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 8,
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "ED": "Electronica digital I",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 8,
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "Telecomunicaciones": "Telecomunicaciones",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 4,
-          "Duodecimo": 12
-        }
-      },
-
-      {
-        "ED2": "Circuitos lineales",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": "-",
-          "Duodecimo": 8
-        }
-      },
-
-      {
-        "EFC": "English for communication",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 2,
-          "Duodecimo": 4
-        }
+  "title": "Electrónica en telecomunicaciones",
+  "Subarea": [
+    {
+      "SDIPE": "Sistemas de información para electrónica",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": "-",
+        "Duodecimo": "-"
       }
-    ],
-    "Total": {
-      "Decimo": 24,
-      "Undecimo": 24,
-      "Duodecimo": 24
     },
-
-    "posiblesPuestos": [
-      "Electrico/a en telecomunicaciones",
-      "Tecnico en electrónica",
-      "Tecnico en reparacion de artefactos eléctricos y cableados"
-    ],
-    "posiblesEmpresas": [
-      "ICE y Subarrendatarios",
-      "Compañia fuerza y luz",
-      "Electronicas",
-      "Liberty",
-      "Claro",
-      "Kolbi",
-      "Tigo"
-    ]
-  }
+    {
+      "DT": "Dibujo técnico",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 2,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "FDE": "Fundamentos de electrónica",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "FDEL": "Fundamentos de electricidad",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "CL": "Circuitos lineales",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "ED": "Electrónica digital I",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "Telecomunicaciones": "Telecomunicaciones",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": 12
+      }
+    },
+    {
+      "ED2": "Circuitos lineales",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 8
+      }
+    },
+    {
+      "EFC": "English for communication",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 2,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Eléctrico/a en telecomunicaciones",
+    "Técnico en electrónica",
+    "Técnico en reparación de artefactos eléctricos y cableados"
+  ],
+  "posiblesEmpresas": [
+    "ICE y Subarrendatarios",
+    "Compañía Fuerza y Luz",
+    "Electrónicas",
+    "Liberty",
+    "Claro",
+    "Kolbi",
+    "Tigo"
+  ]
+}

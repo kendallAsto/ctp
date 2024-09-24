@@ -54,7 +54,7 @@ function Home(ref) {
           <Informacion
             title={t("Mission.title")}
             body={t("Mission.body", {
-              CTPName: "Colegio Tecnico Profesional de Santo Domingo",
+              CTPName: "Colegio Técnico Profesional de Santo Domingo",
             })}
           />
 
@@ -73,7 +73,7 @@ function Home(ref) {
                     {t("Valores.listValores.Commitment")}
                   </p>
                   <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
-                    {t("Valores.listValores.Responsabity")}
+                    {t("Valores.listValores.Responsability")}
                   </p>
                   <p className="text-2xl bg-Atlantis p-2 my-2 text-White rounded-lg  flex justify-center items-center">
                     {t("Valores.listValores.Trust")}
@@ -101,7 +101,7 @@ function Home(ref) {
               body={t("History.body-1")}
               body2={t("History.body-2")}
               body3={t("History.body-3", {
-                CTPName: "Colegio Tecnico Profesional de Santo Domingo",
+                CTPName: "Colegio Técnico Profesional de Santo Domingo",
               })}
               extra={
                 <div className="my-8">
@@ -114,7 +114,7 @@ function Home(ref) {
           <Informacion
             title={t("EO.title")}
             body={t("EO.body", {
-              CTPName: "Colegio Tecnico Profesional de Santo Domingo",
+              CTPName: "Colegio Técnico Profesional de Santo Domingo",
             })}
             extra={
               <div>

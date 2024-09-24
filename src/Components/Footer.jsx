@@ -11,34 +11,34 @@ export default function Footer() {
     <div>
       <div className="flex items-center justify-between">
         <img src={logo} alt="Logo del CTP Santo Domingo" className="w-[7%]" />
-        <div className="flex gap-12">
+        <div className="flex lg:gap-12">
           <a
             href="/"
-            className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
           >
             {t("Home")}
           </a>
           <a
             href="#About-us"
-            className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
           >
             {t("AU")}
           </a>
           <a
             href="/Posts"
-            className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
           >
             {t("Posts")}
           </a>
           <a
             href="#Contact"
-            className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
           >
             {t("Contact")}
           </a>
           <a
             href="/Events"
-            className="text-lg hover:text-White hover:bg-Atlantis p-2 rounded-lg hover:scale-90 transition-all duration-200 lg:text-xl"
+            className="text-lg lg:hover:text-White lg:hover:bg-Atlantis p-2 rounded-lg lg:hover:scale-90 transition-all duration-200 lg:text-xl"
           >
             {t("Events")}
           </a>

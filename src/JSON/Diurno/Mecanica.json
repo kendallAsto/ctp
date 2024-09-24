@@ -1,63 +1,63 @@
-
-  {
-    "title": "Reparación de sistemas de vehiculos livianos",
-    "Subarea": [
-      {
-        "OEEDB": "Operaciones en equipo de banco",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "ODEV": "Operaciones de estructura vehicular",
-        "Horas": {
-          "Decimo": 8,
-          "Undecimo": "-",
-          "Duodecimo": "-"
-        }
-      },
-
-      {
-        "MDMDVL": "Mécanica de motores de vehiculos livianos",
-        "Horas": {
-          "Decimo": "-",
-          "Undecimo": 4,
-          "Duodecimo": 12
-        }
-      },
-
-      {
-        "Autotronica": "Autotrónica",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": 12,
-          "Duodecimo": 8
-        }
-      },
-
-      {
-        "EOTAaF": "Contabilidad Financiera",
-        "Horas": {
-          "Decimo": 4,
-          "Undecimo": 4,
-          "Duodecimo": 4
-        }
+{
+  "title": "Reparación de sistemas de vehículos livianos",
+  "Subarea": [
+    {
+      "OEEDB": "Operaciones en equipo de banco",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": "-",
+        "Duodecimo": "-"
       }
-    ],
-    "Total": {
-      "Decimo": 24,
-      "Undecimo": 24,
-      "Duodecimo": 24
     },
-
-    "posiblesPuestos": [
-      "Mecánico/a automotriz",
-      "Mantenimiento de autos",
-      "Revisiones técnicas"
-    ],
-    "posiblesEmpresas": ["Talleres de automotriz", "Suzuki","Grupo purdy","Grupo Q","Veinsa","Dekra y muchos más"]
-  }
-
+    {
+      "ODEV": "Operaciones de estructura vehicular",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "MDMDVL": "Mecánica de motores de vehículos livianos",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": 12
+      }
+    },
+    {
+      "Autotronica": "Autotrónica",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 12,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "EOTAaF": "Contabilidad Financiera",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Mecánico/a automotriz",
+    "Mantenimiento de autos",
+    "Revisiones técnicas"
+  ],
+  "posiblesEmpresas": [
+    "Talleres de automotriz",
+    "Suzuki",
+    "Grupo Purdy",
+    "Grupo Q",
+    "Veinsa",
+    "Dekra y muchos más"
+  ]
+}
