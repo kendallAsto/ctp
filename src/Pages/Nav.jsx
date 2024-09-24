@@ -267,13 +267,15 @@ export default function Nav() {
                   <div>
                     <ul className=" text-White rounded-xl flex flex-col text-lg md:text-xl">
                       <Link
-                        to="/"
+                        onClick={manejarEstadoNav}
+                        to="/CTechnical"
                         className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
                       >
                         {t("Coordinations.Technical")}
                       </Link>
                       <Link
-                        to="/"
+                        onClick={manejarEstadoNav}
+                        to="/CAcademic"
                         className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
                       >
                         {t("Coordinations.Academic")}
