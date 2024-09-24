@@ -1,0 +1,49 @@
+{
+  "title": "Ejecutivo comercial y servicio al cliente",
+  "Subarea": [
+    {
+      "GCyCPESAC": "Gestión comercial y comunicación para el servicio al cliente",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 4,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "DDPGLIyECE": "Destrezas digitales para gestionar la información y el comercio eléctrico",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "EeIALECySAC": "Emprendimiento e innovación aplicada al ejecutivo comercial y al servicio al cliente",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "EOTBaCSE": "Inglés orientado a ejecutivos de negocios y servicio al cliente",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Asistente de Gerencia",
+    "Secretaria/o",
+    "Oficinista",
+    "Ejecutivo en servicio al cliente"
+  ],
+  "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
+}

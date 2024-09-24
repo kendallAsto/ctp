@@ -41,12 +41,12 @@ function Home(ref) {
   return (
     <Suspense fallback="Cargando informacion">
       <div className="font-Lato relative">
-        <section className="Container w-[90%] md:w-[90%] lg:w-[80%] m-auto overflow-hidden">
+        <section className="Container w-[90%] m-auto overflow-hidden">
           <video
             src={Video}
             autoPlay
             controls
-            className="rounded-xl mb-12"
+            className="rounded-xl mb-24"
           ></video>
 
           <Informacion title={t("Vision.title")} body={t("Vision.body")} />
@@ -337,12 +337,8 @@ function Home(ref) {
               body="300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica"
             />
           </section>
-          <section>
+          <section className="mb-12">
             <Map />
-          </section>
-
-          <section className="m-auto mt-12">
-            <Footer />
           </section>
         </section>
       </div>

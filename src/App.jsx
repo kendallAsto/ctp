@@ -8,21 +8,27 @@ import Services from "./Pages/Services";
 import { Suspense } from "react";
 import CTechnical from "./Pages/CTechnical";
 import CAcademic from "./Pages/CAcademic";
+import CCompany from "./Pages/CCompany";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <Suspense>
       <>
-      <Routes>
-        <Route path="/" element={<Nav />}>
-          <Route path="/UP" element={<UP />} />
-          <Route path="/Services" element={<Services />} />
-          <Route index element={<Home />} />
-          <Route path="/Events" element={<Events />} />
-          <Route path="/CTechnical" element={<CTechnical />} />
-          <Route path="/CAcademic" element={<CAcademic />} />
-        </Route>
-      </Routes>
-    </>
+        <Routes>
+          <Route path="/" element={<Nav />}>
+            <Route path="/UP" element={<UP />} />
+            <Route path="/Services" element={<Services />} />
+            <Route index element={<Home />} />
+            <Route path="/Events" element={<Events />} />
+            <Route path="/CTechnical" element={<CTechnical />} />
+            <Route path="/CAcademic" element={<CAcademic />} />
+            <Route path="/CCompany" element={<CCompany />} />
+          </Route>
+        </Routes>
+        <section>
+          <Footer />
+        </section>
+      </>
     </Suspense>
   );
 }

@@ -1,0 +1,74 @@
+{
+  "title": "Configuración y soporte de redes y sistemas operativos",
+  "Subarea": [
+    {
+      "TDIAALCySDRySO": "Tecnologías de información aplicadas a la configuración y soporte de redes y sistemas operativos",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "FDP": "Fundamentos de programación",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "AySALC": "Administración y soporte a las computadoras",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "EeIAALCySDRySO": "Emprendimiento e innovación aplicada a la configuración y soporte de redes y sistemas operativos",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": ""
+      }
+    },
+    {
+      "CySAR": "Configuración y soporte a redes",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "SALTDI": "Soporte a las tecnologías de información",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 4
+      }
+    },
+    {
+      "EOTNCaOS": "English Oriented to Network Configuration and Operating Systems",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Consultor Senior de Soporte de Operaciones de Red",
+    "Especialista de Soporte de Sistemas en Integración Técnica",
+    "Técnico en Soporte de Redes",
+    "Soportista Técnico",
+    "Técnico en Soporte"
+  ],
+  "posiblesEmpresas": ["SIRTEC Costa Rica", "Nano Sistemas Costa Rica","SG Solutions","Liberty"]
+}

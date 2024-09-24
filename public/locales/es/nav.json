@@ -8,8 +8,9 @@
   "Services" : "Servicios",
   "Coordinations":{
     "title": "Coordinaciones",
-    "Technical": "Coordinacion tecnica",
-    "Academic" : "Coordinacion academica"
+    "Technical": "Coordinación tecnica",
+    "Academic" : "Coordinación academica",
+    "Company" : "Coordinación con la empresa"
   },
   "UP" : "Nuestra mascota"
 }

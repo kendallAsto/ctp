@@ -1,0 +1,76 @@
+{
+  "title": "Administración de las operaciones Aduaneras",
+  "Subarea": [
+    {
+      "MyTA": "Merceología y trámites aduaneros",
+      "Horas": {
+        "Decimo": 6,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "GEA": "Gestión empresarial aduanera",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 6,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "CA": "Clasificación arancelaria",
+      "Horas": {
+        "Decimo": 10,
+        "Undecimo": 8,
+        "Duodecimo": 10
+      }
+    },
+    {
+      "NLA": "Normativa legal aduanera",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": ""
+      }
+    },
+    {
+      "EDCI": "Estrategias de comercio internacional",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 6
+      }
+    },
+    {
+      "EOTA": "Tratados de libre comercio",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 6
+      }
+    },
+    {
+      "EFC": "English for communication. ",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 2,
+        "Duodecimo": 2
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Ejecutivo Comercial Aduanero",
+    "Especialista en Operaciones",
+    "Ejecutivo de Servicio al Cliente",
+    "Analista Logístico Transaccional de Importación/Exportación",
+    "Asistente Contable de Cuentas por Cobrar",
+    "Ejecutivo de Ventas para Exportación",
+    "Asesor de Servicios Logísticos"
+  ],
+  "posiblesEmpresas": ["Global Servicios Ruiz", "DOS MIL DC ASESORES ADUANEROS S.A","KPMG Costa Rica","Grupo Rojas Amador","Aduanera Tic"]
+}

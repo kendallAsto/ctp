@@ -1,0 +1,68 @@
+{
+  "title": "Contabilidad",
+  "Subarea": [
+    {
+      "GC": "Gestión contable",
+      "Horas": {
+        "Decimo": 12,
+        "Undecimo": "-",
+        "Duodecimo": 8
+      }
+    },
+    {
+      "GETDC": "Gestión en tecnologías digitales contables",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "GT": "Gestión tributaria",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 12,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "GEPC": "Gestión empresarial para contadores",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": ""
+      }
+    },
+    {
+      "GEC": "Gestión en costos",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 12,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "EOTA": "English Oriented to Accounting.",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    "Auxiliar contable",
+    "Técnico contable",
+    "Asistente financiero",
+    "Asesor de crédito",
+    "Encargado de cuentas",
+    "Tesorero",
+    "Contador independiente"
+  ],
+  "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
+}

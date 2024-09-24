@@ -141,7 +141,7 @@ export default function Events() {
         {t("Events")}
       </h1>
 
-      <section className="text-lg w-[90%] h-[75vh] md:h-[100vh] lg:w-[80%] m-auto my-12 rounded-xl overflow-hidden md:text-2xl lg:pt-8">
+      <section className="text-lg w-[90%] h-[75vh] md:h-[100vh] m-auto my-12 rounded-xl overflow-hidden md:text-2xl lg:pt-8">
         <Calendar
           localizer={localizer}
           events={eventos}

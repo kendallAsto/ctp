@@ -35,7 +35,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="hidden lg:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[80%] m-auto">
+      <nav className="hidden lg:flex lg:gap-4 justify-center py-10 items-center font-Poppins lg:w-[90%] m-auto">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
           <esFlag1 />
@@ -98,6 +98,9 @@ export default function Nav() {
                   </Link>
                   <Link to="/CAcademic" className="p-2 flex cursor-pointer">
                     {t("Coordinations.Academic")}
+                  </Link>
+                  <Link to="/CCompany" className="p-2 flex cursor-pointer">
+                    {t("Coordinations.Company")}
                   </Link>
                 </ul>
               </div>
@@ -279,6 +282,13 @@ export default function Nav() {
                         className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
                       >
                         {t("Coordinations.Academic")}
+                      </Link>
+                      <Link
+                        onClick={manejarEstadoNav}
+                        to="/CCompany"
+                        className="ml-6 bg-Atlantis px-2 my-1 rounded-xl"
+                      >
+                        {t("Coordinations.Company")}
                       </Link>
                     </ul>
                   </div>
