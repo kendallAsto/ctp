@@ -9,7 +9,7 @@ const year = date.getFullYear();
 export default function Footer() {
   const { t, i18n } = useTranslation("nav");
   return (
-    <div className="m-auto w-[90%]">
+    <div className="m-auto w-[90%] my-8">
       <div className="hidden items-center justify-between lg:flex text-black dark:text-White">
         <img src={logo} alt="Logo del CTP Santo Domingo" className="w-[7%]" />
         <div className="flex gap-12">
