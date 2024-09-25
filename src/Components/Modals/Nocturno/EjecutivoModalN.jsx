@@ -64,7 +64,7 @@ export default function EjecutivoModalN({ estado, cambiarEstado }) {
                 </table>
               </div>
 
-              <section className="flex flex-col gap-8 md:flex-row md:justify-evenly">
+              <section className="my-8 flex flex-col gap-8 md:flex-row md:justify-evenly">
                 <section>
                   <h2 className="text-blue-Diabg-Blue-Dianne text-2xl font-bold">
                     Posibles Puestos de Trabajo
