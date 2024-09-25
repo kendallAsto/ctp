@@ -49,7 +49,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="m-auto hidden items-center justify-center py-10 font-Poppins transition-all duration-500 dark:text-White lg:flex lg:w-[90%] lg:gap-4">
+      <nav className="m-auto hidden items-center justify-center py-10 font-Poppins transition-all duration-200 dark:text-White lg:flex lg:w-[90%] lg:gap-4">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
           <esFlag1 />
@@ -90,7 +90,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="#"
+              to="/Posts"
               className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Posts")}
@@ -207,7 +207,7 @@ export default function Nav() {
             {Language === "es" ? (
               <div className="flex gap-2 md:w-1/3">
                 <img
-                  className="w-1/2 "
+                  className="w-1/2"
                   src={esFlagIMG}
                   alt="Spanish flag language"
                 />{" "}

@@ -6,7 +6,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-let loginAdmin = true;
+let loginAdmin = false;
 dayjs.locale("es");
 
 export default function Events() {

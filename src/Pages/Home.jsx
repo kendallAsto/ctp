@@ -41,8 +41,8 @@ function Home(ref) {
 
   return (
     <Suspense fallback="Cargando informacion">
-      <div className="relative font-Lato dark:bg-black dark:text-White text-black">
-        <section className="Container m-auto w-[90%] overflow-hidden">
+      <div className="relative font-Lato text-black transition-all duration-500 dark:bg-black dark:text-White">
+        <section className="Container m-auto w-[90%] overflow-hidden transition-all duration-500">
           <video
             src={Video}
             autoPlay
@@ -302,7 +302,7 @@ function Home(ref) {
 
           <section className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
             <div>
-              <h1 className="mb-8 font-Poppins text-3xl font-bold text-Atlantis md:text-4xl">
+              <h1 className="mb-8 font-Poppins text-3xl font-bold text-Sycamore md:text-4xl">
                 {t("Contact.title")}
               </h1>
               <form action="#" className="flex flex-col flex-wrap gap-4">

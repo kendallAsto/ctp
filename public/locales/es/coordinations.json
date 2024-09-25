@@ -1,5 +1,111 @@
 {
-    "Academic":{
-        "title": "Coordinación academica"
+  "Academic": {
+    "title": "Coordinación academica",
+    "subtitle": "¿Qué hace un coordinador académico?",
+    "description": "El Coordinador Académico actúa como un puente entre el personal docente y la dirección de la institución educativa. Su rol es fundamental para garantizar la calidad de los procesos educativos, el cumplimiento de las políticas educativas y el desarrollo profesional de los docentes. Algunas de sus funciones clave son:",
+    "functions": {
+      "title": "Funciones",
+      "1": "Desarrollar procesos  que permitan el fortalecimiento de las capacidades emprendedoras y asociativas entre los estudiantes.",
+      "2": "Asesorar al personal docente en aspectos de desarrollo curricular. ",
+      "3": "Colaborar en la divulgación de políticas y planes del MEP. ",
+      "4": "Confeccionar instrumentos de investigación y control.",
+      "5": "Representar a la dirección en el Comité de Trabajo Comunal. ",
+      "6": "Realizar estudios de rendimiento académico. ",
+      "7": "Participar en reuniones referentes a su labor.",
+      "8": "Coordinar con los Departamentos Especializados estudios y procesos de recuperación con fines de mejorar el rendimiento académico. ",
+      "9": "Colaborar en la organización de las semanas de evaluación y otras actividades institucionales.",
+      "10": "Organizar el calendario institucional con la dirección..",
+      "11": "Apoyar al Departamento de Orientación y de Apoyo en proyectos Estudiantiles y adecuaciones curriculares",
+      "12": "Coordinar, planificar y dar seguimiento a programas de desarrollo curricular."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "1": "Coordinar eventos para que docentes y estudiantes compartan experiencias y buenas prácticas en el uso de nuevas tecnologías y metodologías.",
+      "2": "Elaborar un plan de desarrollo profesional docente basado en las necesidades identificadas a través de evaluaciones y encuestas.",
+      "3": "Promover la evaluación formativa en el aula, fomentando la retroalimentación constante y el aprendizaje significativo."
+    },
+    "rules": {
+      "title": "Reglas que deben de seguir",
+      "1": "Resguardar la información confidencial de las empresas y los estudiantes.",
+      "2": "Tratar a todos los miembros de la comunidad educativa con equidad y respeto.",
+      "3": "Promover la honestidad y la ética en todas las actividades académicas.",
+      "4": "Buscar continuamente la mejora de la calidad educativa y la satisfacción de los estudiantes.",
+      "5": " Fomentar en los estudiantes un sentido de responsabilidad social y compromiso con su comunidad."
     }
+  },
+  "Technical": {
+    "title": "Coordinación técnica",
+    "subtitle": "¿Qué hace un coordinador técnico?",
+    "description": "El Coordinador Técnico, dentro del contexto de la educación técnica, es el enlace fundamental entre la institución educativa y la Dirección General de Educación Técnica y Capacidades Emprendedoras. Su rol es asegurar la alineación de las actividades del centro educativo con las directrices nacionales, fomentando el desarrollo de habilidades emprendedoras y asociativas en los estudiantes. Algunas de sus funciones clave son:",
+    "functions": {
+      "title": "Funciones",
+      "1": "Cumplir con los lineamientos emanados por la Dirección General de Educación Técnica y Capacidades Emprendedoras.",
+      "2": "Gestionar con cada uno de los departamentos de la Dirección General de Educación Técnica y Capacidades Emprendedoras, las acciones propias de cada instancia.",
+      "3": "Elaborar, al inicio del curso lectivo, un plan anual de trabajo que incluya  las acciones relacionadas con la Dirección General de Educación Técnica y Capacidades Emprendedoras,  y entregar una  copia a la Dirección del centro educativo.",
+      "4": "Rendir informes semestrales del avance y cumplimiento de sus labores a la Dirección del centro educativo, de acuerdo con el plan anual de trabajo.",
+      "5": "Entregar la información requerida por la Dirección General de Educación Técnica y Capacidades Emprendedoras de manera  puntual y veraz al momento de solicitarse.",
+      "6": "Asistir a las reuniones, seminarios, charlas y otros, convocadas por la Dirección de Educación Técnica y Capacidades Emprendedoras.",
+      "7": "Desarrollar procesos  que permitan el fortalecimiento de las capacidades emprendedoras y asociativas entre los estudiantes."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "1": "Creación de convenios con empresas para que los estudiantes realicen prácticas profesionales y adquieran experiencia laboral.",
+      "2": "Conexión de estudiantes con potenciales empleadores a través de eventos de reclutamiento.",
+      "3": "Asignación de mentores empresariales a estudiantes para brindarles orientación y apoyo en su desarrollo profesional.",
+      "4": "Colaboración con empresas en proyectos de investigación que generen soluciones a problemas reales del sector productivo."
+    },
+    "rules": {
+      "title": "Reglas que deben de seguir",
+
+      "1": "Adherirse estrictamente a las leyes y reglamentos que rigen la educación.",
+      "2": "Actuar con honestidad y transparencia en todas las actividades.",
+      "3": "Resguardar la información confidencial de la institución y de los estudiantes.",
+      "4": "Contribuir al desarrollo de la comunidad educativa."
+    }
+  },
+  "Company": {
+    "title": "Coordinación con la empresa",
+    "subtitle": "¿Qué hace un coordinador con la empresa?",
+    "description": "Garantizar la alineación entre la oferta educativa de la institución y las demandas del sector productivo, mediante la gestión de relaciones estratégicas con empresas y la supervisión de procesos de vinculación y seguimiento. Algunas de sus funciones clave son:",
+    "functions": {
+      "title": "Funciones",
+      "1": "Establecer y mantener relaciones sólidas con empresas, identificar oportunidades de colaboración y diseñar programas que promuevan la inserción laboral de los estudiantes.",
+      "2": "Realizar estudios de mercado para identificar las necesidades de competencias y perfiles profesionales requeridos por las empresas.",
+      "3": "Proponer ajustes en los planes de estudio y programas formativos para garantizar su pertinencia y relevancia en el mercado laboral.",
+      "4": "Implementar sistemas de seguimiento para evaluar la inserción laboral de los egresados y la satisfacción de las empresas.",
+      "5": "Promover la mejora continua de los procesos educativos y la certificación de competencias.",
+      "6": "Asistir a eventos y reuniones del sector productivo, representando a la institución y fortaleciendo su imagen."
+    },
+    "examples": {
+      "title": "Ejemplos",
+      "1": "Creación de convenios con empresas para que los estudiantes realicen prácticas profesionales y adquieran experiencia laboral.",
+      "2": "Conexión de estudiantes con potenciales empleadores a través de eventos de reclutamiento.",
+      "3": "Asignación de mentores empresariales a estudiantes para brindarles orientación y apoyo en su desarrollo profesional.",
+      "4": "Colaboración con empresas en proyectos de investigación que generen soluciones a problemas reales del sector productivo."
+    },
+    "rules": {
+      "title": "Reglas que deben de seguir",
+
+      "1": "Resguardar la información confidencial de las empresas y los estudiantes.",
+      "2": "Actuar con honestidad y transparencia en todas las relaciones.",
+      "3": "Defender los valores y principios de la institución.",
+      "4": "Respetar las leyes y normativas vigentes.",
+      "5": "Contribuir al desarrollo sostenible de la comunidad."
+    }
+  },
+
+  "Contact": {
+    "Academic": {
+        "phone":"2244-3190",
+        "mail":"noemy.soto.alvarado@mep.go.cr"
+    },
+    "Technical": {
+        "phone":"2244-3190",
+        "mail":"adriana.fallas.segura@mep.go.cr"
+    },
+    "Company": {
+        "phone":"2244-3190",
+        "mail":"marvin.vargas.salazar@mep.go.cr"
+    }
+  }
 }

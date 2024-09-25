@@ -1,0 +1,109 @@
+{
+  "Academic": {
+    "title": "Academic Coordination",
+    "subtitle": "What does an academic coordinator do?",
+    "description": "The Academic Coordinator acts as a bridge between the teaching staff and the administration of the educational institution. Their role is crucial for ensuring the quality of educational processes, compliance with educational policies, and the professional development of teachers. Some of their key functions are:",
+    "functions": {
+      "title": "Functions",
+      "1": "Develop processes that strengthen entrepreneurial and associative skills among students.",
+      "2": "Advise teaching staff on curriculum development.",
+      "3": "Collaborate in disseminating policies and plans from the Ministry of Education.",
+      "4": "Create research and control instruments.",
+      "5": "Represent the administration in the Community Work Committee.",
+      "6": "Conduct studies on academic performance.",
+      "7": "Participate in meetings related to their work.",
+      "8": "Coordinate with Specialized Departments studies and recovery processes aimed at improving academic performance.",
+      "9": "Collaborate in organizing evaluation weeks and other institutional activities.",
+      "10": "Organize the institutional calendar with the administration.",
+      "11": "Support the Guidance and Support Department in Student Projects and curriculum adjustments.",
+      "12": "Coordinate, plan, and monitor curricular development programs."
+    },
+    "examples": {
+      "title": "Examples",
+      "1": "Coordinate events for teachers and students to share experiences and best practices in using new technologies and methodologies.",
+      "2": "Develop a professional development plan for teachers based on needs identified through evaluations and surveys.",
+      "3": "Promote formative assessment in the classroom, encouraging constant feedback and meaningful learning."
+    },
+    "rules": {
+      "title": "Rules to Follow",
+      "1": "Safeguard the confidential information of companies and students.",
+      "2": "Treat all members of the educational community with fairness and respect.",
+      "3": "Promote honesty and ethics in all academic activities.",
+      "4": "Continuously seek to improve educational quality and student satisfaction.",
+      "5": "Encourage students to develop a sense of social responsibility and commitment to their community."
+    }
+  },
+  "Technical": {
+    "title": "Technical Coordination",
+    "subtitle": "What does a technical coordinator do?",
+    "description": "The Technical Coordinator, within the context of technical education, is the fundamental link between the educational institution and the General Directorate of Technical Education and Entrepreneurial Skills. Their role is to ensure that the activities of the educational center align with national guidelines, fostering the development of entrepreneurial and associative skills among students. Some of their key functions are:",
+    "functions": {
+      "title": "Functions",
+      "1": "Comply with the guidelines issued by the General Directorate of Technical Education and Entrepreneurial Skills.",
+      "2": "Manage actions specific to each instance with each department of the General Directorate of Technical Education and Entrepreneurial Skills.",
+      "3": "At the beginning of the school year, develop an annual work plan that includes actions related to the General Directorate of Technical Education and Entrepreneurial Skills, and submit a copy to the educational center's administration.",
+      "4": "Submit semester reports on the progress and fulfillment of their duties to the educational center's administration, according to the annual work plan.",
+      "5": "Provide the information required by the General Directorate of Technical Education and Entrepreneurial Skills promptly and accurately when requested.",
+      "7": "Attend meetings, seminars, talks, and others convened by the Directorate of Technical Education and Entrepreneurial Skills.",
+      "8": "Develop processes that strengthen entrepreneurial and associative skills among students."
+    },
+    "examples": {
+      "title": "Examples",
+      "1": "Creating agreements with companies for students to undertake internships and gain work experience.",
+      "2": "Connecting students with potential employers through recruitment events.",
+      "3": "Assigning business mentors to students to provide guidance and support in their professional development.",
+      "4": "Collaborating with companies on research projects that generate solutions to real problems in the productive sector."
+    },
+    "rules": {
+      "title": "Rules to Follow",
+      "1": "Strictly adhere to the laws and regulations governing education.",
+      "2": "Act with honesty and transparency in all activities.",
+      "3": "Safeguard the confidential information of the institution and students.",
+      "4": "Contribute to the development of the educational community."
+    }
+  },
+  "Company": {
+    "title": "Coordination with the Company",
+    "subtitle": "What does a coordinator with the company do?",
+    "description": "Ensure alignment between the educational offerings of the institution and the demands of the productive sector by managing strategic relationships with companies and overseeing linkage and follow-up processes. Some of their key functions are:",
+    "functions": {
+      "title": "Functions",
+      "1": "Establish and maintain strong relationships with companies, identify collaboration opportunities, and design programs that promote the employability of students.",
+      "2": "Conduct market studies to identify the skills and professional profiles required by companies.",
+      "3": "Propose adjustments to curricula and training programs to ensure their relevance and appropriateness in the job market.",
+      "4": "Implement follow-up systems to evaluate the employment of graduates and the satisfaction of companies.",
+      "5": "Promote continuous improvement of educational processes and the certification of skills.",
+      "6": "Attend events and meetings in the productive sector, representing the institution and strengthening its image."
+    },
+    "examples": {
+      "title": "Examples",
+      "1": "Creating agreements with companies for students to undertake internships and gain work experience.",
+      "2": "Connecting students with potential employers through recruitment events.",
+      "3": "Assigning business mentors to students to provide guidance and support in their professional development.",
+      "4": "Collaborating with companies on research projects that generate solutions to real problems in the productive sector."
+    },
+    "rules": {
+      "title": "Rules to Follow",
+      "1": "Safeguard the confidential information of companies and students.",
+      "2": "Act with honesty and transparency in all relationships.",
+      "3": "Defend the values and principles of the institution.",
+      "4": "Respect the current laws and regulations.",
+      "5": "Contribute to the sustainable development of the community."
+    }
+  },
+
+  "Contact": {
+    "Academic": {
+        "phone":"2244-3190",
+        "mail":"noemy.soto.alvarado@mep.go.cr"
+    },
+    "Technical": {
+        "phone":"2244-3190",
+        "mail":"adriana.fallas.segura@mep.go.cr"
+    },
+    "Company": {
+        "phone":"2244-3190",
+        "mail":"marvin.vargas.salazar@mep.go.cr"
+    }
+  }
+}
