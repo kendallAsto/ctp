@@ -13,13 +13,13 @@ export default function CTechnichal() {
         <div className="flex flex-col items-center justify-center">
           <img src={Logo} alt="Logo del CTP Santo Domingo" className="w-1/3" />
 
-          <div className="my-4 flex gap-4">
-            <div className="flex items-center gap-2 text-xl lg:text-2xl">
+          <div className="my-4 flex flex-col gap-4 md:flex-row">
+            <div className="flex items-center justify-center gap-2 text-xl lg:text-2xl">
               <i class="fa-solid fa-phone-volume"></i>
               <p>{t("Contact.Academic.phone")}</p>
             </div>
 
-            <div className="my-2 flex items-center gap-2 text-xl lg:text-2xl">
+            <div className="my-2 flex items-center justify-center gap-2 text-xl lg:text-2xl">
               <i class="fa-solid fa-envelope"></i>
               <p>{t("Contact.Academic.mail")}</p>
             </div>
