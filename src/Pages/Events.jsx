@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../CSS/EventsToolbar.css"
+import "../CSS/EventsToolbars.css"
 import { Calendar, dayjsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-let loginAdmin = false;
+let loginAdmin = true;
 dayjs.locale("es");
 
 export default function Events() {
@@ -90,6 +90,9 @@ export default function Events() {
 
   console.log(eventos);
 
+  const EventosDiurno = [{}];
+  const EventosNocturno = [{}];
+
   return (
     <div className="relative">
       {loginAdmin && (
@@ -166,7 +169,7 @@ export default function Events() {
         {EventsDiurno && (
           <Calendar
             localizer={localizer}
-            events={eventos}
+            events={EventosDiurno}
             messages={
               dayjs.locale() === "es"
                 ? {
@@ -201,7 +204,7 @@ export default function Events() {
         {EventsNocturno && (
           <Calendar
             localizer={localizer}
-            events=""
+            events={EventosNocturno}
             messages={
               dayjs.locale() === "es"
                 ? {

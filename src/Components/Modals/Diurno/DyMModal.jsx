@@ -6,7 +6,7 @@ export default function DyMModal({ estado, cambiarEstado }) {
     <>
       {estado && (
         <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[180vh]">
-          <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90vw] rounded-xl bg-White p-12 md:h-[150vh] md:w-[90vw] md:text-2xl">
+          <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90vw] rounded-xl bg-White p-12 dark:border-2 dark:bg-black md:h-[150vh] md:w-[90vw] md:text-2xl">
             <h1 className="p-2 text-center text-3xl font-bold text-Sycamore md:p-4 md:text-4xl">
               {DyM.title}
             </h1>
@@ -30,20 +30,20 @@ export default function DyMModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {DyM.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
                           {subarea.MAAPC ||
                             subarea.TDPYM ||
                             subarea.DyDAyU ||
                             subarea.EeIAADyMPE ||
                             subarea.EOTAP}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>

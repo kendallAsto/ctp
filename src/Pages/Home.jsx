@@ -41,7 +41,7 @@ function Home(ref) {
 
   return (
     <Suspense fallback="Cargando informacion">
-      <div className="relative font-Lato">
+      <div className="relative font-Lato dark:bg-black dark:text-White text-black">
         <section className="Container m-auto w-[90%] overflow-hidden">
           <video
             src={Video}

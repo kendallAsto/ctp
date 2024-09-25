@@ -1,0 +1,14 @@
+.rbc-toolbar button{
+    color: #ffffff !important; 
+}
+
+.rbc-toolbar button:hover{
+    color: #000 !important; 
+}
+
+.rbc-toolbar button.rbc-active{
+    color: #000 !important; 
+}
+.rbc-today{
+    background: #545552  !important;
+}

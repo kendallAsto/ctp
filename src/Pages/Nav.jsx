@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from "../Assets/IMGS/logo.png";
 import { Link } from "react-router-dom";
@@ -33,9 +33,23 @@ export default function Nav() {
     }
   }
 
+  const [theme, setTheme] = useState("light");
+
+  const handleChangeTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
     <>
-      <nav className="m-auto hidden items-center justify-center py-10 font-Poppins lg:flex lg:w-[90%] lg:gap-4">
+      <nav className="m-auto hidden items-center justify-center py-10 font-Poppins transition-all duration-500 dark:text-White lg:flex lg:w-[90%] lg:gap-4">
         <Link to="/" className="w-[10%]">
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
           <esFlag1 />
@@ -126,6 +140,17 @@ export default function Nav() {
         </ul>
 
         <div
+          onClick={handleChangeTheme}
+          className="flex cursor-pointer justify-center gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White"
+        >
+          {theme === "light" ? (
+            <i class="fa-solid fa-moon text-2xl"></i>
+          ) : (
+            <i class="fa-regular fa-sun text-2xl"></i>
+          )}
+        </div>
+
+        <div
           onClick={changeLanguage}
           className="flex w-[90px] cursor-pointer gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White transition-transform duration-200"
         >
@@ -151,7 +176,7 @@ export default function Nav() {
         </div>
       </nav>
 
-      <nav className="m-auto flex w-[90%] flex-col lg:hidden">
+      <nav className="m-auto flex w-[90%] flex-col dark:text-White lg:hidden">
         <div className="flex items-center justify-between gap-4 text-pretty py-10 font-Poppins">
           <i
             onClick={manejarEstadoNav}
@@ -165,158 +190,171 @@ export default function Nav() {
           </h1>
 
           <div
+            onClick={handleChangeTheme}
+            className="flex cursor-pointer justify-center gap-2 rounded-lg bg-Atlantis p-2 text-White"
+          >
+            {theme === "light" ? (
+              <i class="fa-solid fa-moon text-2xl md:text-3xl"></i>
+            ) : (
+              <i class="fa-regular fa-sun text-2xl md:text-3xl"></i>
+            )}
+          </div>
+
+          <div
             onClick={changeLanguage}
-            className="flex cursor-pointer justify-center gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White"
+            className="flex cursor-pointer justify-center gap-2 rounded-lg bg-Atlantis p-2 text-lg text-White md:w-1/2"
           >
             {Language === "es" ? (
-              <img
-                className="w-1/2"
-                src={esFlagIMG}
-                alt="Spanish flag language"
-              />
+              <div className="flex gap-2 md:w-1/3">
+                <img
+                  className="w-1/2 "
+                  src={esFlagIMG}
+                  alt="Spanish flag language"
+                />{" "}
+                <button className="font-bold">ES</button>
+              </div>
             ) : (
-              <img
-                className="w-1/2"
-                src={enFlagIMG}
-                alt="English flag language"
-              />
+              <div className="flex gap-2 md:w-1/3">
+                <img
+                  className="w-1/2"
+                  src={enFlagIMG}
+                  alt="English flag language"
+                />{" "}
+                <button className="font-bold">EN</button>
+              </div>
             )}
-            <button className="font-bold">{t("CL")}</button>
           </div>
         </div>
         {estadoNav && (
           <div className="absolute left-0 right-0 top-0 z-50 flex h-[100%] flex-col items-center bg-Atlantis px-8 py-2">
-            <div className="flex items-center justify-center gap-4 text-pretty pt-10 font-Poppins transition-all transition-transform duration-200">
-              <Link to="/" className="w-[20%]">
-                <img src={Logo} alt="Logo del CTP Santo Domingo" />
+            <div className="flex items-center justify-center text-pretty pt-10 font-Poppins transition-all duration-200">
+              <Link
+                to="/"
+                className="flex items-center justify-center gap-4"
+                onClick={manejarEstadoNav}
+              >
+                <img
+                  src={Logo}
+                  alt="Logo del CTP Santo Domingo"
+                  className="w-[20%]"
+                />
+                <h1 className="text-md text-pretty text-White md:w-1/2 md:text-xl">
+                  Colegio Técnico Profesional de Santo Domingo
+                </h1>
               </Link>
-              <h1 className="text-md text-pretty text-White md:w-1/2 md:text-xl">
-                Colegio Técnico Profesional de Santo Domingo
-              </h1>
               <i
                 onClick={manejarEstadoNav}
-                className="fa-sharp fa-solid fa-xmark text-4xl text-White"
+                className="fa-sharp fa-solid fa-xmark cursor-pointer text-4xl text-White"
               ></i>
             </div>
-            <ul className="w-[100%] items-center justify-center gap-4 py-10 font-Poppins">
-              <li
+            <ul className="w-[100%] items-center justify-center gap-4 pt-10 font-Poppins">
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/"
-                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
-                >
-                  {t("Home")}
-                </Link>
-              </li>
+                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("Home")}</li>
+              </Link>
 
-              <li
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/#About-Us"
-                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
-                >
-                  {t("AU")}
-                </Link>
-              </li>
-              <li
+                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("AU")}</li>
+              </Link>
+
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/Events"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/Events"
-                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
-                >
+                <li className="my-2 rounded-xl bg-Sycamore p-2">
                   {t("Events")}
-                </Link>
-              </li>
-              <li
+                </li>
+              </Link>
+
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/Services"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/Services"
-                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
-                >
+                <li className="my-2 rounded-xl bg-Sycamore p-2">
                   {t("Services")}
-                </Link>
-              </li>
-              <li
+                </li>
+              </Link>
+
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/Posts"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/Posts"
-                  className="rounded-lg p-2 text-lg text-white transition-all duration-200 md:text-xl"
-                >
+                <li className="my-2 rounded-xl bg-Sycamore p-2">
                   {t("Posts")}
-                </Link>
-              </li>
-              <li
+                </li>
+              </Link>
+
+              <Link
                 onClick={manejarEstadoDropbox}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="/#"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="#"
-                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
-                >
+                <li className="my-2 rounded-xl bg-Sycamore p-2">
                   {t("Coordinations.title")}
-                </Link>
+                </li>
+              </Link>
 
-                {estadoDropbox && (
-                  <div>
-                    <ul className="flex flex-col rounded-xl text-lg text-White md:text-xl">
-                      <Link
-                        onClick={manejarEstadoNav}
-                        to="/CTechnical"
-                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
-                      >
+              {estadoDropbox && (
+                <div className="bg-Atlantis">
+                  <ul className="flex flex-col text-lg text-White md:text-xl">
+                    <Link
+                      onClick={manejarEstadoNav}
+                      to="/CTechnical"
+                      className="ml-6 px-2"
+                    >
+                      <li className="m-1 rounded-xl bg-Sycamore p-2">
                         {t("Coordinations.Technical")}
-                      </Link>
-                      <Link
-                        onClick={manejarEstadoNav}
-                        to="/CAcademic"
-                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
-                      >
+                      </li>
+                    </Link>
+                    <Link
+                      onClick={manejarEstadoNav}
+                      to="/CAcademic"
+                      className="ml-6 px-2"
+                    >
+                      <li className="m-1 rounded-xl bg-Sycamore p-2">
                         {t("Coordinations.Academic")}
-                      </Link>
-                      <Link
-                        onClick={manejarEstadoNav}
-                        to="/CCompany"
-                        className="my-1 ml-6 rounded-xl bg-Atlantis px-2"
-                      >
+                      </li>
+                    </Link>
+                    <Link
+                      onClick={manejarEstadoNav}
+                      to="/CCompany"
+                      className="ml-6 px-2"
+                    >
+                      <li className="m-1 rounded-xl bg-Sycamore p-2">
                         {t("Coordinations.Company")}
-                      </Link>
-                    </ul>
-                  </div>
-                )}
-              </li>
-              <li
-                onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
-              >
-                <Link
-                  to="#Contact"
-                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
-                >
-                  {t("Contact")}
-                </Link>
-              </li>
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              )}
 
-              <li
+              <Link
                 onClick={manejarEstadoNav}
-                className="m-2 rounded-xl bg-Sycamore p-2"
+                to="#Contact"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
-                <Link
-                  to="/UP"
-                  className="rounded-lg p-2 text-lg text-White transition-all duration-200 md:text-xl"
-                >
-                  {t("UP")}
-                </Link>
-              </li>
+                <li className="my-2 rounded-xl bg-Sycamore p-2">
+                  {t("Contact")}
+                </li>
+              </Link>
+
+              <Link
+                onClick={manejarEstadoNav}
+                to="/UP"
+                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+              >
+                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("UP")}</li>
+              </Link>
             </ul>
           </div>
         )}

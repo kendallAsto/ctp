@@ -6,7 +6,7 @@ export default function Services() {
 
   return (
     <>
-      <p className="text-center text-Atlantis md:text-3xl">{t("title")}</p>
+      <h1 className=" text-2xl text-center text-Atlantis md:text-3xl">{t("title")}</h1>
       <section className="m-auto my-12 flex w-[90%] flex-col justify-center gap-4 text-lg lg:w-[80%] lg:flex-row lg:text-xl">
         <div className="overflow-hidden rounded-xl">
           <h2 className="bg-Sycamore p-2 text-center text-White">
