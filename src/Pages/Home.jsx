@@ -61,31 +61,31 @@ function Home() {
             extra={
               <section>
                 <div className="mb-4 grid gap-4 md:grid-cols-3">
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Honesty")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Respect")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Commitment")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Responsability")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Trust")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.Solidarity")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.FACT")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.TW")}
                   </p>
-                  <p className="my-2 flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
                     {t("Valores.listValores.DAE")}
                   </p>
                 </div>
@@ -118,10 +118,10 @@ function Home() {
                         {t("EO.timeDiurno")}
                       </h2>
                     </div>
-                    <ul>
+                    <ul className="flex flex-col gap-1">
                       <p
                         onClick={() => cambiarEstadoModal1(!estadoModal)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DP")}
                       </p>
@@ -132,7 +132,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal2(!estadoModal2)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.ECYSA")}
                       </p>
@@ -143,7 +143,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal3(!estadoModal3)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.CyF")}
                       </p>
@@ -153,7 +153,7 @@ function Home() {
                       />
                       <p
                         onClick={() => cambiarEstadoModal4(!estadoModal4)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DDAM")}
                       </p>
@@ -164,7 +164,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal5(!estadoModal5)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.DyMDE")}
                       </p>
@@ -175,7 +175,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal6(!estadoModal6)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.EET")}
                       </p>
@@ -185,7 +185,7 @@ function Home() {
                       />
                       <p
                         onClick={() => cambiarEstadoModal7(!estadoModal7)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.GDLP")}
                       </p>
@@ -195,7 +195,7 @@ function Home() {
                       />
                       <p
                         onClick={() => cambiarEstadoModal8(!estadoModal8)}
-                        className="my-2 cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
                       >
                         {t("EO.specialities.RDLVL")}
                       </p>
@@ -230,10 +230,10 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    <ul>
+                    <ul className="flex flex-col gap-1">
                       <p
                         onClick={() => cambiarEstadoModal9(!estadoModal9)}
-                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.ECYSA")}
                       </p>
@@ -244,7 +244,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal10(!estadoModal10)}
-                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.CySDRySO")}
                       </p>
@@ -255,7 +255,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal11(!estadoModal11)}
-                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.Contabilidad")}
                       </p>
@@ -266,7 +266,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal12(!estadoModal12)}
-                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.ADLOA")}
                       </p>
@@ -277,7 +277,7 @@ function Home() {
 
                       <p
                         onClick={() => cambiarEstadoModal13(!estadoModal13)}
-                        className="my-2 cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
+                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
                       >
                         {t("EO.specialities-2.RDLVL")}
                       </p>
@@ -305,25 +305,25 @@ function Home() {
                   type="text"
                   name="name"
                   placeholder={t("Contact.name")}
-                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
+                  className="my-2 shadow-md dark:shadow-White shadow-black rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <input
                   type="text"
                   name="email"
                   placeholder={t("Contact.mail")}
-                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
+                  className="my-2 shadow-md dark:shadow-White shadow-black  rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <input
                   type="text"
                   name="subject"
                   placeholder={t("Contact.subject")}
-                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
+                  className="my-2 shadow-md dark:shadow-White shadow-black rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <textarea
                   name="message"
                   id="Message"
                   placeholder={t("Contact.message")}
-                  className="my-2 h-[250px] rounded-lg bg-Blue-Dianne p-3 text-xl text-white md:h-[160px] lg:h-[250px]"
+                  className="my-2 shadow-md dark:shadow-White shadow-black -[250px] rounded-lg bg-Blue-Dianne p-3 text-xl text-white md:h-[160px] lg:h-[250px]"
                 ></textarea>
                 <input
                   type="hidden"
