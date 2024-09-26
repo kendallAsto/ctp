@@ -329,7 +329,6 @@ export default function Events() {
     }
   ];
 
-  console.log(EventosDiurno);
 
   return (
     <div className="relative">
