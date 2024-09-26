@@ -329,7 +329,7 @@ export default function Events() {
     <div className="relative">
       {selectedEvent && informacionEvento && (
         <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
-          <div className="selected-event-details flex w-[90%] flex-col gap-2 justify-center rounded-xl bg-White p-12 py-24 text-black dark:text-White lg:w-1/2">
+          <div className="selected-event-details flex w-[90%] flex-col gap-2 justify-center rounded-xl bg-White dark:bg-black p-12 py-24 text-black dark:text-White lg:w-1/2 transition-colors duration-300">
             <h1 className="text-center text-xl font-bold text-Atlantis lg:text-3xl">
               Detalles del evento
             </h1>
@@ -359,7 +359,7 @@ export default function Events() {
           </div>
           <i
             onClick={handleSelectEvent}
-            className="fa-sharp fa-solid fa-xmark absolute right-[10%] top-[37%] cursor-pointer rounded-full bg-Atlantis px-2 py-1 text-4xl text-White md:right-[20%] md:top-[30%] md:p-2 md:text-5xl lg:px-6"
+            className="fa-sharp fa-solid fa-xmark absolute right-[10%] top-[37%] cursor-pointer rounded-full bg-Atlantis px-2 py-1 text-4xl text-White md:right-[28%] md:top-[35%] md:p-2 md:text-5xl lg:px-6"
           ></i>
         </div>
       )}
