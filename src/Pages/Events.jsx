@@ -474,7 +474,7 @@ export default function Events() {
               },
             }}
             onSelectEvent={handleSelectEvent}
-            className="text-md rounded-xl bg-Sycamore p-4 text-White"
+            className="text-sm lg:text-lg rounded-xl bg-Sycamore p-4 text-White"
           />
         )}
 
