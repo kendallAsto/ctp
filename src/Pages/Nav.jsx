@@ -34,7 +34,7 @@ export default function Nav() {
       // Actualiza el tema en base al valor guardado (opcional)
       document.documentElement.classList.toggle('dark', temaGuardado === 'dark');
     }
-  }, []);
+  },[theme,idiomaActual,i18n]);
 
   function changeLanguage() {
     const nuevoIdioma = idiomaActual === "es" ? "en" : "es";

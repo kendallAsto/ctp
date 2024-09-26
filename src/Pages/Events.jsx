@@ -321,7 +321,31 @@ export default function Events() {
       end: dayjs(`${year}-12-09`).toDate(),
     },
   ];
-  const EventosNocturno = [{}];
+  const EventosNocturno = [
+    {
+      title: `Inicio del proceso de admisión para el curso lectivo ${year + 1}`,
+      start: dayjs(`${year}-10-10`).toDate(),
+      end: dayjs(`${year}-12-04`).toDate(),
+    },{
+      title: `Demostración de aptitudes vocacionales y entrevistas`,
+      start: dayjs(`${year}-10-10`).toDate(),
+      end: dayjs(`${year}-10-10`).toDate(),
+    },
+    {
+      title: `Pre-matricula primer ingreso, I nivel`,
+      start: dayjs(`${year}-10-30T18:00:00`).toDate(),
+      end: dayjs(`${year}-10-30T20:30:00`).toDate(),
+    },
+    {
+      title: `Pre-matrícula I nivel, II nivel y III nivel`,
+      start: dayjs(`${year}-10-31T18:00:00`).toDate(),
+      end: dayjs(`${year}-10-31T20:30:00`).toDate(),
+    },{
+      title: `Matrícula`,
+      start: dayjs(`${year}-12-03T18:00:00`).toDate(),
+      end: dayjs(`${year}-12-04T20:30:00`).toDate(),
+    }
+  ];
 
   console.log(EventosDiurno);
 
@@ -329,7 +353,7 @@ export default function Events() {
     <div className="relative">
       {selectedEvent && informacionEvento && (
         <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
-          <div className="selected-event-details flex w-[90%] flex-col gap-2 justify-center rounded-xl bg-White dark:bg-black p-12 py-24 text-black dark:text-White lg:w-1/2 transition-colors duration-300">
+          <div className="selected-event-details flex w-[90%] flex-col justify-center gap-2 rounded-xl bg-White p-12 py-24 text-black transition-colors duration-300 dark:bg-black dark:text-White lg:w-1/2">
             <h1 className="text-center text-xl font-bold text-Atlantis lg:text-3xl">
               Detalles del evento
             </h1>
@@ -337,13 +361,15 @@ export default function Events() {
               <h2 className="text-xl font-bold text-Sycamore lg:text-3xl">
                 Título:
               </h2>
-              <p className="text-xl lg:text-2xl text-balance">{selectedEvent.title}</p>
+              <p className="text-balance text-xl lg:text-2xl">
+                {selectedEvent.title}
+              </p>
             </div>
             <div className="flex items-center gap-2">
               <h3 className="text-xl font-bold text-Sycamore lg:text-3xl">
                 Inicio:
               </h3>
-              <p className="text-xl lg:text-2xl text-balance">
+              <p className="text-balance text-xl lg:text-2xl">
                 {dayjs(selectedEvent.start).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
@@ -352,7 +378,7 @@ export default function Events() {
               <h4 className="text-xl font-bold text-Sycamore lg:text-3xl">
                 Fin:
               </h4>
-              <p className="text-xl lg:text-2xl text-balance">
+              <p className="text-balance text-xl lg:text-2xl">
                 {dayjs(selectedEvent.end).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
@@ -474,7 +500,7 @@ export default function Events() {
               },
             }}
             onSelectEvent={handleSelectEvent}
-            className="text-sm lg:text-lg rounded-xl bg-Sycamore p-4 text-White"
+            className="rounded-xl bg-Sycamore p-4 text-sm text-White lg:text-lg"
           />
         )}
 
@@ -503,10 +529,12 @@ export default function Events() {
             }
             formats={{
               dayHeaderFormat: (date) => {
-                return dayjs(date).format("ddd/DD/MM/YYYY");
+                return dayjs(date).format("dddd DD / MMMM / YYYY");
               },
               monthHeaderFormat: (date) => {
-                return dayjs(date).format("ddd/D/MM/YYYY");
+                return dayjs(date).format(
+                  "dddd DD / MMMM / YYYY | DD / MM / YY",
+                );
               },
             }}
             onSelectEvent={handleSelectEvent}
