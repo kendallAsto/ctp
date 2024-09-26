@@ -49,13 +49,6 @@ export default function Nav() {
     localStorage.setItem("theme", nuevoTema);
     document.documentElement.classList.toggle('dark', nuevoTema === 'dark');
   };
-
-  const handleScrollTo = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   
 
   return (
@@ -65,7 +58,7 @@ export default function Nav() {
           <img src={Logo} alt="Logo del CTP Santo Domingo" />
           <esFlag1 />
         </Link>
-        <ul className="m-auto hidden items-center justify-center py-10 font-Poppins md:grid md:grid-cols-4 lg:w-[80%] lg:gap-4">
+        <ul className="m-auto hidden items-center justify-center py-10 font-Poppins md:grid md:grid-cols-3 lg:w-[80%] lg:gap-4">
           <li>
             <Link
               to="/"
@@ -75,14 +68,6 @@ export default function Nav() {
             </Link>
           </li>
 
-          <li>
-            <Link
-              onClick={() => handleScrollTo("About-Us")}
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
-            >
-              {t("AU")}
-            </Link>
-          </li>
           <li>
             <Link
               to="/Events"
@@ -101,10 +86,10 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="/Posts"
+              to="/Gallery"
               className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
-              {t("Posts")}
+              {t("Gallery")}
             </Link>
           </li>
           <li onClick={manejarEstadoDropbox} className="relative">
@@ -130,14 +115,6 @@ export default function Nav() {
                 </ul>
               </div>
             )}
-          </li>
-          <li>
-            <Link
-              onClick={() => {handleScrollTo("Contact"); manejarEstadoNav()} }
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
-            >
-              {t("Contact")}
-            </Link>
           </li>
 
           <li>
@@ -268,14 +245,6 @@ export default function Nav() {
               </Link>
 
               <Link
-                onClick={() => {handleScrollTo("About-Us"); manejarEstadoNav()} }
-                to="#About-Us"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("AU")}</li>
-              </Link>
-
-              <Link
                 onClick={manejarEstadoNav}
                 to="/Events"
                 className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
@@ -297,11 +266,11 @@ export default function Nav() {
 
               <Link
                 onClick={manejarEstadoNav}
-                to="/Posts"
+                to="/Gallery"
                 className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
                 <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Posts")}
+                  {t("Gallery")}
                 </li>
               </Link>
 
@@ -348,16 +317,6 @@ export default function Nav() {
                   </ul>
                 </div>
               )}
-
-              <Link
-                onClick={() => {handleScrollTo("Contact"); manejarEstadoNav()} }
-                to="#Contact"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Contact")}
-                </li>
-              </Link>
 
               <Link
                 onClick={manejarEstadoNav}

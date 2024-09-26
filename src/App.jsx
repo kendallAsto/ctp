@@ -10,7 +10,7 @@ import CTechnical from "./Pages/CTechnical";
 import CAcademic from "./Pages/CAcademic";
 import CCompany from "./Pages/CCompany";
 import Footer from "./Components/Footer";
-import Posts from "./Pages/Posts";
+import Gallery from "./Pages/Gallery";
 function App() {
   return (
     <Suspense>
@@ -24,7 +24,7 @@ function App() {
             <Route path="/CTechnical" element={<CTechnical />} />
             <Route path="/CAcademic" element={<CAcademic />} />
             <Route path="/CCompany" element={<CCompany />} />
-            <Route path="/Posts" element={<Posts />} />
+            <Route path="/Gallery" element={<Gallery />} />
           </Route>
         </Routes>
         <section>
