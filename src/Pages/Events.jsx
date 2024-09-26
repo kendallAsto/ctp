@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../CSS/EventsToolbars.css"
+import "../CSS/EventsToolbars.css";
 import { Calendar, dayjsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import dayjs from "dayjs";
@@ -24,7 +24,6 @@ export default function Events() {
     setEventsDiurno(!EventsDiurno);
     setEventsNocturno(!EventsNocturno);
   }
-
 
   const [title, setTitle] = useState("");
   const [start, setStart] = useState("");
@@ -88,13 +87,282 @@ export default function Events() {
     fetchEvents();
   }, []);
 
-  console.log(eventos);
+  const date = new Date();
+  const year = date.getFullYear();
 
-  const EventosDiurno = [{}];
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [informacionEvento, setInformacionEvento] = useState(false);
+
+  const handleSelectEvent = (event) => {
+    setSelectedEvent(event);
+    setInformacionEvento(!informacionEvento);
+  };
+
+  const EventosDiurno = [
+    //Periodos del año lectivo
+    {
+      title: "I Periodo X | XI",
+      start: dayjs(`${year}-02-08`).toDate(),
+      end: dayjs(`${year}-06-28`).toDate(),
+    },
+    {
+      title: "II Periodo X | XI",
+      start: dayjs(`${year}-07-15`).toDate(),
+      end: dayjs(`${year}-12-13`).toDate(),
+    },
+
+    {
+      title: "I Periodo XII",
+      start: dayjs(`${year}-02-06`).toDate(),
+      end: dayjs(`${year}-05-17`).toDate(),
+    },
+    {
+      title: "II Periodo XII",
+      start: dayjs(`${year}-05-20`).toDate(),
+      end: dayjs(`${year}-08-30`).toDate(),
+    },
+
+    //Fechas conmemorativas y efemerides
+
+    {
+      title: "Batalla de Santa Rosa",
+      start: dayjs(`${year}-03-30`).toDate(),
+      end: dayjs(`${year}-03-30`).toDate(),
+    },
+    {
+      title: "Dia nacional del deporte",
+      start: dayjs(`${year}-03-31`).toDate(),
+      end: dayjs(`${year}-03-31`).toDate(),
+    },
+
+    {
+      title: "Aniversario de la Batalla de Rivas",
+      start: dayjs(`${year}-04-11`).toDate(),
+      end: dayjs(`${year}-04-11`).toDate(),
+    },
+    {
+      title: "Aniversario de la Anexión del Partido de Nicoya",
+      start: dayjs(`${year}-07-25`).toDate(),
+      end: dayjs(`${year}-07-25`).toDate(),
+    },
+
+    {
+      title: "Semana Cívica",
+      start: dayjs(`${year}-09-09`).toDate(),
+      end: dayjs(`${year}-09-13`).toDate(),
+    },
+    {
+      title: "Recorrido de la antorcha de la libertad",
+      start: dayjs(`${year}-09-14`).toDate(),
+      end: dayjs(`${year}-09-14`).toDate(),
+    },
+
+    {
+      title: "Aniversario de la Independencia Nacional",
+      start: dayjs(`${year}-09-15`).toDate(),
+      end: dayjs(`${year}-09-15`).toDate(),
+    },
+    {
+      title: "Dia de las culturas",
+      start: dayjs(`${year}-10-12`).toDate(),
+      end: dayjs(`${year}-10-12`).toDate(),
+    },
+    {
+      title: "Abolición del Ejercito",
+      start: dayjs(`${year}-12-01`).toDate(),
+      end: dayjs(`${year}-12-01`).toDate(),
+    },
+
+    // Pruebas Tecnicas, Academicas y Comprensivas I Periodo Decimo y Undecimo
+    {
+      title: "I Pruebas Academicas | X | XI",
+      start: dayjs(`${year}-04-22`).toDate(),
+      end: dayjs(`${year}-04-26`).toDate(),
+    },
+    {
+      title: "I Pruebas comprensivas | X | XI",
+      start: dayjs(`${year}-02-26`).toDate(),
+      end: dayjs(`${year}-03-01`).toDate(),
+    },
+    {
+      title: "II Pruebas Academicas | X | XI",
+      start: dayjs(`${year}-06-24`).toDate(),
+      end: dayjs(`${year}-06-28`).toDate(),
+    },
+
+    {
+      title: "I Pruebas Técnicas | X | XI",
+      start: dayjs(`${year}-02-17`).toDate(),
+      end: dayjs(`${year}-06-21`).toDate(),
+    },
+
+    // Pruebas Tecnicas, Academicas y Comprensivas II Periodo Decimo y Undecimo
+    {
+      title: "II Pruebas Academicas | X | XI",
+      start: dayjs(`${year}-08-26`).toDate(),
+      end: dayjs(`${year}-08-30`).toDate(),
+    },
+
+    {
+      title: "II Pruebas comprensivas | X | XI",
+      start: dayjs(`${year}-08-19`).toDate(),
+      end: dayjs(`${year}-08-23`).toDate(),
+    },
+    {
+      title: "II Pruebas Academicas | X | XI",
+      start: dayjs(`${year}-11-04`).toDate(),
+      end: dayjs(`${year}-11-08`).toDate(),
+    },
+
+    {
+      title: "II Pruebas Técnicas | X | XI",
+      start: dayjs(`${year}-10-28`).toDate(),
+      end: dayjs(`${year}-11-01`).toDate(),
+    },
+
+    //Pasantias y Pruebas de Ampliacion
+    {
+      title: "Pasantia XI",
+      start: dayjs(`${year}-09-16`).toDate(),
+      end: dayjs(`${year}-09-27`).toDate(),
+    },
+
+    {
+      title: "I Pruebas de ampliación",
+      start: dayjs(`${year}-12-02`).toDate(),
+      end: dayjs(`${year}-12-11`).toDate(),
+    },
+    {
+      title: "II Pruebas de ampliación",
+      start: dayjs(`${year + 1}-02-03`).toDate(),
+      end: dayjs(`${year + 1}-02-07`).toDate(),
+    },
+
+    // Pruebas Tecnicas, Academicas y Comprensivas I Periodo Duodecimo
+    {
+      title: "I Pruebas Academicas | XII",
+      start: dayjs(`${year}-03-18`).toDate(),
+      end: dayjs(`${year}-03-22`).toDate(),
+    },
+    {
+      title: "Prueba Nacional Estandarizada Diagnostica | XII",
+      start: dayjs(`${year}-04-03`).toDate(),
+      end: dayjs(`${year}-04-09`).toDate(),
+    },
+    {
+      title: "II Pruebas Academicas | XII",
+      start: dayjs(`${year}-05-06`).toDate(),
+      end: dayjs(`${year}-05-10`).toDate(),
+    },
+
+    {
+      title: "I Pruebas Técnicas | XII",
+      start: dayjs(`${year}-05-13`).toDate(),
+      end: dayjs(`${year}-05-17`).toDate(),
+    },
+    {
+      title: "Entrega de notas I Periodo | XII",
+      start: dayjs(`${year}-05-31`).toDate(),
+      end: dayjs(`${year}-05-31`).toDate(),
+    },
+
+    // Pruebas Tecnicas, Academicas y Comprensivas II Periodo Duodecimo
+    {
+      title: "Prueba Nacional de Lenguas Extranjeras | XII",
+      start: dayjs(`${year}-06-03`).toDate(),
+      end: dayjs(`${year}-06-07`).toDate(),
+    },
+    {
+      title: "I Pruebas Academicas | XII",
+      start: dayjs(`${year}-06-24`).toDate(),
+      end: dayjs(`${year}-06-28`).toDate(),
+    },
+    {
+      title: "II Pruebas Academicas | XII",
+      start: dayjs(`${year}-08-12`).toDate(),
+      end: dayjs(`${year}-08-16`).toDate(),
+    },
+
+    {
+      title: "II Pruebas Técnicas | XII",
+      start: dayjs(`${year}-08-19`).toDate(),
+      end: dayjs(`${year}-08-23`).toDate(),
+    },
+
+    {
+      title: "Entrega de notas II Periodo | XII",
+      start: dayjs(`${year}-09-13`).toDate(),
+      end: dayjs(`${year}-09-13`).toDate(),
+    },
+    {
+      title: "Prueba de Especialidad Técnica | XII",
+      start: dayjs(`${year}-10-01`).toDate(),
+      end: dayjs(`${year}-10-01`).toDate(),
+    },
+
+    {
+      title: "Prueba Nacionales Estandarizada Sumativa | XII",
+      start: dayjs(`${year}-09-17`).toDate(),
+      end: dayjs(`${year}-09-23`).toDate(),
+    },
+    {
+      title: "Práctica Supervisada | XII",
+      start: dayjs(`${year}-10-07`).toDate(),
+      end: dayjs(`${year}-11-29`).toDate(),
+    },
+    {
+      title: "Primera Prueba de Ampliación | XII",
+      start: dayjs(`${year}-09-05`).toDate(),
+      end: dayjs(`${year}-09-10`).toDate(),
+    },
+    {
+      title: "Segunda Prueba de Ampliación | XII",
+      start: dayjs(`${year}-12-02`).toDate(),
+      end: dayjs(`${year}-12-09`).toDate(),
+    },
+  ];
   const EventosNocturno = [{}];
+
+  console.log(EventosDiurno);
 
   return (
     <div className="relative">
+      {selectedEvent && informacionEvento && (
+        <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
+          <div className="selected-event-details flex w-[90%] flex-col gap-2 justify-center rounded-xl bg-White p-12 py-24 text-black dark:text-White lg:w-1/2">
+            <h1 className="text-center text-xl font-bold text-Atlantis lg:text-3xl">
+              Detalles del evento
+            </h1>
+            <div className="flex gap-2">
+              <h2 className="text-xl font-bold text-Sycamore lg:text-3xl">
+                Título:
+              </h2>
+              <p className="text-xl lg:text-2xl text-balance">{selectedEvent.title}</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-bold text-Sycamore lg:text-3xl">
+                Inicio:
+              </h3>
+              <p className="text-xl lg:text-2xl text-balance">
+                {dayjs(selectedEvent.start).format("DD/MM/YYYY hh:mm")}
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <h4 className="text-xl font-bold text-Sycamore lg:text-3xl">
+                Fin:
+              </h4>
+              <p className="text-xl lg:text-2xl text-balance">
+                {dayjs(selectedEvent.end).format("DD/MM/YYYY hh:mm")}
+              </p>
+            </div>
+          </div>
+          <i
+            onClick={handleSelectEvent}
+            className="fa-sharp fa-solid fa-xmark absolute right-[10%] top-[37%] cursor-pointer rounded-full bg-Atlantis px-2 py-1 text-4xl text-White md:right-[20%] md:top-[30%] md:p-2 md:text-5xl lg:px-6"
+          ></i>
+        </div>
+      )}
       {loginAdmin && (
         <div className="absolute right-[15%] top-0 flex gap-8">
           <button
@@ -157,15 +425,21 @@ export default function Events() {
       </h1>
 
       <div className="mt-4 flex items-center justify-center">
-        <button onClick={cambiarHorario} className="rounded-l-xl bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+        <button
+          onClick={cambiarHorario}
+          className="rounded-l-xl bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl"
+        >
           {t("EO.timeDiurno")}
         </button>
-        <button onClick={cambiarHorario} className="rounded-r-xl bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl">
+        <button
+          onClick={cambiarHorario}
+          className="rounded-r-xl bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Fuscous md:text-3xl"
+        >
           {t("EO.timeNocturna")}
         </button>
       </div>
 
-      <section className="m-auto my-12 h-[75vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2">
+      <section className="m-auto my-12 h-[100vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2">
         {EventsDiurno && (
           <Calendar
             localizer={localizer}
@@ -191,13 +465,16 @@ export default function Events() {
             }
             formats={{
               dayHeaderFormat: (date) => {
-                return dayjs(date).format("ddd/DD/MM/YYYY");
+                return dayjs(date).format("dddd DD / MMMM / YYYY");
               },
               monthHeaderFormat: (date) => {
-                return dayjs(date).format("ddd/D/MM/YYYY");
+                return dayjs(date).format(
+                  "dddd DD / MMMM / YYYY | DD / MM / YY",
+                );
               },
             }}
-            className="bg-Sycamore p-4 text-White rounded-xl"
+            onSelectEvent={handleSelectEvent}
+            className="text-md rounded-xl bg-Sycamore p-4 text-White"
           />
         )}
 
@@ -232,7 +509,8 @@ export default function Events() {
                 return dayjs(date).format("ddd/D/MM/YYYY");
               },
             }}
-            className="bg-Blue-Dianne text-White p-4 rounded-xl"
+            onSelectEvent={handleSelectEvent}
+            className="rounded-xl bg-Blue-Dianne p-4 text-White"
           />
         )}
       </section>
