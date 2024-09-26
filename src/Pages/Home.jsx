@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Suspense, useState } from "react";
 import Informacion from "../Components/Informacion";
-import BTNS from "../Components/BTNS";
 import Danger from "../Assets/IMGS/Danger.webp";
 import Contact from "../Components/contact";
 import Map from "../Components/Map";
-import Footer from "../Components/Footer";
 import Video from "../Assets/Videos/videoCTP.webm";
 import ContabilidadModal from "../Components/Modals/Diurno/ContabilidadModal";
 import DesarrolloModal from "../Components/Modals/Diurno/DesarrolloModal";
@@ -104,11 +102,6 @@ function Home(ref) {
               body3={t("History.body-3", {
                 CTPName: "Colegio Técnico Profesional de Santo Domingo",
               })}
-              extra={
-                <div className="my-8">
-                  <BTNS tipo="informativo" href="/" texto={t("Mission.btn")} />
-                </div>
-              }
             />
           </section>
 
@@ -300,7 +293,7 @@ function Home(ref) {
             }
           />
 
-          <section className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
+          <section id="Contact" className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
             <div>
               <h1 className="mb-8 font-Poppins text-3xl font-bold text-Sycamore md:text-4xl">
                 {t("Contact.title")}

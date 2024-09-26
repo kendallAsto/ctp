@@ -99,42 +99,38 @@ export default function Events() {
   };
 
   const EventosDiurno = [
-    //Periodos del año lectivo
+    // Periodos del año lectivo
     {
-      title: "I Periodo X | XI",
+      title: "I Período | X | XI",
       start: dayjs(`${year}-02-08`).toDate(),
       end: dayjs(`${year}-06-28`).toDate(),
     },
     {
-      title: "II Periodo X | XI",
+      title: "II Período | X | XI",
       start: dayjs(`${year}-07-15`).toDate(),
       end: dayjs(`${year}-12-13`).toDate(),
     },
-
     {
-      title: "I Periodo XII",
+      title: "I Período XII",
       start: dayjs(`${year}-02-06`).toDate(),
       end: dayjs(`${year}-05-17`).toDate(),
     },
     {
-      title: "II Periodo XII",
+      title: "II Período XII",
       start: dayjs(`${year}-05-20`).toDate(),
       end: dayjs(`${year}-08-30`).toDate(),
     },
-
-    //Fechas conmemorativas y efemerides
-
+    // Fechas conmemorativas y efemérides
     {
       title: "Batalla de Santa Rosa",
       start: dayjs(`${year}-03-30`).toDate(),
       end: dayjs(`${year}-03-30`).toDate(),
     },
     {
-      title: "Dia nacional del deporte",
+      title: "Día Nacional del Deporte",
       start: dayjs(`${year}-03-31`).toDate(),
       end: dayjs(`${year}-03-31`).toDate(),
     },
-
     {
       title: "Aniversario de la Batalla de Rivas",
       start: dayjs(`${year}-04-11`).toDate(),
@@ -145,152 +141,138 @@ export default function Events() {
       start: dayjs(`${year}-07-25`).toDate(),
       end: dayjs(`${year}-07-25`).toDate(),
     },
-
     {
       title: "Semana Cívica",
       start: dayjs(`${year}-09-09`).toDate(),
       end: dayjs(`${year}-09-13`).toDate(),
     },
     {
-      title: "Recorrido de la antorcha de la libertad",
+      title: "Recorrido de la Antorcha de la Libertad",
       start: dayjs(`${year}-09-14`).toDate(),
       end: dayjs(`${year}-09-14`).toDate(),
     },
-
     {
       title: "Aniversario de la Independencia Nacional",
       start: dayjs(`${year}-09-15`).toDate(),
       end: dayjs(`${year}-09-15`).toDate(),
     },
     {
-      title: "Dia de las culturas",
+      title: "Día de las Culturas",
       start: dayjs(`${year}-10-12`).toDate(),
       end: dayjs(`${year}-10-12`).toDate(),
     },
     {
-      title: "Abolición del Ejercito",
+      title: "Abolición del Ejército",
       start: dayjs(`${year}-12-01`).toDate(),
       end: dayjs(`${year}-12-01`).toDate(),
     },
-
-    // Pruebas Tecnicas, Academicas y Comprensivas I Periodo Decimo y Undecimo
+    // Pruebas Técnicas, Académicas y Comprensivas I Período Décimo y Undécimo
     {
-      title: "I Pruebas Academicas | X | XI",
+      title: "I Pruebas Académicas | X | XI",
       start: dayjs(`${year}-04-22`).toDate(),
       end: dayjs(`${year}-04-26`).toDate(),
     },
     {
-      title: "I Pruebas comprensivas | X | XI",
+      title: "I Pruebas Comprensivas | X | XI",
       start: dayjs(`${year}-02-26`).toDate(),
       end: dayjs(`${year}-03-01`).toDate(),
     },
     {
-      title: "II Pruebas Academicas | X | XI",
+      title: "II Pruebas Académicas | X | XI",
       start: dayjs(`${year}-06-24`).toDate(),
       end: dayjs(`${year}-06-28`).toDate(),
     },
-
     {
       title: "I Pruebas Técnicas | X | XI",
       start: dayjs(`${year}-02-17`).toDate(),
       end: dayjs(`${year}-06-21`).toDate(),
     },
-
-    // Pruebas Tecnicas, Academicas y Comprensivas II Periodo Decimo y Undecimo
+    // Pruebas Técnicas, Académicas y Comprensivas II Período Décimo y Undécimo
     {
-      title: "II Pruebas Academicas | X | XI",
+      title: "II Pruebas Académicas | X | XI",
       start: dayjs(`${year}-08-26`).toDate(),
       end: dayjs(`${year}-08-30`).toDate(),
     },
-
     {
-      title: "II Pruebas comprensivas | X | XI",
+      title: "II Pruebas Comprensivas | X | XI",
       start: dayjs(`${year}-08-19`).toDate(),
       end: dayjs(`${year}-08-23`).toDate(),
     },
     {
-      title: "II Pruebas Academicas | X | XI",
+      title: "II Pruebas Académicas | X | XI",
       start: dayjs(`${year}-11-04`).toDate(),
       end: dayjs(`${year}-11-08`).toDate(),
     },
-
     {
       title: "II Pruebas Técnicas | X | XI",
       start: dayjs(`${year}-10-28`).toDate(),
       end: dayjs(`${year}-11-01`).toDate(),
     },
-
-    //Pasantias y Pruebas de Ampliacion
+    // Pasantías y Pruebas de Ampliación
     {
-      title: "Pasantia XI",
+      title: "Pasantía XI",
       start: dayjs(`${year}-09-16`).toDate(),
       end: dayjs(`${year}-09-27`).toDate(),
     },
-
     {
-      title: "I Pruebas de ampliación",
+      title: "I Pruebas de Ampliación | X | XI",
       start: dayjs(`${year}-12-02`).toDate(),
       end: dayjs(`${year}-12-11`).toDate(),
     },
     {
-      title: "II Pruebas de ampliación",
+      title: "II Pruebas de Ampliación | X | XI",
       start: dayjs(`${year + 1}-02-03`).toDate(),
       end: dayjs(`${year + 1}-02-07`).toDate(),
     },
-
-    // Pruebas Tecnicas, Academicas y Comprensivas I Periodo Duodecimo
+    // Pruebas Técnicas, Académicas y Comprensivas I Período Duodécimo
     {
-      title: "I Pruebas Academicas | XII",
+      title: "I Pruebas Académicas | XII",
       start: dayjs(`${year}-03-18`).toDate(),
       end: dayjs(`${year}-03-22`).toDate(),
     },
     {
-      title: "Prueba Nacional Estandarizada Diagnostica | XII",
+      title: "Prueba Nacional Estandarizada Diagnóstica | XII",
       start: dayjs(`${year}-04-03`).toDate(),
       end: dayjs(`${year}-04-09`).toDate(),
     },
     {
-      title: "II Pruebas Academicas | XII",
+      title: "II Pruebas Académicas | XII",
       start: dayjs(`${year}-05-06`).toDate(),
       end: dayjs(`${year}-05-10`).toDate(),
     },
-
     {
       title: "I Pruebas Técnicas | XII",
       start: dayjs(`${year}-05-13`).toDate(),
       end: dayjs(`${year}-05-17`).toDate(),
     },
     {
-      title: "Entrega de notas I Periodo | XII",
+      title: "Entrega de Notas I Período | XII",
       start: dayjs(`${year}-05-31`).toDate(),
       end: dayjs(`${year}-05-31`).toDate(),
     },
-
-    // Pruebas Tecnicas, Academicas y Comprensivas II Periodo Duodecimo
+    // Pruebas Técnicas, Académicas y Comprensivas II Período Duodécimo
     {
       title: "Prueba Nacional de Lenguas Extranjeras | XII",
       start: dayjs(`${year}-06-03`).toDate(),
       end: dayjs(`${year}-06-07`).toDate(),
     },
     {
-      title: "I Pruebas Academicas | XII",
+      title: "I Pruebas Académicas | XII",
       start: dayjs(`${year}-06-24`).toDate(),
       end: dayjs(`${year}-06-28`).toDate(),
     },
     {
-      title: "II Pruebas Academicas | XII",
+      title: "II Pruebas Académicas | XII",
       start: dayjs(`${year}-08-12`).toDate(),
       end: dayjs(`${year}-08-16`).toDate(),
     },
-
     {
       title: "II Pruebas Técnicas | XII",
       start: dayjs(`${year}-08-19`).toDate(),
       end: dayjs(`${year}-08-23`).toDate(),
     },
-
     {
-      title: "Entrega de notas II Periodo | XII",
+      title: "Entrega de Notas II Período | XII",
       start: dayjs(`${year}-09-13`).toDate(),
       end: dayjs(`${year}-09-13`).toDate(),
     },
@@ -299,9 +281,8 @@ export default function Events() {
       start: dayjs(`${year}-10-01`).toDate(),
       end: dayjs(`${year}-10-01`).toDate(),
     },
-
     {
-      title: "Prueba Nacionales Estandarizada Sumativa | XII",
+      title: "Pruebas Nacionales Estandarizadas Sumativas | XII",
       start: dayjs(`${year}-09-17`).toDate(),
       end: dayjs(`${year}-09-23`).toDate(),
     },
@@ -320,7 +301,8 @@ export default function Events() {
       start: dayjs(`${year}-12-02`).toDate(),
       end: dayjs(`${year}-12-09`).toDate(),
     },
-  ];
+];
+
   const EventosNocturno = [
     {
       title: `Inicio del proceso de admisión para el curso lectivo ${year + 1}`,
@@ -353,7 +335,7 @@ export default function Events() {
     <div className="relative">
       {selectedEvent && informacionEvento && (
         <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
-          <div className="selected-event-details flex w-[90%] flex-col justify-center gap-2 rounded-xl bg-White p-12 py-24 text-black transition-colors duration-300 dark:bg-black dark:text-White lg:w-1/2">
+          <div className="selected-event-details flex w-[90%] flex-col justify-center gap-2 rounded-xl bg-White p-12 py-24 text-black transition-colors duration-300 dark:bg-black dark:text-White lg:w-1/2 border-Atlantis border-4 dark:border-White">
             <h1 className="text-center text-xl font-bold text-Atlantis lg:text-3xl">
               Detalles del evento
             </h1>

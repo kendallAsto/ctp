@@ -50,6 +50,14 @@ export default function Nav() {
     document.documentElement.classList.toggle('dark', nuevoTema === 'dark');
   };
 
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+
   return (
     <>
       <nav className="m-auto hidden items-center justify-center py-10 font-Poppins transition-all duration-200 dark:text-White lg:flex lg:w-[90%] lg:gap-4">
@@ -69,7 +77,7 @@ export default function Nav() {
 
           <li>
             <Link
-              to="#"
+              onClick={() => handleScrollTo("About-Us")}
               className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("AU")}
@@ -125,7 +133,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              to="#Contact"
+              onClick={() => {handleScrollTo("Contact"); manejarEstadoNav()} }
               className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
             >
               {t("Contact")}
@@ -260,8 +268,8 @@ export default function Nav() {
               </Link>
 
               <Link
-                onClick={manejarEstadoNav}
-                to="/"
+                onClick={() => {handleScrollTo("About-Us"); manejarEstadoNav()} }
+                to="#About-Us"
                 className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
                 <li className="my-2 rounded-xl bg-Sycamore p-2">{t("AU")}</li>
@@ -342,7 +350,7 @@ export default function Nav() {
               )}
 
               <Link
-                onClick={manejarEstadoNav}
+                onClick={() => {handleScrollTo("Contact"); manejarEstadoNav()} }
                 to="#Contact"
                 className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
               >
