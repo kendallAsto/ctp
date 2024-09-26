@@ -5,47 +5,50 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import enFlagIMG from "../Assets/Flags/en.png";
 import esFlagIMG from "../Assets/Flags/es.png";
-import dayjs from "dayjs";
 
 export default function Nav() {
-  const { t, i18n } = useTranslation("nav");
-  const [idiomaActual, setIdiomaActual] = useState("es");
   const [estadoNav, setEstadoNav] = useState(false);
-  const [estadoDropbox, setEstadoDropbox] = useState(false);
-  const Language = i18n.language;
-  function manejarEstadoDropbox() {
-    setEstadoDropbox(!estadoDropbox);
-  }
-
   function manejarEstadoNav() {
     setEstadoNav(!estadoNav);
   }
-
-  function changeLanguage() {
-    if (idiomaActual === "es") {
-      i18n.changeLanguage("en");
-      setIdiomaActual("en");
-      dayjs.locale("en");
-    } else {
-      i18n.changeLanguage("es");
-      setIdiomaActual("es");
-      dayjs.locale("es");
-    }
+  function manejarEstadoDropbox() {
+    setEstadoDropbox(!estadoDropbox);
   }
-
-  const [theme, setTheme] = useState("light");
-
-  const handleChangeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  const [estadoDropbox, setEstadoDropbox] = useState(false);
+  const { t, i18n } = useTranslation("nav");
+  const [idiomaActual, setIdiomaActual] = useState("");
+  const [theme, setTheme] = useState(""); 
+  const Language = i18n.language;
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector("html").classList.add("dark");
-    } else {
-      document.querySelector("html").classList.remove("dark");
+    const idiomaGuardado = localStorage.getItem("idiomaActual");
+    const temaGuardado = localStorage.getItem("theme");
+
+    if (idiomaGuardado) {
+      setIdiomaActual(idiomaGuardado);
+      i18n.changeLanguage(idiomaGuardado); // Cambia el idioma de react-i18next
     }
-  }, [theme]);
+
+    if (temaGuardado) {
+      setTheme(temaGuardado);
+      // Actualiza el tema en base al valor guardado (opcional)
+      document.documentElement.classList.toggle('dark', temaGuardado === 'dark');
+    }
+  }, []);
+
+  function changeLanguage() {
+    const nuevoIdioma = idiomaActual === "es" ? "en" : "es";
+    setIdiomaActual(nuevoIdioma);
+    i18n.changeLanguage(nuevoIdioma);
+    localStorage.setItem("idiomaActual", nuevoIdioma);
+  }
+
+  const handleChangeTheme = () => {
+    const nuevoTema = theme === "light" ? "dark" : "light";
+    setTheme(nuevoTema);
+    localStorage.setItem("theme", nuevoTema);
+    document.documentElement.classList.toggle('dark', nuevoTema === 'dark');
+  };
 
   return (
     <>
