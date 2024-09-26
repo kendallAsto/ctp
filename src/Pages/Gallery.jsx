@@ -139,7 +139,7 @@ export default function Gallery() {
               style={{
                 backgroundImage: `url(${slidesArte[currentIndexArte].url})`,
               }}
-              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] md:w-[90%] lg:w-[60%]"
+              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] w-[90%] lg:w-[60%]"
             ></div>
 
             <div className="absolute left-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:left-8 lg:left-48 lg:hidden">
@@ -160,7 +160,7 @@ export default function Gallery() {
               style={{
                 backgroundImage: `url(${slidesFotografia[currentIndexFotografia].url})`,
               }}
-              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] md:w-[90%] lg:w-[60%]"
+              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] w-[90%] lg:w-[60%]"
             ></div>
 
             <div className="absolute left-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:left-8 lg:left-48 lg:hidden">
@@ -181,7 +181,7 @@ export default function Gallery() {
               style={{
                 backgroundImage: `url(${slidesEsculturas[currentIndexEsculturas].url})`,
               }}
-              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] md:w-[90%] lg:w-[60%]"
+              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] w-[90%] lg:w-[60%]"
             ></div>
             <div className="absolute left-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:left-8 lg:left-48 lg:hidden">
               <BsChevronCompactLeft onClick={prevSlideEsculturas} size={30} />
@@ -200,7 +200,7 @@ export default function Gallery() {
               style={{
                 backgroundImage: `url(${slidesExtras[currentIndexExtras].url})`,
               }}
-              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] md:w-[90%] lg:w-[60%]"
+              className="aspect-square h-[400px] rounded-xl bg-cover bg-center duration-500 md:h-[90%] w-[90%] lg:w-[60%]"
             ></div>
             <div className="absolute left-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:left-8 lg:left-48 lg:hidden">
               <BsChevronCompactLeft onClick={prevSlideExtras} size={30} />

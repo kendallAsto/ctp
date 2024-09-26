@@ -18,9 +18,8 @@ import ContabilidadModalN from "../Components/Modals/Nocturno/ContabilidadModalN
 import AdministracionModal from "../Components/Modals/Nocturno/AdministracionModalN.jsx";
 import MecanicaModalN from "../Components/Modals/Nocturno/MecanicaModalN.jsx";
 
-import { forwardRef } from "react";
 import DyMModal from "../Components/Modals/Diurno/DyMModal.jsx";
-function Home(ref) {
+function Home() {
   const { t } = useTranslation("information");
 
   const [estadoModal, cambiarEstadoModal1] = useState(false);
@@ -293,20 +292,31 @@ function Home(ref) {
             }
           />
 
-          <section id="Contact" className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2">
+          <section
+            id="Contact"
+            className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2"
+          >
             <div>
               <h1 className="mb-8 font-Poppins text-3xl font-bold text-Sycamore md:text-4xl">
                 {t("Contact.title")}
               </h1>
-              <form action="#" className="flex flex-col flex-wrap gap-4">
+              <form action="https://formsubmit.co/ctpsantodomingoconsultas@gmail.com" method="POST" className="flex flex-col flex-wrap gap-4">
                 <input
                   type="text"
+                  name="name"
                   placeholder={t("Contact.name")}
                   className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <input
                   type="text"
+                  name="email"
                   placeholder={t("Contact.mail")}
+                  className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder={t("Contact.subject")}
                   className="my-2 rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
                 />
                 <textarea
@@ -315,9 +325,22 @@ function Home(ref) {
                   placeholder={t("Contact.message")}
                   className="my-2 h-[250px] rounded-lg bg-Blue-Dianne p-3 text-xl text-white md:h-[160px] lg:h-[250px]"
                 ></textarea>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="ctp-santodomingo-vercel.app"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Hola!!!, dentro de poco te responderemos,gracias por su mensaje"
+                />
                 <div className="m-auto flex w-1/3 items-center justify-center gap-3 rounded-xl bg-Atlantis p-3 text-xl text-White">
                   <i class="fa-solid fa-paper-plane text-White"></i>
-                  <button type="submit">Enviar</button>
+                  <button type="submit" value="Enviar">
+                    Enviar
+                  </button>
                 </div>
               </form>
             </div>
@@ -339,6 +362,10 @@ function Home(ref) {
               body="ctp.santodomingo@mep.go.cr"
             />
             <Contact
+              clase="fa-solid fa-envelope text-3xl"
+              body="ctpsantodomingoconsultas@gmail.com"
+            />
+            <Contact
               clase="fa-solid fa-map text-3xl"
               body="300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica"
             />
@@ -352,4 +379,4 @@ function Home(ref) {
   );
 }
 
-export default forwardRef(Home);
+export default Home;

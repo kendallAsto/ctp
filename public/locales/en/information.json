@@ -83,6 +83,8 @@
 
       "mail": "Mail",
 
+      "subject": "Subject",
+
       "message": "Message",
 
       "send": "Send"
