@@ -33,7 +33,7 @@ export default function Gallery() {
     { url: "https://i.ibb.co/TLCS4ZL/Arte-13.webp" },
     { url: "https://i.ibb.co/RvBjx0d/Arte-14.webp" },
     { url: "https://i.ibb.co/yQgWwC2/Arte-15.webp" },
-    { url: "https://i.ibb.co/NFg5ccc/Arte-16.web" },
+    { url: "https://i.ibb.co/NFg5ccc/Arte-16.webp" },
   ];
 
   const slidesEsculturas = [

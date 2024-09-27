@@ -90,14 +90,14 @@ export default function Events() {
   const date = new Date();
   const year = date.getFullYear();
 
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedEventDiurno, setSelectedEventDiurno] = useState(null);
+  const [informacionEventoDiurno, setInformacionEventoDiurno] = useState(false);
   const [selectedEventNocturno, setSelectedEventNocturno] = useState(null);
-  const [informacionEvento, setInformacionEvento] = useState(false);
   const [informacionEventoNocturno, setInformacionEventoNocturno] = useState(false);
 
   const handleSelectEventDiurno = (event) => {
-    setSelectedEvent(event);
-    setInformacionEvento(!informacionEvento);
+    setSelectedEventDiurno(event);
+    setInformacionEventoDiurno(!informacionEventoDiurno);
   };
 
   const handleSelectEventNocturno = (event) => {
@@ -339,7 +339,7 @@ export default function Events() {
 
   return (
     <div className="relative">
-      {selectedEvent && informacionEvento && (
+      {selectedEventDiurno && informacionEventoDiurno && (
         <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
           <div className="selected-event-details flex w-[90%] flex-col justify-center gap-2 rounded-xl bg-White p-12 py-24 text-black transition-colors duration-300 dark:bg-black dark:text-White lg:w-1/2 border-Atlantis border-4 dark:border-White">
             <h1 className="text-center text-xl font-bold text-Atlantis lg:text-3xl">
@@ -350,7 +350,7 @@ export default function Events() {
                 Título:
               </h2>
               <p className="text-balance text-xl lg:text-2xl">
-                {selectedEvent.title}
+                {selectedEventDiurno.title}
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -358,7 +358,7 @@ export default function Events() {
                 Inicio:
               </h3>
               <p className="text-balance text-xl lg:text-2xl">
-                {dayjs(selectedEvent.start).format("DD/MM/YYYY hh:mm")}
+                {dayjs(selectedEventDiurno.start).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
 
@@ -367,7 +367,7 @@ export default function Events() {
                 Fin:
               </h4>
               <p className="text-balance text-xl lg:text-2xl">
-                {dayjs(selectedEvent.end).format("DD/MM/YYYY hh:mm")}
+                {dayjs(selectedEventDiurno.end).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
           </div>
@@ -389,7 +389,7 @@ export default function Events() {
                 Título:
               </h2>
               <p className="text-balance text-xl lg:text-2xl">
-                {selectedEvent.title}
+                {selectedEventNocturno.title}
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -397,7 +397,7 @@ export default function Events() {
                 Inicio:
               </h3>
               <p className="text-balance text-xl lg:text-2xl">
-                {dayjs(selectedEvent.start).format("DD/MM/YYYY hh:mm")}
+                {dayjs(selectedEventNocturno.start).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
 
@@ -406,7 +406,7 @@ export default function Events() {
                 Fin:
               </h4>
               <p className="text-balance text-xl lg:text-2xl">
-                {dayjs(selectedEvent.end).format("DD/MM/YYYY hh:mm")}
+                {dayjs(selectedEventNocturno.end).format("DD/MM/YYYY hh:mm")}
               </p>
             </div>
           </div>
@@ -492,7 +492,7 @@ export default function Events() {
         </button>
       </div>
 
-      <section className="m-auto my-12 h-[100vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2">
+      <section className="m-auto my-12 h-[100vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2 font-Poppins">
         {EventsDiurno && (
           <Calendar
             localizer={localizer}
@@ -565,7 +565,7 @@ export default function Events() {
               },
             }}
             onSelectEvent={handleSelectEventNocturno}
-            className="rounded-xl bg-Blue-Dianne p-4 text-White"
+            className="rounded-xl bg-Blue-Dianne p-4 text-White text-sm lg:text-lg"
           />
         )}
       </section>
