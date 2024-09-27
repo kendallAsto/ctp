@@ -18,6 +18,7 @@ export default {
       fontFamily:{
         "Lato": "Lato",
         "Poppins": "Poppins",
+        "Fredoka": "Fredoka",
       }
     },
   },

@@ -5,7 +5,7 @@ export default function GestionModal({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[180vh]">
+        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[180vh] font-Poppins">
           <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90%] rounded-xl bg-White p-12 dark:border-2 dark:bg-black md:h-[150vh] md:w-[90vw] md:text-2xl">
             <h1 className="p-2 text-center text-3xl font-bold text-Sycamore md:p-4 md:text-4xl">
               {Gestion.title}

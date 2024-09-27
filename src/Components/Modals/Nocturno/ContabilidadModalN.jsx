@@ -5,7 +5,7 @@ export default function ContabilidadModalN({ estado, cambiarEstado }) {
   return (
     <>
       {estado && (
-        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[100vh]">
+        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[100vh] font-Poppins">
           <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90vw] rounded-xl bg-White p-12 dark:border-2 dark:bg-black md:h-[90vh] md:w-[90vw] md:text-2xl">
             <h1 className="text-blue-diabg-Blue-Dianne p-2 text-center text-3xl font-bold md:p-4 md:text-4xl">
               {Contabilidad.title}
