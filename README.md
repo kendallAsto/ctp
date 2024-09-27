@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Colegio Técnico Profesional de Santo Domingo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Descripción:**
 
-## Available Scripts
+El Colegio Técnico Profesional de Santo Domingo es una institución educativa comprometida con la excelencia académica y técnica. Ofrecemos una amplia variedad de carreras técnicas y profesionales, tanto en modalidad diurna como nocturna.
 
-In the project directory, you can run:
+**Objetivos:**
 
-### `npm start`
+* Formar profesionales técnicos medios y bachilleres en educación media competitivos.
+* Promover el liderazgo y el compromiso con la excelencia laboral.
+* Fomentar la preservación del ambiente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Instalación:**
+(Uso obligatorio de GIT si desea clonarlo)
+- git clone https://github.com/ElPanaHans/ctp-santodomingo.git
+- npm i
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Uso:**
+- npm start (Una vez usado el comando "npm i")
+- (Si se desea usar la BD):
+  - cd BackendCTPSD
+  - node .\server.js
 
-### `npm test`
+**Recursos Adicionales:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Eventos:** ![{4C0242AD-C4F5-4590-B6D6-CE48B2F910F2}](https://github.com/user-attachments/assets/20a112e0-a88b-4025-9876-1f23ca44b8bf) ![{36146041-5C5C-4240-94DE-1DC6F5231C7B}](https://github.com/user-attachments/assets/00da8996-b594-4141-afa1-4f43345c74f5)
+]
+* **Servicios:** ![{8A1E46AD-D7AC-4879-995B-6CB0D8526F4D}](https://github.com/user-attachments/assets/130685ab-a435-4660-98dc-462a7124d0ee)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Galería:** ![{2B272ABD-1A7C-4D36-BA91-42758EB37E5F}](https://github.com/user-attachments/assets/a363977c-50c3-421a-863c-b679db243570)
