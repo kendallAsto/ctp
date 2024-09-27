@@ -308,6 +308,26 @@ export default function Events() {
       start: dayjs(`${year}-12-02`).toDate(),
       end: dayjs(`${year}-12-09`).toDate(),
     },
+    {
+      title: "Entrega de informes al hogar | X | XI | Segundo periodo",
+      start: dayjs(`${year}-12-12`).toDate(),
+      end: dayjs(`${year}-12-12`).toDate(),
+    },
+    {
+      title: "Finalizacion del curso lectivo | XII",
+      start: dayjs(`${year}-12-13`).toDate(),
+      end: dayjs(`${year}-12-13`).toDate(),
+    },
+    {
+      title: "Ratificación de matricula",
+      start: dayjs(`${year}-12-02`).toDate(),
+      end: dayjs(`${year}-12-03`).toDate(),
+    },
+    {
+      title: "Graduacion | XII",
+      start: dayjs(`${year}-12-16T13:00:00`).toDate(),
+      end: dayjs(`${year}-12-16`).toDate(),
+    }
 ];
 
   const EventosNocturno = [

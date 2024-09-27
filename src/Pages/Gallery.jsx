@@ -18,8 +18,8 @@ export default function Gallery() {
   ];
 
   const slidesArte = [
-    { url: "https://i.ibb.co/7VkqcKB/Arte-2.webp" },
-    { url: "https://i.ibb.co/X4wSkpM/Arte-1.webp" },
+    { url: "https://i.ibb.co/7VkqcKB/Arte-1.webp" },
+    { url: "https://i.ibb.co/X4wSkpM/Arte-2.webp" },
     { url: "https://i.ibb.co/qDmQ46D/Arte-3.webp" },
     { url: "https://i.ibb.co/z2CrhXw/Arte-4.webp" },
     { url: "https://i.ibb.co/9rzkmP2/Arte-5.webp" },
