@@ -91,11 +91,18 @@ export default function Events() {
   const year = date.getFullYear();
 
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedEventNocturno, setSelectedEventNocturno] = useState(null);
   const [informacionEvento, setInformacionEvento] = useState(false);
+  const [informacionEventoNocturno, setInformacionEventoNocturno] = useState(false);
 
-  const handleSelectEvent = (event) => {
+  const handleSelectEventDiurno = (event) => {
     setSelectedEvent(event);
     setInformacionEvento(!informacionEvento);
+  };
+
+  const handleSelectEventNocturno = (event) => {
+    setSelectedEventNocturno(event);
+    setInformacionEventoNocturno(!informacionEventoNocturno);
   };
 
   const EventosDiurno = [
@@ -365,8 +372,47 @@ export default function Events() {
             </div>
           </div>
           <i
-            onClick={handleSelectEvent}
+            onClick={handleSelectEventDiurno}
             className="fa-sharp fa-solid fa-xmark absolute right-[10%] top-[37%] cursor-pointer rounded-full bg-Atlantis px-2 py-1 text-4xl text-White md:right-[28%] md:top-[35%] md:p-2 md:text-5xl lg:px-6"
+          ></i>
+        </div>
+      )}
+
+{selectedEventNocturno && informacionEventoNocturno && (
+        <div className="absolute z-50 flex h-[100%] w-[100%] items-center justify-center bg-[rgba(0,0,0,.5)]">
+          <div className="selected-event-details flex w-[90%] flex-col justify-center gap-2 rounded-xl bg-White p-12 py-24 text-black transition-colors duration-300 dark:bg-black dark:text-White lg:w-1/2 border-Blue-Dianne border-4 dark:border-White">
+            <h1 className="text-center text-xl font-bold text-Blue-Dianne lg:text-3xl">
+              Detalles del evento
+            </h1>
+            <div className="flex gap-2">
+              <h2 className="text-xl font-bold text-Blue-Dianne lg:text-3xl">
+                Título:
+              </h2>
+              <p className="text-balance text-xl lg:text-2xl">
+                {selectedEvent.title}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-bold text-Blue-Dianne lg:text-3xl">
+                Inicio:
+              </h3>
+              <p className="text-balance text-xl lg:text-2xl">
+                {dayjs(selectedEvent.start).format("DD/MM/YYYY hh:mm")}
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <h4 className="text-xl font-bold text-Blue-Dianne lg:text-3xl">
+                Fin:
+              </h4>
+              <p className="text-balance text-xl lg:text-2xl">
+                {dayjs(selectedEvent.end).format("DD/MM/YYYY hh:mm")}
+              </p>
+            </div>
+          </div>
+          <i
+            onClick={handleSelectEventNocturno}
+            className="fa-sharp fa-solid fa-xmark absolute right-[10%] top-[37%] cursor-pointer rounded-full bg-Blue-Dianne px-2 py-1 text-4xl text-White md:right-[28%] md:top-[35%] md:p-2 md:text-5xl lg:px-6"
           ></i>
         </div>
       )}
@@ -480,7 +526,7 @@ export default function Events() {
                 );
               },
             }}
-            onSelectEvent={handleSelectEvent}
+            onSelectEvent={handleSelectEventDiurno}
             className="rounded-xl bg-Sycamore p-4 text-sm text-White lg:text-lg"
           />
         )}
@@ -518,7 +564,7 @@ export default function Events() {
                 );
               },
             }}
-            onSelectEvent={handleSelectEvent}
+            onSelectEvent={handleSelectEventNocturno}
             className="rounded-xl bg-Blue-Dianne p-4 text-White"
           />
         )}
