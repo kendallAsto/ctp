@@ -1,5 +1,9 @@
 {
+  "subarea-title": "Sub-Área",
+  "horas-totales": "Horas totales",
   "title": "Reparación de sistemas de vehículos livianos",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
   "Subarea": [
     {
       "OEEDB": "Operaciones en equipo de banco",

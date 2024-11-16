@@ -8,17 +8,20 @@ import esFlagIMG from "../Assets/Flags/es.png";
 
 export default function Nav() {
   const [estadoNav, setEstadoNav] = useState(false);
+  const [estadoDropbox, setEstadoDropbox] = useState(false);
+  const { t, i18n } = useTranslation("nav");
+  const [idiomaActual, setIdiomaActual] = useState("");
+  const [theme, setTheme] = useState(""); 
+  const Language = i18n.language;
+
+
   function manejarEstadoNav() {
     setEstadoNav(!estadoNav);
   }
   function manejarEstadoDropbox() {
     setEstadoDropbox(!estadoDropbox);
   }
-  const [estadoDropbox, setEstadoDropbox] = useState(false);
-  const { t, i18n } = useTranslation("nav");
-  const [idiomaActual, setIdiomaActual] = useState("");
-  const [theme, setTheme] = useState(""); 
-  const Language = i18n.language;
+  
 
   useEffect(() => {
     const idiomaGuardado = localStorage.getItem("idiomaActual");
@@ -31,10 +34,21 @@ export default function Nav() {
 
     if (temaGuardado) {
       setTheme(temaGuardado);
-      // Actualiza el tema en base al valor guardado (opcional)
       document.documentElement.classList.toggle('dark', temaGuardado === 'dark');
     }
   },[theme,idiomaActual,i18n]);
+
+  useEffect(() => {
+    if (estadoNav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [estadoNav]);
 
   function changeLanguage() {
     const nuevoIdioma = idiomaActual === "es" ? "en" : "es";
@@ -49,7 +63,7 @@ export default function Nav() {
     localStorage.setItem("theme", nuevoTema);
     document.documentElement.classList.toggle('dark', nuevoTema === 'dark');
   };
-  
+
 
   return (
     <>
@@ -62,7 +76,7 @@ export default function Nav() {
           <li>
             <Link
               to="/"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
               {t("Home")}
             </Link>
@@ -71,23 +85,23 @@ export default function Nav() {
           <li>
             <Link
               to="/Events"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
               {t("Events")}
             </Link>
           </li>
           <li>
             <Link
-              to="/Services"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
+              to="/Especialidades"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
-              {t("Services")}
+              {t("Especialidades")}
             </Link>
           </li>
           <li>
             <Link
               to="/Gallery"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
               {t("Gallery")}
             </Link>
@@ -95,14 +109,14 @@ export default function Nav() {
           <li onClick={manejarEstadoDropbox} className="relative">
             <Link
               to="#"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:bg-Atlantis hover:text-White lg:text-xl"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
               {t("Coordinations.title")}
             </Link>
 
             {estadoDropbox && (
               <div className="lg:w-92 absolute right-0 z-50 my-4 lg:text-xl">
-                <ul className="rounded-xl bg-Atlantis text-White">
+                <ul className="rounded-xl bg-Atlantis text-White dark:bg-Blue-Dianne">
                   <Link to="/CTechnical" className="flex cursor-pointer p-2">
                     {t("Coordinations.Technical")}
                   </Link>
@@ -116,15 +130,25 @@ export default function Nav() {
               </div>
             )}
           </li>
+          
+          <li>
+            <Link
+              to="/Contacto"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
+            >
+              {t("Contact")}
+            </Link>
+          </li>
 
           <li>
             <Link
-              to="/UP"
-              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl"
+              to="/Bolsa"
+              className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
-              {t("UP")}
+              {t("Bolsa")}
             </Link>
           </li>
+
         </ul>
 
         <div
@@ -173,7 +197,7 @@ export default function Nav() {
           <Link to="/" className="w-[40%] md:w-[20%]">
             <img src={Logo} alt="Logo del CTP Santo Domingo" />
           </Link>
-          <h1 className="text-sm md:text-lg">
+          <h1 className="text-sm text-black md:text-lg dark:text-white">
             Colegio Técnico Profesional de Santo Domingo
           </h1>
 
@@ -214,119 +238,131 @@ export default function Nav() {
           </div>
         </div>
         {estadoNav && (
-          <div className="absolute left-0 right-0 top-0 z-50 flex h-[100%] flex-col items-center bg-Atlantis px-8 py-2">
-            <div className="flex items-center justify-center text-pretty pt-10 font-Poppins transition-all duration-200">
-              <Link
-                to="/"
-                className="flex items-center justify-center gap-4"
-                onClick={manejarEstadoNav}
-              >
-                <img
-                  src={Logo}
-                  alt="Logo del CTP Santo Domingo"
-                  className="w-[20%]"
-                />
-                <h1 className="text-md text-pretty text-White md:w-1/2 md:text-xl">
-                  Colegio Técnico Profesional de Santo Domingo
-                </h1>
-              </Link>
-              <i
-                onClick={manejarEstadoNav}
-                className="fa-sharp fa-solid fa-xmark cursor-pointer text-4xl text-White"
-              ></i>
+          <section className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,.7)]">
+            <div className="relative h-full overflow-y-auto bg-white rounded-xl p-8 md:h-[100%] md:w-[80%]  dark:bg-black">
+              <div className="flex items-center justify-center text-pretty pt-10 font-Poppins transition-all duration-200">
+                <Link
+                  to="/"
+                  className="flex items-center justify-center gap-4"
+                  onClick={manejarEstadoNav}
+                >
+                  <img
+                    src={Logo}
+                    alt="Logo del CTP Santo Domingo"
+                    className="w-[20%]"
+                  />
+                  <h1 className="text-md text-black text-pretty text-White md:w-1/2 md:text-xl dark:text-white">
+                    Colegio Técnico Profesional de Santo Domingo
+                  </h1>
+                </Link>
+                <i
+                  onClick={manejarEstadoNav}
+                  className="fa-sharp fa-solid fa-xmark cursor-pointer text-4xl text-black dark:text-white"
+                ></i>
+              </div>
+              <ul className="w-[100%] items-center justify-center gap-4 pt-10 font-Poppins">
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">{t("Home")}</li>
+                </Link>
+
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/Events"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                    {t("Events")}
+                  </li>
+                </Link>
+                
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/Especialidades"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                    {t("Especialidades")}
+                  </li>
+                </Link>
+
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/Gallery"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                    {t("Gallery")}
+                  </li>
+                </Link>
+
+                <Link
+                  onClick={manejarEstadoDropbox}
+                  to="/#"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                    {t("Coordinations.title")}
+                  </li>
+                </Link>
+
+                {estadoDropbox && (
+                  <div className="">
+                    <ul className="flex flex-col text-lg text-White md:text-xl">
+                      <Link
+                        onClick={manejarEstadoNav}
+                        to="/CTechnical"
+                        className="ml-6 px-2"
+                      >
+                        <li className="m-1 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                          {t("Coordinations.Technical")}
+                        </li>
+                      </Link>
+                      <Link
+                        onClick={manejarEstadoNav}
+                        to="/CAcademic"
+                        className="ml-6 px-2"
+                      >
+                        <li className="m-1 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                          {t("Coordinations.Academic")}
+                        </li>
+                      </Link>
+                      <Link
+                        onClick={manejarEstadoNav}
+                        to="/CCompany"
+                        className="ml-6 px-2"
+                      >
+                        <li className="m-1 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">
+                          {t("Coordinations.Company")}
+                        </li>
+                      </Link>
+                    </ul>
+                  </div>
+                )}
+
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/Contacto"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">{t("Contact")}</li>
+                </Link>
+
+                <Link
+                  onClick={manejarEstadoNav}
+                  to="/Bolsa"
+                  className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
+                >
+                  <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">{t("Bolsa")}</li>
+                </Link>
+
+              </ul>
             </div>
-            <ul className="w-[100%] items-center justify-center gap-4 pt-10 font-Poppins">
-              <Link
-                onClick={manejarEstadoNav}
-                to="/"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("Home")}</li>
-              </Link>
-
-              <Link
-                onClick={manejarEstadoNav}
-                to="/Events"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Events")}
-                </li>
-              </Link>
-
-              <Link
-                onClick={manejarEstadoNav}
-                to="/Services"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Services")}
-                </li>
-              </Link>
-
-              <Link
-                onClick={manejarEstadoNav}
-                to="/Gallery"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Gallery")}
-                </li>
-              </Link>
-
-              <Link
-                onClick={manejarEstadoDropbox}
-                to="/#"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">
-                  {t("Coordinations.title")}
-                </li>
-              </Link>
-
-              {estadoDropbox && (
-                <div className="bg-Atlantis">
-                  <ul className="flex flex-col text-lg text-White md:text-xl">
-                    <Link
-                      onClick={manejarEstadoNav}
-                      to="/CTechnical"
-                      className="ml-6 px-2"
-                    >
-                      <li className="m-1 rounded-xl bg-Sycamore p-2">
-                        {t("Coordinations.Technical")}
-                      </li>
-                    </Link>
-                    <Link
-                      onClick={manejarEstadoNav}
-                      to="/CAcademic"
-                      className="ml-6 px-2"
-                    >
-                      <li className="m-1 rounded-xl bg-Sycamore p-2">
-                        {t("Coordinations.Academic")}
-                      </li>
-                    </Link>
-                    <Link
-                      onClick={manejarEstadoNav}
-                      to="/CCompany"
-                      className="ml-6 px-2"
-                    >
-                      <li className="m-1 rounded-xl bg-Sycamore p-2">
-                        {t("Coordinations.Company")}
-                      </li>
-                    </Link>
-                  </ul>
-                </div>
-              )}
-
-              <Link
-                onClick={manejarEstadoNav}
-                to="/UP"
-                className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
-              >
-                <li className="my-2 rounded-xl bg-Sycamore p-2">{t("UP")}</li>
-              </Link>
-            </ul>
-          </div>
+          </section>
+          
         )}
       </nav>
       <Outlet />

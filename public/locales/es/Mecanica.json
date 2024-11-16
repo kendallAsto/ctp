@@ -1,0 +1,68 @@
+{
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "title": "Reparación de Sistemas de Vehículos Ligeros",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Operaciones con Equipos de Banco",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Operaciones de Estructura del Vehículo",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Mecánica de Motores de Vehículos Ligeros",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Autotrónica",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 12,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Contabilidad Financiera",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      {"label": "Mecánico Automotriz"},
+      {"label": "Mantenimiento de Vehículos"},
+      {"label": "Inspecciones Técnicas"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Talleres Automotrices"},
+      {"label": "Suzuki"},
+      {"label": "Grupo Purdy"},
+      {"label": "Grupo Q"},
+      {"label": "Veinsa"},
+      {"label": "Dekra y muchas más"}
+    ]
+  }
+  

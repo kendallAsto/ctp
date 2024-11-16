@@ -1,0 +1,64 @@
+{
+    "subarea-title": "Sub-área",
+    "horas-totales": "Horas Totales",
+    "title": "Gestión de Producción",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Gestión de Operaciones",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Planificación y Control de Producción",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Mantenimiento y Seguridad en la Producción",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Inglés Orientado a la Gestión de Producción",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      {"label": "Asistente de Gestión"},
+      {"label": "Control de Calidad"},
+      {"label": "Procesos Industriales"},
+      {"label": "Inspector de Calidad"},
+      {"label": "Gerente de Calidad"},
+      {"label": "Líneas de Producción"},
+      {"label": "Asistente de Calidad"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Confruit"},
+      {"label": "Coopesa"},
+      {"label": "Etipress"},
+      {"label": "Amazon"},
+      {"label": "Walmart"},
+      {"label": "Bimbo"},
+      {"label": "Empresas Ortopédicas"}
+    ]
+  }

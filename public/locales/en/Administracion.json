@@ -1,0 +1,87 @@
+{
+    "title": "Administration of Customs Operations",
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Merceology and Customs Procedures",
+        "Horas": {
+          "Decimo": 6,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Customs Business Management",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 6,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Tariff Classification",
+        "Horas": {
+          "Decimo": 10,
+          "Undecimo": 8,
+          "Duodecimo": 10
+        }
+      },
+      {
+        "label": "Customs Legal Regulations",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "International Trade Strategies",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 6
+        }
+      },
+      {
+        "label": "Free Trade Agreements",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 6
+        }
+      },
+      {
+        "label": "English for Communication",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 2,
+          "Duodecimo": 2
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Customs Commercial Executive" },
+      { "label": "Operations Specialist" },
+      { "label": "Customer Service Executive" },
+      { "label": "Transactional Logistics Analyst for Import/Export" },
+      { "label": "Accounts Receivable Accounting Assistant" },
+      { "label": "Export Sales Executive" },
+      { "label": "Logistics Services Advisor" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Global Servicios Ruiz" },
+      { "label": "DOS MIL DC ASESORES ADUANEROS S.A" },
+      { "label": "KPMG Costa Rica" },
+      { "label": "Grupo Rojas Amador" },
+      { "label": "Aduanera Tic" }
+    ]
+  }
+  

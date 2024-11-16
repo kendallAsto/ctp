@@ -1,23 +1,40 @@
-import React from "react";
-import DyM from "../../../JSON/Diurno/DyM.json";
+import React, { useEffect } from "react";
+import DyM from "../../../JSON/Diurno/DyM_es.json";
+import { useTranslation } from "react-i18next";
 
 export default function DyMModal({ estado, cambiarEstado }) {
+  const { t } = useTranslation("DyM");
+
+  // Bloquea el scroll del fondo cuando el modal está abierto
+  useEffect(() => {
+    if (estado) {
+      document.body.style.overflow = 'hidden'; // Bloquear el scroll
+    } else {
+      document.body.style.overflow = 'auto'; // Restaurar el scroll
+    }
+
+    // Limpiar al desmontar
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [estado]);
+
   return (
     <>
       {estado && (
-        <section className="absolute left-0 right-0 h-[200vh] w-[100%] rounded-xl bg-[rgba(0,0,0,.5)] md:h-[180vh] font-Poppins">
-          <div className="text-md absolute bottom-0 left-0 right-0 top-0 m-auto h-[180vh] w-[90vw] rounded-xl bg-White p-12 dark:border-2 dark:bg-black md:h-[150vh] md:w-[90vw] md:text-2xl">
+        <section className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,.7)]">
+          <div className="relative w-[98%] h-[98%] py-2 overflow-y-auto bg-white rounded-xl p-8 md:h-[80%] md:w-[80%] dark:border-2 dark:border-White dark:bg-black">
             <h1 className="p-2 text-center text-3xl font-bold text-Sycamore md:p-4 md:text-4xl">
-              {DyM.title}
+              {t("title")}
             </h1>
-            <div className="flex grid-cols-2 flex-col items-center justify-center md:text-lg lg:grid">
-              <div>
+            <section className="m-auto my-12 flex w-[100%] flex-col justify-center gap-4 text-lg lg:w-[100%] lg:flex-row lg:text-xl">
+              <div className="overflow-hidden rounded-xl">
                 <table className="overflow-hidden rounded-xl md:m-4">
                   <tr className="bg-Atlantis">
                     <td className="text-center text-White md:px-12 md:py-2">
-                      Sub-Área
+                      {t("subarea-title")}
                     </td>
-                    <td className="px-6 py-1 text-center text-White md:px-12 md:py-2">
+                    <td className="text-center text-White md:px-12 md:py-2">
                       X
                     </td>
                     <td className="text-center text-White md:px-12 md:py-2">
@@ -30,73 +47,70 @@ export default function DyMModal({ estado, cambiarEstado }) {
                   <tbody className="text-center">
                     {DyM.Subarea.map((subarea, index) => (
                       <tr key={index}>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
-                          {subarea.MAAPC ||
-                            subarea.TDPYM ||
-                            subarea.DyDAyU ||
-                            subarea.EeIAADyMPE ||
-                            subarea.EOTAP}
+                        <td className="border-2 border-white bg-Sycamore px-2 py-1 text-White dark:border-black md:p-2 md:px-8">
+                          {t(`Subarea.${index}.label`)}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-2 py-1 text-White dark:border-black md:p-2 md:px-8">
                           {subarea.Horas.Decimo}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-2 py-1 text-White dark:border-black md:p-2 md:px-8">
                           {subarea.Horas.Undecimo}
                         </td>
-                        <td className="border-2 border-white bg-Sycamore px-6 py-1 text-White dark:border-black md:p-2">
+                        <td className="border-2 border-white bg-Sycamore px-2 py-1 text-White dark:border-black md:p-2 md:px-8">
                           {subarea.Horas.Duodecimo}
                         </td>
                       </tr>
                     ))}
                   </tbody>
-
                   <tr className="bg-Atlantis text-center text-white">
-                    <td className="md:px-12 md:py-2">Horas totales</td>
-                    <td className="md:px-12 md:py-2">{DyM.Total.Decimo} </td>
-                    <td className="md:px-12 md:py-2">{DyM.Total.Undecimo} </td>
-                    <td className="md:px-12 md:py-2">{DyM.Total.Duodecimo} </td>
+                    <td className="md:px-12 md:py-2">{t("horas-totales")}</td>
+                    <td className="md:px-12 md:py-2">
+                      {DyM.Total.Decimo}{" "}
+                    </td>
+                    <td className="md:px-12 md:py-2">
+                      {DyM.Total.Undecimo}{" "}
+                    </td>
+                    <td className="md:px-12 md:py-2">
+                      {DyM.Total.Duodecimo}{" "}
+                    </td>
                   </tr>
                 </table>
               </div>
-
-              <section className="flex flex-col gap-8 md:flex-row md:justify-evenly">
-                <section>
-                  <h2 className="text-2xl font-bold text-Atlantis">
-                    Posibles Puestos de Trabajo
-                  </h2>
-                  <ul>
-                    {DyM.posiblesPuestos.map((puesto, index) => (
-                      <li
-                        className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
-                        key={index}
-                      >
-                        {puesto}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-
-                <section>
-                  <h2 className="text-2xl font-bold text-Atlantis">
-                    Posibles Empresas
-                  </h2>
-                  <ul>
-                    {DyM.posiblesEmpresas.map((empresa, index) => (
-                      <li
-                        className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
-                        key={index}
-                      >
-                        {empresa}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              </section>
+              <div className="overflow-hidden rounded-xl">
+                <h2 className="text-2xl font-bold text-Atlantis">
+                  {t("puestos-title")}
+                </h2>
+                <ul>
+                  {DyM.posiblesPuestos.map((puesto, index) => (
+                    <li
+                      className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
+                      key={index}
+                    >
+                      {t(`posiblesPuestos.${index}.label`)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="overflow-hidden rounded-xl">
+                <h2 className="text-2xl font-bold text-Atlantis">
+                  {t("empresas-title")}
+                </h2>
+                <ul>
+                  {DyM.posiblesEmpresas.map((empresa, index) => (
+                    <li
+                      className="my-4 rounded-xl bg-Atlantis px-6 py-1 text-white md:p-2"
+                      key={index}
+                    >
+                      {t(`posiblesEmpresas.${index}.label`)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <i
                 onClick={() => cambiarEstado(false)}
-                class="fa-sharp fa-solid fa-xmark absolute right-1 top-1 cursor-pointer rounded-full px-6 py-1 text-4xl hover:bg-Atlantis hover:text-White md:right-12 md:top-4 md:p-2 md:text-5xl"
+                className="fa-sharp fa-solid fa-xmark absolute right-1 top-1 cursor-pointer rounded-full px-6 py-1 text-4xl hover:bg-Atlantis hover:text-White md:right-12 md:top-4 md:p-2 md:text-5xl dark:text-white"
               ></i>
-            </div>
+            </section>
           </div>
         </section>
       )}

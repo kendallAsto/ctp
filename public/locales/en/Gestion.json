@@ -1,0 +1,65 @@
+{
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "title": "Production Management",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Operations Management",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Production Planning and Control",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Maintenance and Safety in Production",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "English Oriented to Management Production",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      {"label": "Management Assistant"},
+      {"label": "Quality Control"},
+      {"label": "Industrial Processes"},
+      {"label": "Quality Inspector"},
+      {"label": "Quality Manager"},
+      {"label": "Production Lines"},
+      {"label": "Quality Assistant"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Confruit"},
+      {"label":"Coopesa"},
+      {"label": "Etipress"},
+      {"label": "Amazon"},
+      {"label": "Walmart"},
+      {"label": "Bimbo"},
+      {"label": "Orthopedic Companies"}
+    ]
+  }
+  

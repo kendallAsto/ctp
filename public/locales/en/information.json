@@ -96,6 +96,38 @@
       "Delete": "Delete",
       "Edit": "Edit",
       "Add": "Add"
+    },
+
+    "Danger": {
+    "title": "About Our Pet",
+    "name": "Danger",
+    "p1": "In 2017, a staff member from the Santo Domingo Technical High School in Heredia noticed a friendly dog following him on his way to work. Instead of turning the dog away, he brought him to the school, where he has remained ever since as part of the community. The principal welcomed this new addition, who was named 'Danger' as the dog seemed to have chosen the school as his home.",
+    "p2": "Since his arrival, Danger has played an important role at the school: he accompanies the cleaning staff in the mornings and watches over the entrance alongside the security guard in the afternoons. His presence has fostered a sense of empathy and responsibility, and he’s so beloved that he even has his own house, bed, food, and an Instagram account where he shares his daily life at the school.",
+
+    "p3": "Although it’s believed that Danger may have suffered mistreatment in the past, the love and care he receives from the entire school community, from students to teachers, has given him a fresh start."
+    
+    },
+
+    "Services":{
+      "title": "Our Services.",
+      "title2": "Services.",
+      "title3": "Resources.",
+      "s1": "Student dining room.",
+      "s2": "Transportation service.",
+      "s3": "Guidance service.",
+      "s4": "Student scholarships.",
+      "s5": "Job placement.",
+      "s6": "Internships and supervised practices in companies according to the specialty.",
+      "r1": "Excellent infrastructure.",
+      "r2": "Gymnasium.",
+      "r3": "Large green areas.",
+      "r4": "Modern equipment.",
+      "r5": "Classrooms with interactive whiteboards and modern TV screens.",
+      "r6": "Productive units such as automotive workshop, digital design laboratories, and production and printing workshop.",
+      "r7": "Highly qualified staff.",
+      "r8": "100% in high school exams.",
+      "r9": "100% in standardized tests.",
+      "r10": "Technical and academic English."
     }
   }
 

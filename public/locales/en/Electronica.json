@@ -1,0 +1,148 @@
+{
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "title": "Telecommunications Electronics",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Information technologies applied to mobile application development",
+        "Horas": {
+          "Decimo": 160,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Entrepreneurship and innovation applied to mobile application development",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 160,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Mobile application development and databases",
+        "Horas": {
+          "Decimo": 320,
+          "Undecimo": 320,
+          "Duodecimo": 300
+        }
+      },
+      {
+        "label": "Support and security of mobile applications",
+        "Horas": {
+          "Decimo": 320,
+          "Undecimo": 320,
+          "Duodecimo": 200
+        }
+      },
+      {
+        "label": "English oriented to application development",
+        "Horas": {
+          "Decimo": 160,
+          "Undecimo": 160,
+          "Duodecimo": 100
+        }
+      },
+      {
+        "label": "Information systems for electronics",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Technical drawing",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 2,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentals of electronics",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentals of electricity",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Linear circuits",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Digital electronics I",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Telecommunications",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Linear circuits",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "English for communication",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 2,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 960,
+      "Undecimo": 960,
+      "Duodecimo": 600
+    },
+    "posiblesPuestos": [
+      {"label": "Software Development Technician"},
+      {"label": "Programmer"},
+      {"label": "Monitoring Operator"},
+      {"label": "Computer Maintenance Technician"},
+      {"label": "Mobile Application Developer"},
+      {"label": "Electrician in telecommunications"},
+      {"label": "Electronics Technician"},
+      {"label": "Technician in repair of electrical appliances and wiring"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Private companies"},
+      {"label": "Public companies"},
+      {"label": "ICE and Subcontractors"},
+      {"label": "Compañía Fuerza y Luz"},
+      {"label": "Electronics"},
+      {"label": "Liberty"},
+      {"label": "Claro"},
+      {"label": "Kolbi"},
+      {"label": "Tigo"}
+    ]
+  }
+  

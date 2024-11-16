@@ -1,0 +1,84 @@
+{
+    "title": "Network and Operating Systems Configuration and Support",
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Information Technology Applied to Network and Operating Systems Configuration and Support",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentals of Programming",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Administration and Support for Computers",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Entrepreneurship and Innovation Applied to Network and Operating Systems Configuration and Support",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "Network Configuration and Support",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Information Technology Support",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "English Oriented to Network Configuration and Operating Systems",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Senior Network Operations Support Consultant" },
+      { "label": "Systems Support Specialist in Technical Integration" },
+      { "label": "Network Support Technician" },
+      { "label": "Technical Support Specialist" },
+      { "label": "Support Technician" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "SIRTEC Costa Rica" },
+      { "label": "Nano Sistemas Costa Rica" },
+      { "label": "SG Solutions" },
+      { "label": "Liberty" }
+    ]
+  }
+  

@@ -1,0 +1,68 @@
+{
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "title": "Repair of Light Vehicle Systems",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Operations with Bench Equipment",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Operations of Vehicle Structure",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Mechanics of Light Vehicle Engines",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Autotronics",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 12,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Financial Accounting",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      {"label": "Automotive Mechanic"},
+      {"label": "Car Maintenance"},
+      {"label": "Technical Inspections"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Automotive Workshops"},
+      {"label": "Suzuki"},
+      {"label": "Grupo Purdy"},
+      {"label": "Grupo Q"},
+      {"label": "Veinsa"},
+      {"label": "Dekra and many more"}
+    ]
+  }
+  

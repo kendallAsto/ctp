@@ -1,0 +1,19 @@
+{
+    "Contact": {
+        "title": "Atendemos tus consultas",
+        "msj": "¡Hola! ¿En qué puedo ayudarte? Selecciona una opción de abajo.",
+        "op1": "Horario",
+        "op2": "Admisión/Modalidad Diurna",
+        "op3": "¿A partir de qué grado académico puedo ingresar?",
+        "op4": "Servicio de transporte",
+        "op5": "Otro",
+        "op6": "Admisión/Modalidad Nocturna",
+        "followUp": "¡Gracias por contactarnos! Estamos para servirle.",
+        "response1": "Nuestro horario es de 7:00 a. m. a 4:30 p. m. de lunes a viernes.",
+        "response2": "Las admisiones están abiertas una vez al año. Para más detalles visita el siguiente enlace: [este enlace](https://example.com/admision).",
+        "response3": "Aceptamos estudiantes a partir de décimo año (necesario tener el título de Conclusión de estudios de la educación general básica.",
+        "response4": "Asociados con BeeBus, empresa que ofrece el transporte de los estudiantes, para consultas entra al siguiente enlace: [mapa de rutas](https://example.com/rutas).",
+        "response5": "Las admisiones están abiertas una vez al año. Para más detalles visita el siguiente enlace: [este enlace](https://example.com/admision).",
+        "default": "No puedo suministrar esta respuesta, da click en 'otro'"
+    }
+}

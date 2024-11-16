@@ -1,0 +1,66 @@
+{
+  "subarea-title": "Sub-Area",
+  "horas-totales": "Total Hours",
+  "title": "Mobile Application Development",
+  "puestos-title": "Possible Positions",
+  "empresas-title": "Possible Companies",
+  "Subarea": [
+    {
+      "label": "Information technologies applied to mobile application development",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Entrepreneurship and innovation applied to mobile application development",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 160,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Mobile application development and databases",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 300
+      }
+    },
+    {
+      "label": "Support and security of mobile applications",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 200
+      }
+    },
+    {
+      "label": "English oriented to application development",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": 160,
+        "Duodecimo": 100
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 960,
+    "Undecimo": 960,
+    "Duodecimo": 600
+  },
+  "posiblesPuestos": [
+    {"label":"Software Development Technician"},
+    {"label":"Programmer"},
+    {"label":"Monitoring Operator"},
+    {"label":"Computer Maintenance Technician"},
+    {"label":"Mobile Application Developer"}
+    
+  ],
+  "posiblesEmpresas": [
+    {"label":"Private companies"}, 
+    {"label":"Public companies"}
+  ]
+}

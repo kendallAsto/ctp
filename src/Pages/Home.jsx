@@ -2,40 +2,12 @@ import { useTranslation } from "react-i18next";
 import { Suspense, useState } from "react";
 import Informacion from "../Components/Informacion";
 import Danger from "../Assets/IMGS/Danger.webp";
-import Contact from "../Components/contact";
 import Map from "../Components/Map";
 import Video from "../Assets/Videos/videoCTP.webm";
-import ContabilidadModal from "../Components/Modals/Diurno/ContabilidadModal";
-import DesarrolloModal from "../Components/Modals/Diurno/DesarrolloModal";
-import DisenoModal from "../Components/Modals/Diurno/DisenoModal";
-import EjecutivoModal from "../Components/Modals/Diurno/EjecutivoModal";
-import ElectronicaModal from "../Components/Modals/Diurno/Electronica";
-import GestionModal from "../Components/Modals/Diurno/GestionModal";
-import MecanicaModal from "../Components/Modals/Diurno/Mecanica";
-import EjecutivoModalN from "../Components/Modals/Nocturno/EjecutivoModalN.jsx";
-import CySModalN from "../Components/Modals/Nocturno/CySModalN.jsx";
-import ContabilidadModalN from "../Components/Modals/Nocturno/ContabilidadModalN.jsx";
-import AdministracionModal from "../Components/Modals/Nocturno/AdministracionModalN.jsx";
-import MecanicaModalN from "../Components/Modals/Nocturno/MecanicaModalN.jsx";
 
-import DyMModal from "../Components/Modals/Diurno/DyMModal.jsx";
 function Home() {
   const { t } = useTranslation("information");
-
-  const [estadoModal, cambiarEstadoModal1] = useState(false);
-  const [estadoModal2, cambiarEstadoModal2] = useState(false);
-  const [estadoModal3, cambiarEstadoModal3] = useState(false);
-  const [estadoModal4, cambiarEstadoModal4] = useState(false);
-  const [estadoModal5, cambiarEstadoModal5] = useState(false);
-  const [estadoModal6, cambiarEstadoModal6] = useState(false);
-  const [estadoModal7, cambiarEstadoModal7] = useState(false);
-  const [estadoModal8, cambiarEstadoModal8] = useState(false);
-  const [estadoModal9, cambiarEstadoModal9] = useState(false);
-  const [estadoModal10, cambiarEstadoModal10] = useState(false);
-  const [estadoModal11, cambiarEstadoModal11] = useState(false);
-  const [estadoModal12, cambiarEstadoModal12] = useState(false);
-  const [estadoModal13, cambiarEstadoModal13] = useState(false);
-
+  
   return (
     <Suspense fallback="Cargando informacion">
       <div className="relative font-Lato text-black transition-all duration-500 dark:bg-black dark:text-White">
@@ -43,6 +15,8 @@ function Home() {
           <video
             src={Video}
             autoPlay
+            muted
+            loop
             controls
             className="mb-24 rounded-xl"
           ></video>
@@ -61,31 +35,31 @@ function Home() {
             extra={
               <section>
                 <div className="mb-4 grid gap-4 md:grid-cols-3">
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Honesty")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Respect")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Commitment")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Responsability")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Trust")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.Solidarity")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.FACT")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.TW")}
                   </p>
-                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White">
+                  <p className="my-2 shadow-md dark:shadow-White shadow-black flex items-center justify-center rounded-lg bg-Atlantis p-2 text-2xl text-White dark:bg-Blue-Dianne">
                     {t("Valores.listValores.DAE")}
                   </p>
                 </div>
@@ -103,273 +77,72 @@ function Home() {
               })}
             />
           </section>
+          
+          <Informacion
+            title={t("Services.title")}
+            extra={
+            <section className="m-auto my-12 flex flex-col justify-center gap-4 text-lg lg:w-[100%] lg:flex-row lg:text-xl">
+              <div className="overflow-hidden rounded-xl">
+                <h2 className="bg-Sycamore p-2 text-center text-White dark:bg-gray-800">
+                  {t("Services.title2")}
+                </h2>
+                <ul className="list-decimal text-pretty bg-Atlantis text-White text-center justify-center dark:bg-Blue-Dianne">
+                  
+                  <li className="py-5 p-2">{t("Services.s1")}</li>
+                  <li className="py-5 p-2">{t("Services.s2")}</li>
+                  <li className="py-5 p-2">{t("Services.s3")}</li>
+                  <li className="py-5 p-2">{t("Services.s4")}</li>
+                  <li className="py-5 p-2">{t("Services.s5")}</li>
+                  <li className="py-5 p-2">{t("Services.s6")}</li>
+                  
+                </ul>
+              </div>
+  
+              <div className="overflow-hidden rounded-xl">
+                <h2 className="bg-Sycamore text-Sycamore p-2 text-center text-White dark:bg-gray-800">
+                  {t("Services.title3")}
+                </h2>
+                <ul className="list-decimal text-pretty bg-Atlantis text-White text-center justify-center dark:bg-Blue-Dianne">
+                  <li className="p-2">{t("Services.r1")}</li>
+                  <li className="p-2">{t("Services.r2")}</li>
+                  <li className="p-2">{t("Services.r3")}</li>
+                  <li className="p-2">{t("Services.r4")}</li>
+                  <li className="p-2">{t("Services.r5")}</li>
+                  <li className="p-2">{t("Services.r6")}</li>
+                  <li className="p-2">{t("Services.r7")}</li>
+                  <li className="p-2">{t("Services.r8")}</li>
+                  <li className="p-2">{t("Services.r9")}</li>
+                  <li className="p-2">{t("Services.r10")}</li>
+                </ul>
+              </div>
+            </section>}
+          />
 
           <Informacion
-            title={t("EO.title")}
-            body={t("EO.body", {
-              CTPName: "Colegio Técnico Profesional de Santo Domingo",
-            })}
+            title={
+              t("Danger.title")
+            }
             extra={
-              <div>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <section id="Especialidades-Diurno">
-                    <div className="flex justify-center">
-                      <h2 className="cursor-pointer rounded-full bg-Fuscous p-2 text-center text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne lg:w-1/3">
-                        {t("EO.timeDiurno")}
-                      </h2>
-                    </div>
-                    <ul className="flex flex-col gap-1">
-                      <p
-                        onClick={() => cambiarEstadoModal1(!estadoModal)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.DP")}
-                      </p>
-                      <DisenoModal
-                        estado={estadoModal}
-                        cambiarEstado={cambiarEstadoModal1}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal2(!estadoModal2)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.ECYSA")}
-                      </p>
-                      <EjecutivoModal
-                        estado={estadoModal2}
-                        cambiarEstado={cambiarEstadoModal2}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal3(!estadoModal3)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.CyF")}
-                      </p>
-                      <ContabilidadModal
-                        estado={estadoModal3}
-                        cambiarEstado={cambiarEstadoModal3}
-                      />
-                      <p
-                        onClick={() => cambiarEstadoModal4(!estadoModal4)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.DDAM")}
-                      </p>
-                      <DesarrolloModal
-                        estado={estadoModal4}
-                        cambiarEstado={cambiarEstadoModal4}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal5(!estadoModal5)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.DyMDE")}
-                      </p>
-                      <DyMModal
-                        estado={estadoModal5}
-                        cambiarEstado={cambiarEstadoModal5}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal6(!estadoModal6)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.EET")}
-                      </p>
-                      <ElectronicaModal
-                        estado={estadoModal6}
-                        cambiarEstado={cambiarEstadoModal6}
-                      />
-                      <p
-                        onClick={() => cambiarEstadoModal7(!estadoModal7)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.GDLP")}
-                      </p>
-                      <GestionModal
-                        estado={estadoModal7}
-                        cambiarEstado={cambiarEstadoModal7}
-                      />
-                      <p
-                        onClick={() => cambiarEstadoModal8(!estadoModal8)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Atlantis p-2 text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne"
-                      >
-                        {t("EO.specialities.RDLVL")}
-                      </p>
-                      <MecanicaModal
-                        estado={estadoModal8}
-                        cambiarEstado={cambiarEstadoModal8}
-                      />
-                    </ul>
-                  </section>
-
-                  <section className="Especialidades-Nocturno">
-                    <div className="flex flex-col items-center justify-center">
-                      <h2 className="cursor-pointer rounded-full bg-Fuscous p-2 text-center text-2xl text-White transition-colors duration-200 hover:bg-Blue-Dianne lg:w-1/3">
-                        {t("EO.timeNocturna")}
-                      </h2>
-                      <div className="flex gap-8 pt-2">
-                        <p className="font-bold text-Fuscous">
-                          {t("EO.Requirements.title")}
-                        </p>
-                        <div>
-                          <ul>
-                            <li className="list-disc text-gray-500">
-                              {t("EO.Requirements.1")}
-                            </li>
-                            <li className="list-disc text-gray-500">
-                              {t("EO.Requirements.2")}
-                            </li>
-                            <li className="list-disc text-gray-500">
-                              {t("EO.Requirements.3")}
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="flex flex-col gap-1">
-                      <p
-                        onClick={() => cambiarEstadoModal9(!estadoModal9)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
-                      >
-                        {t("EO.specialities-2.ECYSA")}
-                      </p>
-                      <EjecutivoModalN
-                        estado={estadoModal9}
-                        cambiarEstado={cambiarEstadoModal9}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal10(!estadoModal10)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
-                      >
-                        {t("EO.specialities-2.CySDRySO")}
-                      </p>
-                      <CySModalN
-                        estado={estadoModal10}
-                        cambiarEstado={cambiarEstadoModal10}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal11(!estadoModal11)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
-                      >
-                        {t("EO.specialities-2.Contabilidad")}
-                      </p>
-                      <ContabilidadModalN
-                        estado={estadoModal11}
-                        cambiarEstado={cambiarEstadoModal11}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal12(!estadoModal12)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
-                      >
-                        {t("EO.specialities-2.ADLOA")}
-                      </p>
-                      <AdministracionModal
-                        estado={estadoModal12}
-                        cambiarEstado={cambiarEstadoModal12}
-                      />
-
-                      <p
-                        onClick={() => cambiarEstadoModal13(!estadoModal13)}
-                        className="my-2 shadow-md dark:shadow-White shadow-black cursor-pointer rounded-lg bg-Blue-Dianne p-2 text-2xl text-White transition-colors duration-200 hover:bg-Atlantis"
-                      >
-                        {t("EO.specialities-2.RDLVL")}
-                      </p>
-                      <MecanicaModalN
-                        estado={estadoModal13}
-                        cambiarEstado={cambiarEstadoModal13}
-                      />
-                    </ul>
-                  </section>
+              <section className="m-auto my-12 flex w-[100%] flex-col justify-center gap-4 text-lg lg:w-[100%] lg:flex-row lg:text-xl">
+                <div className="m-auto overflow-hidden rounded-xl">
+                    <img
+                      src={Danger}
+                      alt="Foto del perro de la institucion"
+                      className="m-auto rounded-xl w-full border-Atlantis border-2 dark:border-Blue-Dianne"
+                    />
                 </div>
-              </div>
+
+                <div className="m-auto overflow-hidden rounded-xl bg-Sycamore font-Lato text-White text-center justify-center dark:bg-Blue-Dianne">
+                  <h1 className="m-auto text-White font-Poppins text-3xl font-bold lg:text-4xl">
+                      {t("Danger.name")}
+                  </h1>  
+                  <p className="m-auto mb-3 text-pretty text-lg md:text-2xl">{t("Danger.p1")}</p>
+                  <p className="m-auto mb-3 text-pretty text-lg md:text-2xl">{t("Danger.p2")}</p>
+                </div> 
+            </section>
             }
           />
 
-          <section
-            id="Contact"
-            className="flex flex-col-reverse gap-4 md:grid md:grid-cols-2"
-          >
-            <div>
-              <h1 className="mb-8 font-Poppins text-3xl font-bold text-Sycamore md:text-4xl">
-                {t("Contact.title")}
-              </h1>
-              <form action="https://formsubmit.co/ctpsantodomingoconsultas@gmail.com" method="POST" className="flex flex-col flex-wrap gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder={t("Contact.name")}
-                  className="my-2 shadow-md dark:shadow-White shadow-black rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  placeholder={t("Contact.mail")}
-                  className="my-2 shadow-md dark:shadow-White shadow-black  rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
-                />
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder={t("Contact.subject")}
-                  className="my-2 shadow-md dark:shadow-White shadow-black rounded-lg bg-Blue-Dianne p-3 text-xl text-white"
-                />
-                <textarea
-                  name="message"
-                  id="Message"
-                  placeholder={t("Contact.message")}
-                  className="my-2 shadow-md dark:shadow-White shadow-black -[250px] rounded-lg bg-Blue-Dianne p-3 text-xl text-white md:h-[160px] lg:h-[250px]"
-                ></textarea>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="ctp-santodomingo-vercel.app"
-                />
-                <input type="hidden" name="_captcha" value="false" />
-                <input
-                  type="hidden"
-                  name="_autoresponse"
-                  value="Hola!!!, dentro de poco te responderemos,gracias por su mensaje"
-                />
-                <div className="m-auto flex w-1/3 items-center justify-center gap-3 rounded-xl bg-Atlantis p-3 text-xl text-White">
-                  <i class="fa-solid fa-paper-plane text-White"></i>
-                  <button type="submit" value="Enviar">
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            <img
-              src={Danger}
-              alt="Foto del perro de la institucion"
-              className="m-auto rounded-xl md:w-[80%] lg:w-[70%]"
-            />
-          </section>
-
-          <section className="my-24 flex flex-col gap-4">
-            <Contact
-              clase="fa-solid fa-phone text-3xl"
-              body="(+506) 2244-3190"
-            />
-            <Contact
-              clase="fa-solid fa-envelope text-3xl"
-              body="ctp.santodomingo@mep.go.cr"
-            />
-            <Contact
-              clase="fa-solid fa-envelope text-3xl"
-              body="ctpsantodomingoconsultas@gmail.com"
-            />
-            <Contact
-              clase="fa-solid fa-map text-3xl"
-              body="300 metros Oeste y 25 metros Sur de la Iglesia Católica de Santa Rosa de Santo Domingo, Heredia , Santo Domingo, Costa Rica"
-            />
-          </section>
           <section className="mb-12">
             <Map />
           </section>

@@ -1,0 +1,56 @@
+{
+  "subarea-title": "Subarea",
+  "horas-totales": "Total Hours",
+  "title": "Commercial Executive and Customer Service",
+  "puestos-title": "Possible Positions",
+  "empresas-title": "Possible Companies",
+  "Subarea": [
+    {
+      "label": "Commercial Management and Communication for Customer Service",
+      "Hours": {
+        "Decimo": 8,
+        "Undecimo": 4,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Digital Skills for Information Management and E-Commerce",
+      "Hours": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Entrepreneurship and Innovation Applied to Commercial Executives and Customer Service",
+      "Hours": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "English for Commercial Executives and Customer Service",
+      "Hours": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    {"label": "Management Assistant"},
+    {"label": "Secretary"},
+    {"label": "Administrative Assistant"},
+    {"label": "Customer Service Executive"}
+  ],
+  "posiblesEmpresas": [
+    {"label": "Private Companies"},
+    {"label": "Public Companies"}
+  ]
+}

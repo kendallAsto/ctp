@@ -1,0 +1,87 @@
+{
+    "title": "Administración de Operaciones Aduaneras",
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Mercología y Procedimientos Aduaneros",
+        "Horas": {
+          "Decimo": 6,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Gestión Comercial Aduanera",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 6,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Clasificación Arancelaria",
+        "Horas": {
+          "Decimo": 10,
+          "Undecimo": 8,
+          "Duodecimo": 10
+        }
+      },
+      {
+        "label": "Regulaciones Legales Aduaneras",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "Estrategias de Comercio Internacional",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 6
+        }
+      },
+      {
+        "label": "Acuerdos de Libre Comercio",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 6
+        }
+      },
+      {
+        "label": "Inglés para la Comunicación",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 2,
+          "Duodecimo": 2
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Ejecutivo Comercial Aduanero" },
+      { "label": "Especialista en Operaciones" },
+      { "label": "Ejecutivo de Servicio al Cliente" },
+      { "label": "Analista Logístico Transaccional de Importación/Exportación" },
+      { "label": "Asistente de Contabilidad de Cuentas por Cobrar" },
+      { "label": "Ejecutivo de Ventas de Exportación" },
+      { "label": "Asesor de Servicios Logísticos" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Global Servicios Ruiz" },
+      { "label": "DOS MIL DC ASESORES ADUANEROS S.A" },
+      { "label": "KPMG Costa Rica" },
+      { "label": "Grupo Rojas Amador" },
+      { "label": "Aduanera Tic" }
+    ]
+  }
+  

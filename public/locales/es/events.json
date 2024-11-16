@@ -1,0 +1,27 @@
+{
+    "calendar": {
+      "title": "Calendario",
+      "addEvent": "Agregar Evento",
+      "eventTitle": "Título del evento:",
+      "startDate": "Fecha de inicio del evento (YYYY-MM-DD HH:mm):",
+      "endDate": "Fecha de fin del evento (YYYY-MM-DD HH:mm):",
+      "invalidStart": "Fecha de inicio inválida.",
+      "invalidEnd": "Fecha de fin inválida o anterior a la fecha de inicio.",
+      "eventDetails": "Detalles del Evento",
+      "start": "Inicio:",
+      "end": "Fin:",
+      "editEvent": "Editar Evento",
+      "deleteEvent": "Eliminar Evento",
+      "close": "Cerrar",
+      "errorStored": "Error al analizar eventos almacenados",
+      "requiredTitle": "El título es obligatorio.",
+      "newTitle": "Nuevo título:",
+      "next": "Siguiente",
+      "previous": "Anterior",
+      "today": "Hoy",
+      "month": "Mes",
+      "week": "Semana",
+      "day": "Día"
+    }
+  }
+  

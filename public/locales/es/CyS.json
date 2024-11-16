@@ -1,0 +1,84 @@
+{
+    "title": "Configuración y Soporte de Redes y Sistemas Operativos",
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Tecnologías de la Información Aplicadas a la Configuración y Soporte de Redes y Sistemas Operativos",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentos de Programación",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Administración y Soporte de Computadoras",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Emprendimiento e Innovación Aplicados a la Configuración y Soporte de Redes y Sistemas Operativos",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "Configuración y Soporte de Redes",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Soporte de Tecnologías de la Información",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Inglés Orientado a la Configuración de Redes y Sistemas Operativos",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Consultor Senior de Soporte en Operaciones de Redes" },
+      { "label": "Especialista en Soporte de Sistemas para Integración Técnica" },
+      { "label": "Técnico de Soporte de Redes" },
+      { "label": "Especialista en Soporte Técnico" },
+      { "label": "Técnico de Soporte" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "SIRTEC Costa Rica" },
+      { "label": "Nano Sistemas Costa Rica" },
+      { "label": "SG Solutions" },
+      { "label": "Liberty" }
+    ]
+  }
+  

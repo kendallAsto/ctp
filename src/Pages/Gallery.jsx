@@ -3,6 +3,16 @@ import { Suspense } from "react";
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import fotoDanger1 from "../Assets/IMGS/Danger/Danger-1.webp";
+import fotoDanger2 from "../Assets/IMGS/Danger/Danger-2.webp";
+import fotoDanger3 from "../Assets/IMGS/Danger/Danger-3.webp";
+import fotoDanger4 from "../Assets/IMGS/Danger/Danger-4.webp";
+import fotoDanger5 from "../Assets/IMGS/Danger/Danger-5.webp";
+import fotoDanger6 from "../Assets/IMGS/Danger/Danger-6.webp";
+import fotoDanger7 from "../Assets/IMGS/Danger/Danger-7.webp";
+import fotoDanger8 from "../Assets/IMGS/Danger/Danger-8.webp";
+import fotoDanger9 from "../Assets/IMGS/Danger/Danger-9.webp";
+import fotoDanger10 from "../Assets/IMGS/Danger/Danger-10.webp";
 
 export default function Gallery() {
   const { t } = useTranslation("gallery");
@@ -86,11 +96,26 @@ export default function Gallery() {
     { url: "https://i.ibb.co/jRxt9ZM/Banda-10.webp" },
     { url: "https://i.ibb.co/Ng0F2Ds/Banda-11.webp" },
   ];
+  const slidesDanger = [
+    { url:  fotoDanger1},
+    { url:  fotoDanger2},
+    { url:  fotoDanger3},
+    { url:  fotoDanger4},
+    { url:  fotoDanger5},
+    { url:  fotoDanger6},
+    { url:  fotoDanger7},
+    { url:  fotoDanger8},
+    { url:  fotoDanger9},
+    { url:  fotoDanger10},
+
+  ];
+
   const [currentIndexArte, setCurrentIndexArte] = useState(0);
   const [currentIndexFotografia, setCurrentIndexFotografia] = useState(0);
   const [currentIndexEsculturas, setCurrentIndexEsculturas] = useState(0);
   const [currentIndexExtras, setCurrentIndexExtras] = useState(0);
   const [currentIndexBanda, setCurrentIndexBanda] = useState(0);
+  const [currentIndexDanger, setCurrentIndexDanger] = useState(0);
 
   //Manejo de botones de Arte
 
@@ -166,10 +191,25 @@ export default function Gallery() {
     const newIndex = isLastSlide ? 0 : currentIndexBanda + 1;
     setCurrentIndexBanda(newIndex);
   };
+
+  //Manejo de botones de Danger
+
+  const prevSlideDanger = () => {
+    const isFirstSlide = currentIndexDanger === 0;
+    const newIndex = isFirstSlide
+      ? slidesDanger.length - 1
+      : currentIndexDanger - 1;
+    setCurrentIndexDanger(newIndex);
+  };
+  const nextSlideDanger = () => {
+    const isLastSlide = currentIndexDanger === slidesDanger.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndexDanger + 1;
+    setCurrentIndexDanger(newIndex);
+  };
   return (
     <Suspense fallback="Cargando Galeria">
       <>
-        <h1 className="mb-12 text-center text-3xl font-bold text-Sycamore">
+        <h1 className="mb-12 text-center text-3xl font-extrabold text-Atlantis lg:text-4xl dark:text-emerald-300">
           {t("title")}
         </h1>
         <section className="relative m-auto flex w-[90%] grid-cols-2 flex-col content-center items-center justify-center gap-8 md:grid">
@@ -273,6 +313,27 @@ export default function Gallery() {
               <BsChevronCompactRight onClick={nextSlideBanda} size={30} />
             </div>
           </div>
+
+          <div className="group relative flex flex-col items-center justify-center gap-8">
+            <h1 className="text-pretty text-center text-2xl font-bold text-Atlantis lg:text-3xl">
+              {t("danger")}
+            </h1>
+            <div
+              style={{
+                backgroundImage: `url(${slidesDanger[currentIndexDanger].url})`,
+              }}
+              className="aspect-square h-[400px] w-[90%] rounded-xl bg-cover bg-center duration-500 md:h-[90%] lg:w-[60%]"
+            ></div>
+
+            <div className="absolute left-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:left-8 lg:left-48 lg:hidden">
+              <BsChevronCompactLeft onClick={prevSlideDanger} size={30} />
+            </div>
+
+            <div className="absolute right-4 top-[50%] -translate-x-0 -translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-White group-hover:block md:right-8 lg:right-48 lg:hidden">
+              <BsChevronCompactRight onClick={nextSlideDanger} size={30} />
+            </div>
+          </div>
+
         </section>
       </>
     </Suspense>

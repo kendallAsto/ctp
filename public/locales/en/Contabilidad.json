@@ -1,0 +1,67 @@
+{
+  "title": "Accounting and Finance",
+  "subarea-title": "Sub-Area",
+  "horas-totales": "Total Hours",
+  "puestos-title": "Possible Positions",
+  "empresas-title": "Possible Companies",
+  "Subarea": [
+    {
+      "label": "Financial Accounting",
+      "Horas": {
+        "Decimo": 12,
+        "Undecimo": 12,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Management in digital technologies oriented towards finance",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Business management for finance",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Cost management",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 12
+      }
+    },
+    {
+      "label": "English for accounting and finance",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    { "label": "Accounting Assistant" },
+    { "label": "Accounting Technician" },
+    { "label": "Financial Assistant" },
+    { "label": "Credit Advisor" },
+    { "label": "Account Manager" },
+    { "label": "Treasurer" },
+    { "label": "Independent Accountant" }
+  ],
+  "posiblesEmpresas": [
+    { "label": "Private Companies" },
+    { "label": "Public Companies" }
+  ]
+}

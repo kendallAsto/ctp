@@ -31,25 +31,19 @@ app.get('/api/events',(req,res) =>{
     })
 })
 
-app.post('/api/events', (req,res) =>{
-    console.log(req.body)
-    const {title,start,end} = req.body;
-
-    if(!title ||!start || !end){
-        return res.status(400).json({
-            error: `Todos los campos son obligatorios`
-        })
-    }
-
-    const SQL_QUERY = `INSERT INTO events (title,start,end) values (?,?,?)`
-    db.query(SQL_QUERY, [title,start,end],(err,result) =>{
-        if(err){
-            return res.status(500).json({error: err.message})
+app.get('/api/empleos', (req, res) => {
+    const SQL_QUERY = 'SELECT * FROM empleos';
+    
+    db.query(SQL_QUERY, (err, result) => {
+        if (err) {
+            console.error("Error al obtener empleos:", err);
+            return res.status(500).json({ error: "Error al obtener empleos" });
         }
-        res.status(201).json({title,start,end})
-    })
-})
+        res.json(result);
+    });
+});
+
 
 app.listen(PORT,() =>{
     console.log(`Servidor escuchado en HTTP://localhost:${PORT}`)
-})
+})                                             

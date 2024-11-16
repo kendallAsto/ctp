@@ -1,0 +1,148 @@
+{
+    "subarea-title": "Sub-Área",
+    "horas-totales": "Horas totales",
+    "title": "Electrónica en telecomunicaciones",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Tecnologías de la información aplicadas al desarrollo de aplicaciones móviles",
+        "Horas": {
+          "Decimo": 160,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Emprendimiento e innovación aplicados al desarrollo de aplicaciones móviles",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 160,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Desarrollo de aplicaciones móviles y bases de datos",
+        "Horas": {
+          "Decimo": 320,
+          "Undecimo": 320,
+          "Duodecimo": 300
+        }
+      },
+      {
+        "label": "Soporte y seguridad de aplicaciones móviles",
+        "Horas": {
+          "Decimo": 320,
+          "Undecimo": 320,
+          "Duodecimo": 200
+        }
+      },
+      {
+        "label": "Inglés orientado al desarrollo de aplicaciones",
+        "Horas": {
+          "Decimo": 160,
+          "Undecimo": 160,
+          "Duodecimo": 100
+        }
+      },
+      {
+        "label": "Sistemas de información para electrónica",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Dibujo técnico",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 2,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentos de electrónica",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fundamentos de electricidad",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Circuitos lineales",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Electrónica digital I",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Telecomunicaciones",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Circuitos lineales",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Inglés para la comunicación",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 2,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 960,
+      "Undecimo": 960,
+      "Duodecimo": 600
+    },
+    "posiblesPuestos": [
+      {"label": "Técnico en desarrollo de software"},
+      {"label": "Programador"},
+      {"label": "Operador de monitoreo"},
+      {"label": "Técnico en mantenimiento de computadoras"},
+      {"label": "Desarrollador de aplicaciones móviles"},
+      {"label": "Eléctrico/a en telecomunicaciones"},
+      {"label": "Técnico en electrónica"},
+      {"label": "Técnico en reparación de artefactos eléctricos y cableados"}
+    ],
+    "posiblesEmpresas": [
+      {"label": "Empresas privadas"},
+      {"label": "Empresas públicas"},
+      {"label": "ICE y Subarrendatarios"},
+      {"label": "Compañía Fuerza y Luz"},
+      {"label": "Electrónicas"},
+      {"label": "Liberty"},
+      {"label": "Claro"},
+      {"label": "Kolbi"},
+      {"label": "Tigo"}
+    ]
+  }
+  

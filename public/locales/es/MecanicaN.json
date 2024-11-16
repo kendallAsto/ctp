@@ -1,0 +1,68 @@
+{
+    "title": "Reparación de sistemas de vehículos livianos",
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Operaciones en equipo de banco",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Operaciones de estructura vehicular",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Mecánica de motores de vehículos livianos",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Autotrónica",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 12,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Contabilidad Financiera",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Mecánico/a automotriz" },
+      { "label": "Mantenimiento de autos" },
+      { "label": "Revisiones técnicas" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Talleres de automotriz" },
+      { "label": "Suzuki" },
+      { "label": "Grupo Purdy" },
+      { "label": "Grupo Q" },
+      { "label": "Veinsa" },
+      { "label": "Dekra y muchos más" }
+    ]
+  }
+  

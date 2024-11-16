@@ -1,0 +1,76 @@
+{
+    "title": "Contabilidad",
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Gestión Contable",
+        "Horas": {
+          "Decimo": 12,
+          "Undecimo": "-",
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Gestión de Tecnologías de Contabilidad Digital",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Gestión Fiscal",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 12,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Gestión Empresarial para Contadores",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "Gestión de Costos",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 12,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Inglés Orientado a la Contabilidad",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Asistente Contable" },
+      { "label": "Técnico Contable" },
+      { "label": "Asistente Financiero" },
+      { "label": "Asesor de Crédito" },
+      { "label": "Gerente de Cuentas" },
+      { "label": "Tesorero" },
+      { "label": "Contador Independiente" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Empresas Privadas" },
+      { "label": "Empresas Públicas" }
+    ]
+  }
+  

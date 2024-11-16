@@ -1,0 +1,81 @@
+{
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "title": "Diseño Publicitario",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Diseño Publicitario",
+        "Horas": {
+          "Decimo": 16,
+          "Undecimo": 8,
+          "Duodecimo": 10
+        }
+      },
+      {
+        "label": "Dibujo Técnico",
+        "Horas": {
+          "Decimo": 2,
+          "Undecimo": 2,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Fotografía",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Diseño Digital",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Sistemas de Impresión",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Inglés para la Comunicación",
+        "Horas": {
+          "Decimo": 2,
+          "Undecimo": 2,
+          "Duodecimo": 2
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Freelance" },
+      { "label": "Presentación Visual" },
+      { "label": "Diseñador" },
+      { "label": "Técnico de Diseño" },
+      { "label": "Productor Audiovisual" },
+      { "label": "Técnico en Fotografía" },
+      { "label": "Gestión Empresarial" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Agencias Publicitarias" },
+      { "label": "Walmart" },
+      { "label": "ICE" },
+      { "label": "Instituciones Públicas" },
+      { "label": "Municipalidades" },
+      { "label": "Serigrafía" },
+      { "label": "Imprentas" }
+    ]
+  }
+  

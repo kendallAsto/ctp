@@ -1,0 +1,57 @@
+{
+    "title": "Ejecutivo comercial y servicio al cliente",
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Gestión comercial y comunicación para el servicio al cliente",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 4,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Destrezas digitales para gestionar la información y el comercio eléctrico",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Emprendimiento e innovación aplicada al ejecutivo comercial y al servicio al cliente",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Inglés orientado a ejecutivos de negocios y servicio al cliente",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": 8,
+          "Duodecimo": 8
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Asistente de Gerencia" },
+      { "label": "Secretaria/o" },
+      { "label": "Oficinista" },
+      { "label": "Ejecutivo en servicio al cliente" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Empresas privadas" },
+      { "label": "Empresas públicas" }
+    ]
+  }
+  

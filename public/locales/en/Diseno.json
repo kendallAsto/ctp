@@ -1,0 +1,80 @@
+{
+  "subarea-title": "Sub-Area",
+  "horas-totales": "Total Hours",
+  "title": "Advertising Design",
+  "puestos-title": "Possible Positions",
+  "empresas-title": "Possible Companies",
+  "Subarea": [
+    {
+      "label": "Advertising Design",
+      "Horas": {
+        "Decimo": 16,
+        "Undecimo": 8,
+        "Duodecimo": 10
+      }
+    },
+    {
+      "label": "Technical Drawing",
+      "Horas": {
+        "Decimo": 2,
+        "Undecimo": 2,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Photography",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Digital Design",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Printing Systems",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 4
+      }
+    },
+    {
+      "label": "English for Communication",
+      "Horas": {
+        "Decimo": 2,
+        "Undecimo": 2,
+        "Duodecimo": 2
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    { "label": "Freelancer" },
+    { "label": "Visual Presentation" },
+    { "label": "Designer" },
+    { "label": "Design Technician" },
+    { "label": "Audiovisual Producer" },
+    { "label": "Photography Technician" },
+    { "label": "Business Management" }
+  ],
+  "posiblesEmpresas": [
+    { "label": "Advertising Agencies" },
+    { "label": "Walmart" },
+    { "label": "ICE" },
+    { "label": "Public Institutions" },
+    { "label": "Municipalities" },
+    { "label": "Screen Printing" },
+    { "label": "Printing Houses" }
+  ]
+}

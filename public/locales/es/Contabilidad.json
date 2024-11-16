@@ -1,0 +1,69 @@
+{
+  "title": "Contabilidad y Finanzas",
+  "subarea-title": "Subárea",
+  "horas-totales": "Horas Totales",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
+  "Subarea": [
+    {
+      "label": "Contabilidad Financiera",
+      "Horas": {
+        "Decimo": 12,
+        "Undecimo": 12,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Gestión en tecnologías digitales orientada a las finanzas",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Gestión empresarial para las finanzas",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 8,
+        "Duodecimo": "-"
+      }
+    },
+    {
+
+      "label": "Gestión de costos",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": "-",
+        "Duodecimo": 12
+      }
+    },
+    {
+
+      "label": "Inglés para contabilidad y finanzas",
+      "Horas": {
+        "Decimo": 4,
+        "Undecimo": 4,
+        "Duodecimo": 4
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    { "label": "Asistente Contable" },
+    { "label": "Técnico Contable" },
+    { "label": "Asistente Financiero" },
+    { "label": "Asesor de Crédito" },
+    { "label": "Gestor de Cuentas" },
+    { "label": "Tesorero" },
+    { "label": "Contador Independiente" }
+  ],
+  "posiblesEmpresas": [
+    { "label": "Empresas Privadas" },
+    { "label": "Empresas Públicas" }
+  ]
+}

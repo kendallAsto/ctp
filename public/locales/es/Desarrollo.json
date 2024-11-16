@@ -1,0 +1,66 @@
+{
+  "subarea-title": "Sub-Área",
+  "horas-totales": "Horas totales",
+  "title": "Desarrollo de aplicaciones móviles",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
+  "Subarea": [
+    {
+      "label": "Tecnologías de la información aplicada al desarrollo de aplicaciones móviles",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": "-",
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Emprendimiento e innovación aplicada al desarrollo de aplicaciones móviles",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 160,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Desarrollo de aplicaciones móviles y bases de datos",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 300
+      }
+    },
+    {
+      "label": "Soporte y seguridad de aplicaciones móviles",
+      "Horas": {
+        "Decimo": 320,
+        "Undecimo": 320,
+        "Duodecimo": 200
+      }
+    },
+    {
+      "label": "Inglés orientado al desarrollo de aplicaciones",
+      "Horas": {
+        "Decimo": 160,
+        "Undecimo": 160,
+        "Duodecimo": 100
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 960,
+    "Undecimo": 960,
+    "Duodecimo": 600
+  },
+  "posiblesPuestos": [
+    {"label":"Técnico en desarrollo de software"},
+    {"label":"Programador"},
+    {"label":"Operador de monitoreo"},
+    {"label":"Técnico en mantenimiento de computadoras"},
+    {"label":"Desarrollador de aplicaciones móviles"}
+    
+  ],
+  "posiblesEmpresas": [
+    {"label":"Empresas privadas"}, 
+    {"label":"Empresas públicas"}
+  ]
+}

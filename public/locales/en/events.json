@@ -1,0 +1,27 @@
+{
+    "calendar": {
+      "title": "Calendar",
+      "addEvent": "Add Event",
+      "eventTitle": "Event Title:",
+      "startDate": "Event start date (YYYY-MM-DD HH:mm):",
+      "endDate": "Event end date (YYYY-MM-DD HH:mm):",
+      "invalidStart": "Invalid start date.",
+      "invalidEnd": "Invalid end date or earlier than the start date.",
+      "eventDetails": "Event Details",
+      "start": "Start:",
+      "end": "End:",
+      "editEvent": "Edit Event",
+      "deleteEvent": "Delete Event",
+      "close": "Close",
+      "errorStored": "Error parsing stored events.",
+      "requiredTitle": "The title is required.",
+      "newTitle": "New title:",
+      "next": "Next",
+      "previous": "Previous",
+      "today": "Today",
+      "month": "Month",
+      "week": "Week",
+      "day": "Day"
+    }
+  }
+  

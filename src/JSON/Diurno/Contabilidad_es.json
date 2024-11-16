@@ -1,5 +1,9 @@
 {
+  "subarea-title": "Sub-Área",
+  "horas-totales": "Horas totales",
   "title": "Contabilidad y Finanzas",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
   "Subarea": [
     {
       "CF": "Contabilidad Financiera",
@@ -56,5 +60,8 @@
     "Tesorero",
     "Contador independiente"
   ],
-  "posiblesEmpresas": ["Empresas privadas", "Empresas públicas"]
+  "posiblesEmpresas": [
+    "Empresas privadas",
+    "Empresas públicas"
+  ]
 }

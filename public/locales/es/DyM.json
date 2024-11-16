@@ -1,0 +1,68 @@
+{
+    "subarea-title": "Subárea",
+    "horas-totales": "Horas Totales",
+    "title": "Dibujo y Modelado de Edificaciones",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
+    "Subarea": [
+      {
+        "label": "Modelado Arquitectónico Asistido por Computadora",
+        "Horas": {
+          "Decimo": 12,
+          "Undecimo": 12,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Técnicas de Presentación y Modelos",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Dibujo y Diseño Arquitectónico y Urbano",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Emprendimiento e Innovación Aplicados al Dibujo y Modelado de Edificaciones",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Inglés Orientado al Dibujo y Modelado de Edificaciones",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Dibujante Arquitectónico" },
+      { "label": "Modelador BIM (Building Information Modeling)" },
+      { "label": "Diseñador de Interiores" },
+      { "label": "Especialista en Visualización Arquitectónica" },
+      { "label": "Consultor Independiente BIM (Building Information Modeling)" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "3D View CR" },
+      { "label": "Occhio" },
+      { "label": "Phoenix Consultants" },
+      { "label": "Arkcon de Costa Rica" }
+    ]
+  }
+  

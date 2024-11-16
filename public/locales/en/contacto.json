@@ -1,0 +1,19 @@
+{
+    "Contact": {
+        "title": "We answer your questions",
+        "msj": "Hello! How can I help you? Select an option below.",
+        "op1": "Schedule",
+        "op2": "Admission/Daytime Program",
+        "op3": "From what academic degree can I enter?",
+        "op4": "Transportation service",
+        "op5": "Other",
+        "op6": "Admission/Evening Program",
+        "followUp": "Thank you for contacting us! We are at your service",
+        "response1": "Our hours are from 7:00 a.m. to 4:30 p.m. Monday through Friday.",
+        "response2": "Admissions are open once a year. For more details visit the following link: [this link](https://example.com/admision).",
+        "response3": "We accept students from tenth grade onwards (it is necessary to have a certificate of completion of basic general education.",
+        "response4": "Associated with BeeBus, a company that provides transportation for students, for inquiries go to the following link: [route map](https://example.com/rutas).",
+        "response5": "Admissions are open once a year. For more details visit the following link: [this link](https://example.com/admision).",
+        "default": "I can't provide this answer, click on 'other'"
+    }
+}

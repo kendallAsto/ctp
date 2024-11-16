@@ -1,5 +1,9 @@
 {
+  "subarea-title": "Sub-Área",
+  "horas-totales": "Horas totales",
   "title": "Gestión de la producción",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
   "Subarea": [
     {
       "GDLO": "Gestión de las operaciones",

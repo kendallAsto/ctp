@@ -1,0 +1,56 @@
+{
+  "subarea-title": "Subárea",
+  "horas-totales": "Horas Totales",
+  "title": "Ejecutivo Comercial y Atención al Cliente",
+  "puestos-title": "Posibles Puestos",
+  "empresas-title": "Posibles Empresas",
+  "Subarea": [
+    {
+      "label": "Gestión Comercial y Comunicación para el Servicio al Cliente",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 4,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Habilidades Digitales para la Gestión de Información y Comercio Electrónico",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    },
+    {
+      "label": "Emprendimiento e Innovación Aplicada al Ejecutivo Comercial y Servicio al Cliente",
+      "Horas": {
+        "Decimo": "-",
+        "Undecimo": 4,
+        "Duodecimo": "-"
+      }
+    },
+    {
+      "label": "Inglés Orientado a Ejecutivos Comerciales y Atención al Cliente",
+      "Horas": {
+        "Decimo": 8,
+        "Undecimo": 8,
+        "Duodecimo": 8
+      }
+    }
+  ],
+  "Total": {
+    "Decimo": 24,
+    "Undecimo": 24,
+    "Duodecimo": 24
+  },
+  "posiblesPuestos": [
+    {"label": "Asistente de Gerencia"},
+    {"label": "Secretaria"},
+    {"label": "Auxiliar Administrativo"},
+    {"label": "Ejecutivo de Servicio al Cliente"}
+  ],
+  "posiblesEmpresas": [
+    {"label": "Empresas Privadas"},
+    {"label": "Empresas Públicas"}
+  ]
+}

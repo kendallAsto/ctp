@@ -1,5 +1,9 @@
 {
+    "subarea-title": "Sub-Área",
+    "horas-totales": "Horas totales",
     "title": "Dibujo y modelado de edificaciones",
+    "puestos-title": "Posibles Puestos",
+    "empresas-title": "Posibles Empresas",
     "Subarea": [
       {
         "MAAPC": "Modelado arquitectónico asistido por computadora ",

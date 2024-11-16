@@ -5,12 +5,12 @@
   "Contact": "Contacto",
   "Events": "Eventos",
   "CL": "ES",
-  "Services" : "Servicios",
+  "Especialidades" : "Especialidades",
   "Coordinations":{
     "title": "Coordinaciones",
     "Technical": "Coordinación tecnica",
     "Academic" : "Coordinación academica",
     "Company" : "Coordinación con la empresa"
   },
-  "UP" : "Nuestra mascota"
+  "Bolsa": "Bolsa de empleos"
 }

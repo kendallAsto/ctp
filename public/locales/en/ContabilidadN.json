@@ -1,0 +1,76 @@
+{
+    "title": "Accounting",
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Accounting Management",
+        "Horas": {
+          "Decimo": 12,
+          "Undecimo": "-",
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Digital Accounting Technologies Management",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Tax Management",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 12,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Business Management for Accountants",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 8,
+          "Duodecimo": ""
+        }
+      },
+      {
+        "label": "Cost Management",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 12,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "English Oriented to Accounting",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Accounting Assistant" },
+      { "label": "Accounting Technician" },
+      { "label": "Financial Assistant" },
+      { "label": "Credit Advisor" },
+      { "label": "Accounts Manager" },
+      { "label": "Treasurer" },
+      { "label": "Independent Accountant" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Private Companies" },
+      { "label": "Public Companies" }
+    ]
+  }
+  

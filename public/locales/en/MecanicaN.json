@@ -1,0 +1,68 @@
+{
+    "title": "Repair of light vehicle systems",
+    "subarea-title": "Subarea",
+    "horas-totales": "Total Hours",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Bank team operations",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Vehicle structure operations",
+        "Horas": {
+          "Decimo": 8,
+          "Undecimo": "-",
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "Light vehicle engine mechanics",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Autronics",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 12,
+          "Duodecimo": 8
+        }
+      },
+      {
+        "label": "Financial Accounting",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Automotive mechanic" },
+      { "label": "Car maintenance" },
+      { "label": "Technical inspections" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "Automotive workshops" },
+      { "label": "Suzuki" },
+      { "label": "Grupo Purdy" },
+      { "label": "Grupo Q" },
+      { "label": "Veinsa" },
+      { "label": "Dekra and many more" }
+    ]
+  }
+  

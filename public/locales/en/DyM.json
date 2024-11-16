@@ -1,0 +1,68 @@
+{
+    "subarea-title": "Sub-Area",
+    "horas-totales": "Total Hours",
+    "title": "Drawing and Modeling of Buildings",
+    "puestos-title": "Possible Positions",
+    "empresas-title": "Possible Companies",
+    "Subarea": [
+      {
+        "label": "Computer-Assisted Architectural Modeling",
+        "Horas": {
+          "Decimo": 12,
+          "Undecimo": 12,
+          "Duodecimo": 12
+        }
+      },
+      {
+        "label": "Presentation Techniques and Models",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": "-",
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Architectural and Urban Drawing and Design",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      },
+      {
+        "label": "Entrepreneurship and Innovation Applied to Drawing and Modeling for Buildings",
+        "Horas": {
+          "Decimo": "-",
+          "Undecimo": 4,
+          "Duodecimo": "-"
+        }
+      },
+      {
+        "label": "English Oriented to Drawing and Modeling of Buildings",
+        "Horas": {
+          "Decimo": 4,
+          "Undecimo": 4,
+          "Duodecimo": 4
+        }
+      }
+    ],
+    "Total": {
+      "Decimo": 24,
+      "Undecimo": 24,
+      "Duodecimo": 24
+    },
+    "posiblesPuestos": [
+      { "label": "Architectural Draftsman" },
+      { "label": "BIM Modeler (Building Information Modeling)" },
+      { "label": "Interior Designer" },
+      { "label": "Architectural Visualization Specialist" },
+      { "label": "Independent BIM Consultant (Building Information Modeling)" }
+    ],
+    "posiblesEmpresas": [
+      { "label": "3D View CR" },
+      { "label": "Occhio" },
+      { "label": "Phoenix Consultants" },
+      { "label": "Arkcon de Costa Rica" }
+    ]
+  }
+  
