@@ -16,7 +16,7 @@ export default function Login() {
         setError("");
 
         try {
-            const response = await axios.post("http://localhost:3001/api/validar", {
+            const response = await axios.post("http://sql5.freesqldatabase.com:3006/api/validar", {
                 cedula,
                 apellido,
             });
