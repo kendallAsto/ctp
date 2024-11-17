@@ -142,7 +142,7 @@ export default function Nav() {
 
           <li>
             <Link
-              to="/Bolsa"
+              to="/Login"
               className="rounded-lg p-2 text-lg transition-all duration-200 hover:scale-90 hover:bg-Atlantis hover:text-White lg:text-xl dark:hover:bg-Blue-Dianne"
             >
               {t("Bolsa")}
@@ -353,7 +353,7 @@ export default function Nav() {
 
                 <Link
                   onClick={manejarEstadoNav}
-                  to="/Bolsa"
+                  to="/Login"
                   className="rounded-lg text-lg text-white transition-all duration-200 md:text-xl"
                 >
                   <li className="my-2 rounded-xl bg-Sycamore p-2 dark:bg-Blue-Dianne">{t("Bolsa")}</li>

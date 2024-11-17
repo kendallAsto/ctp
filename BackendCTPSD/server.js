@@ -4,8 +4,13 @@ const cors = require("cors")
 
 const app = express();
 const PORT = 3001;
+const bodyParser = require('body-parser');
+app.use(bodyParser.json()); // Para procesar JSON
+app.use(bodyParser.urlencoded({ extended: true })); // Para datos codificados en URL
+
 app.use(cors())
 app.use(express.json());
+
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -30,6 +35,35 @@ app.get('/api/events',(req,res) =>{
         res.json(result);
     })
 })
+
+app.post('/api/validar', (req, res) => {
+    const { cedula, apellido } = req.body;
+
+    // Validación básica
+    if (!cedula || !apellido) {
+        console.log('Faltan datos: ', { cedula, apellido });
+        return res.status(400).json({ success: false, message: 'Cédula y apellido son requeridos' });
+    }
+
+    // Consulta a la base de datos
+    const SQL_QUERY = 'SELECT * FROM `lista-estudiantes` WHERE cedula = ? AND apellido = ?';
+    db.query(SQL_QUERY, [cedula, apellido], (err, result) => {
+        if (err) {
+            console.error('Error en la consulta SQL:', err);
+            return res.status(500).json({ success: false, message: 'Error en el servidor' });
+        }
+
+        if (result.length > 0) {
+            console.log('Credenciales válidas:', result);
+            return res.json({ success: true, message: 'Credenciales válidas' });
+        } else {
+            console.log('Credenciales inválidas');
+            return res.json({ success: false, message: 'Credenciales inválidas' });
+        }
+    });
+});
+
+
 
 app.get('/api/empleos', (req, res) => {
     const SQL_QUERY = 'SELECT * FROM empleos';

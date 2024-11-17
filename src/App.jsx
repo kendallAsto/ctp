@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Nav from "./Pages/Nav";
 import Home from "./Pages/Home";
 import Events from "./Pages/Events";
@@ -12,11 +12,17 @@ import Gallery from "./Pages/Gallery";
 import Contacto from "./Pages/Contacto";
 import Especialidades from "./Pages/Especialidades";
 import Bolsa from "./Pages/BolsaTrabajo";
+import Login from "./Components/Loginform";
+import PrivateRoute from "./PrivateRoute";
+
 function App() {
+  const location = useLocation(); // Obtenemos la ruta actual
+
   return (
     <Suspense>
       <>
         <Routes>
+          {/* Rutas con Nav y Footer */}
           <Route path="/" element={<Nav />}>
             <Route path="/Especialidades" element={<Especialidades />} />
             <Route index element={<Home />} />
@@ -26,12 +32,22 @@ function App() {
             <Route path="/CCompany" element={<CCompany />} />
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/Contacto" element={<Contacto />} />
-            <Route path="/Bolsa" element={<Bolsa />} />
+            <Route
+              path="/Bolsa"
+              element={
+                <PrivateRoute>
+                  <Bolsa />
+                </PrivateRoute>
+              }
+            />
           </Route>
+
+          {/* Ruta independiente para Login */}
+          <Route path="/Login" element={<Login />} />
         </Routes>
-        <section>
-          <Footer />
-        </section>
+
+        {/* Renderizamos Footer solo si no estamos en /Login */}
+        {location.pathname !== "/Login" && <Footer />}
       </>
     </Suspense>
   );
