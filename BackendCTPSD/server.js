@@ -3,7 +3,7 @@ const mysql = require("mysql");
 const cors = require("cors")
 
 const app = express();
-const PORT = 3001;
+const PORT = 3306;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // Para procesar JSON
 app.use(bodyParser.urlencoded({ extended: true })); // Para datos codificados en URL
@@ -13,9 +13,9 @@ app.use(express.json());
 
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "CTPSD-Admin2024",
-    password: "P4ssw0rdCTPSD-Admin",
+    host: "sql5.freesqldatabase.com",
+    user: "sql5745276",
+    password: "wQFDM24LgJ",
     database: "ctpsd-admin2024"
 });
 
