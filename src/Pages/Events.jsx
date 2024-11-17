@@ -54,7 +54,7 @@ export default function App() {
 
   const fetchEvents = async () => {
     try {
-      const response = await fetch(`http://sql5.freesqldatabase.com/api/events`);
+      const response = await fetch(`http://localhost:3001/api/events`);
       if (!response.ok) {
         throw new Error("Error al obtener los datos del servidor!!");
       }
@@ -82,7 +82,7 @@ export default function App() {
         const newEvent = { title, start, end };
 
         // Llamada a la API para agregar el evento
-        const response = await fetch("http://sql5.freesqldatabase.com/api/events", {
+        const response = await fetch("http://localhost:3001/api/events", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newEvent),
