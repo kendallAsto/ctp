@@ -14,12 +14,12 @@ export default function Footer() {
           <div class="sm:flex sm:items-center sm:justify-between">
               <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                   <img src={Logo} alt="Logo del CTP Santo Domingo" class="h-8"/> 
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CTP Santo Domingo</span>
+                  <span class="self-center text-2xl font-semibold dark:text-white">CTP Santo Domingo</span>
               </a>
-              <div className="flex items-center justify-center p-6 lg:justify-between">
+              <div className="flex items-center justify-center p-6 md:mx-8 md:text-center lg:justify-between">
                   <div >
                     <h6
-                      class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                      class="mb-4 flex justify-center font-semibold uppercase  sm:text-center md:text-center">
                       {t("footer.title")}
                     </h6>
                     <p class="mb-4 flex items-center justify-center md:justify-start">

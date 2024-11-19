@@ -239,7 +239,7 @@ export default function Nav() {
         </div>
         {estadoNav && (
           <section className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(0,0,0,.7)]">
-            <div className="relative h-full overflow-y-auto bg-white rounded-xl p-8 md:h-[100%] md:w-[80%]  dark:bg-black">
+            <div className="relative h-full overflow-y-auto bg-white p-8 md:h-[100%] md:w-[100%]  dark:bg-black">
               <div className="flex items-center justify-center text-pretty pt-10 font-Poppins transition-all duration-200">
                 <Link
                   to="/"

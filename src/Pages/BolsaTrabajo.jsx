@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 function JobBoard() {
   const [jobs, setJobs] = useState([]);
-
+  const { t } = useTranslation("Bolsa");
   // Función para obtener los empleos de la API
   useEffect(() => {
     fetch('http://localhost:3001/api/empleos')
@@ -15,7 +16,7 @@ function JobBoard() {
   return (
         <>
           <h1 className="mb-12 text-center text-3xl font-extrabold text-Atlantis lg:text-4xl dark:text-emerald-300">
-            Bolsa de empleo
+            {t("title")}
           </h1>
           <br />
           <div>
@@ -33,16 +34,16 @@ function JobBoard() {
                     />
                   </div>
                   <div className="p-8">
-                    <p className="block mt-1 text-lg leading-tight font-medium text-black">Empresa:</p>
+                    <p className="block mt-1 text-lg leading-tight font-medium text-black">{t("subtitle1")}</p>
                     <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                       {job.titulo}
                     </div>
-                    <p className="block mt-1 text-lg leading-tight font-medium text-black">Formulario:</p>
+                    <p className="block mt-1 text-lg leading-tight font-medium text-black">{t("subtitle2")}</p>
                     <a
-                      className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+                      className="block mt-1 text-lg leading-tight font-medium } hover:underline"
                       href={job.descripcion}
                     >
-                      Presiona aquí
+                      {t("link")}
                     </a>
                   </div>
                 </div>

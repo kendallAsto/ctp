@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = () => {
         setIsAuthenticated(false);
-        navigate("/login"); // Redirige al login al cerrar sesión
+        navigate("/Login"); // Redirige al login al cerrar sesión
     };
 
     return (

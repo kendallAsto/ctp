@@ -1,0 +1,8 @@
+{
+    "title": "Login",
+    "SuccessMessage": "Login successful. Redirecting...",
+    "Error1": "Incorrect credentials.",
+    "Id": "ID",
+    "LastName": "Last Name",
+    "Send": "Enter"
+}

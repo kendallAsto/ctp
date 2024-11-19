@@ -54,10 +54,8 @@ app.post('/api/validar', (req, res) => {
         }
 
         if (result.length > 0) {
-            console.log('Credenciales válidas:', result);
             return res.json({ success: true, message: 'Credenciales válidas' });
         } else {
-            console.log('Credenciales inválidas');
             return res.json({ success: false, message: 'Credenciales inválidas' });
         }
     });

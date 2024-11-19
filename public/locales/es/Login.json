@@ -1,0 +1,8 @@
+{
+    "title": "Iniciar Sesión",
+    "SuccessMessage" : "Inicio de sesión exitoso. Redirigiendo...",
+    "Error1": "Credenciales incorrectas.",
+    "Id": "Cédula",
+    "LastName": "Apellido",
+    "Send": "Entrar"
+}
