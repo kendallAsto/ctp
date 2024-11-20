@@ -7,10 +7,11 @@ export default function MecanicaModalN({ estado, cambiarEstado }) {
   // Bloquea el scroll del fondo cuando el modal está abierto
   useEffect(() => {
     if (estado) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';// Bloquear el scroll
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';// Restaurar el scroll
     }
+    // Quitar al cerrar el modal
     return () => {
       document.body.style.overflow = 'auto';
     };

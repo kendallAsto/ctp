@@ -9,6 +9,7 @@ export default function Map() {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         className="h-[550px] w-[100%]"
+        title="Google Maps - Santo Domingo Technical College"
       ></iframe>
     </div>
   );

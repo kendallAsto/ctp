@@ -2,6 +2,7 @@
     "title": "Iniciar Sesión",
     "SuccessMessage" : "Inicio de sesión exitoso. Redirigiendo...",
     "Error1": "Credenciales incorrectas.",
+    "Error2": "No se pudo conectar con el servidor.",
     "Id": "Cédula",
     "LastName": "Apellido",
     "Send": "Entrar"

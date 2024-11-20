@@ -12,8 +12,7 @@ export default function ContabilidadModal({ estado, cambiarEstado }) {
     } else {
       document.body.style.overflow = 'auto'; // Restaurar el scroll
     }
-
-    // Limpiar al desmontar
+    // Quitar al cerrar el modal
     return () => {
       document.body.style.overflow = 'auto';
     };

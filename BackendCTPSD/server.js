@@ -25,7 +25,7 @@ db.connect((err) =>{
     }
     console.log("Conexion establecida")
 })
-
+//Obtener los eventos de la base de datos//
 app.get('/api/events',(req,res) =>{
     const SQL_QUERY = 'SELECT * FROM events';
     db.query(SQL_QUERY,(err,result) =>{
@@ -35,7 +35,7 @@ app.get('/api/events',(req,res) =>{
         res.json(result);
     })
 })
-
+//Validar si se encuentra el registro de la base de datos para el login//
 app.post('/api/validar', (req, res) => {
     const { cedula, apellido } = req.body;
 
@@ -62,7 +62,7 @@ app.post('/api/validar', (req, res) => {
 });
 
 
-
+//Obtener los empleos de la base de datos//
 app.get('/api/empleos', (req, res) => {
     const SQL_QUERY = 'SELECT * FROM empleos';
     

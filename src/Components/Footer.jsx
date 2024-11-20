@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../Assets/IMGS/logo.png";
-import Contact from "../Components/contact";
 import { useTranslation } from "react-i18next";
 
 const date = new Date();

@@ -33,9 +33,7 @@ function ScrollToTopButton() {
       {isVisible && (
         <div style={contenedorEstilo}>
           <button onClick={scrollToTop} style={botonEstilo}>
-            <span className="material-symbols-outlined" style={iconoEstilo}>
-              arrow_upward
-            </span>
+            <i class="fa-solid fa-arrow-up" style={iconoEstilo}></i>
           </button>
         </div>
       )}
