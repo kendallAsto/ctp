@@ -3,7 +3,7 @@
     "SuccessMessage": "Login successful. Redirecting...",
     "Error1": "Incorrect credentials.",
     "Error2": "Unable to connect to the server.",
-    "Id": "ID",
-    "LastName": "Last Name",
+    "Id": "ID (No spaces or additional zeros)",
+    "LastName": "Last Name  (First letter uppercase)",
     "Send": "Enter"
 }

@@ -7,15 +7,12 @@ import "dayjs/locale/es";
 import "dayjs/locale/en";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-let loginAdmin = false;
 // Componente principal
 export default function App() {
   const { i18n } = useTranslation();
   dayjs.locale(i18n.language)
   const { t } = useTranslation("events");
   const localizer = dayjsLocalizer(dayjs);
-  const date = new Date();
-  const year = date.getFullYear();
   const [estado, setEstado] = useState(false);
   const [eventos, setEventos] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -71,32 +68,6 @@ export default function App() {
     }
   };
 
-  const addEvent = async () => {
-    if (loginAdmin) {
-      // Prompt para agregar un nuevo evento
-      const title = prompt("Ingrese el título del evento:");
-      const start = prompt("Ingrese la fecha de inicio (YYYY-MM-DD HH:mm):");
-      const end = prompt("Ingrese la fecha de finalización (YYYY-MM-DD HH:mm):");
-
-      if (title && start && end) {
-        const newEvent = { title, start, end };
-
-        // Llamada a la API para agregar el evento
-        const response = await fetch("http://localhost:3001/api/events", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(newEvent),
-        });
-
-        if (response.ok) {
-          fetchEvents(); // Refrescar la lista de eventos
-        } else {
-          alert("Error al agregar el evento");
-        }
-      }
-    }
-  };
-
   const calendarMessages = {
     next: t("calendar.next"),
     previous: t("calendar.previous"),
@@ -117,10 +88,7 @@ export default function App() {
       <h1 className="mb-12 text-center text-3xl font-extrabold text-Atlantis lg:text-4xl dark:text-emerald-300">
         {t("calendar.title")}
       </h1>
-      {loginAdmin&&(
-        <button onClick={addEvent}>{t("calendar.addEvent")}</button>
-      )}
-      <section className="m-auto my-12 h-[100vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[100vh] md:text-2xl lg:pt-2 font-Poppins">
+      <section className="m-auto my-12 h-[130vh] w-[90%] overflow-hidden rounded-xl text-lg md:h-[150vh] md:text-2xl lg:pt-2 font-Poppins">
         <Calendar
           localizer={localizer}
           events={eventos}

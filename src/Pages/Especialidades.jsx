@@ -14,7 +14,6 @@ import ContabilidadModalN from "../Components/Modals/Nocturno/ContabilidadModalN
 import AdministracionModal from "../Components/Modals/Nocturno/AdministracionModalN.jsx";
 import MecanicaModalN from "../Components/Modals/Nocturno/MecanicaModalN.jsx";
 import DyMModal from "../Components/Modals/Diurno/DyMModal.jsx";
-import ScrollToTopButton from "../Components/ScrollToTopButton.jsx";
 
 function Especialidades(){
     const { t } = useTranslation("information");

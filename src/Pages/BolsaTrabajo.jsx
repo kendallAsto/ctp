@@ -45,6 +45,18 @@ function JobBoard() {
                     >
                       {t("link")}
                     </a>
+                    <br />
+                    <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                      Requisitos
+                    </div>
+                    <p className="block mt-1 text-lg leading-tight font-medium text-black">
+                      {job.Requisitos.split('\n').map((line, index) => (
+                        <React.Fragment key={index}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </p>
                   </div>
                 </div>
               </div>

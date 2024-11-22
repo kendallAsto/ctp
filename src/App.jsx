@@ -46,7 +46,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
         </Routes>
 
-        {/* Renderizamos Footer solo si no estamos en /Login */}
+        {/* Renderizamos Footer solo si no estamos en el Login */}
         {location.pathname !== "/Login" && <Footer />}
       </>
     </Suspense>
