@@ -13,88 +13,156 @@ import fotoDanger7 from "../Assets/IMGS/Danger/Danger-7.webp";
 import fotoDanger8 from "../Assets/IMGS/Danger/Danger-8.webp";
 import fotoDanger9 from "../Assets/IMGS/Danger/Danger-9.webp";
 import fotoDanger10 from "../Assets/IMGS/Danger/Danger-10.webp";
+import foto1 from "../Assets/IMGS/Fotografia/Fotografia-1.webp";
+import foto2 from "../Assets/IMGS/Fotografia/Fotografia-2.webp";
+import foto3 from "../Assets/IMGS/Fotografia/Fotografia-3.webp";
+import foto4 from "../Assets/IMGS/Fotografia/Fotografia-4.webp";
+import foto5 from "../Assets/IMGS/Fotografia/Fotografia-5.webp";
+import foto6 from "../Assets/IMGS/Fotografia/Fotografia-6.webp";
+import foto7 from "../Assets/IMGS/Fotografia/Fotografia-7.webp";
+import foto8 from "../Assets/IMGS/Fotografia/Fotografia-8.webp";
+import arte1 from "../Assets/IMGS/Arte/Arte-1.webp";
+import arte2 from "../Assets/IMGS/Arte/Arte-2.webp";
+import arte3 from "../Assets/IMGS/Arte/Arte-3.webp";
+import arte4 from "../Assets/IMGS/Arte/Arte-4.webp";
+import arte5 from "../Assets/IMGS/Arte/Arte-5.webp";
+import arte6 from "../Assets/IMGS/Arte/Arte-6.webp";
+import arte7 from "../Assets/IMGS/Arte/Arte-7.webp";
+import arte8 from "../Assets/IMGS/Arte/Arte-8.webp";
+import arte9 from "../Assets/IMGS/Arte/Arte-9.webp";
+import arte10 from "../Assets/IMGS/Arte/Arte-10.webp";
+import arte11 from "../Assets/IMGS/Arte/Arte-11.webp";
+import arte12 from "../Assets/IMGS/Arte/Arte-12.webp";
+import arte13 from "../Assets/IMGS/Arte/Arte-13.webp";
+import arte14 from "../Assets/IMGS/Arte/Arte-14.webp";
+import arte15 from "../Assets/IMGS/Arte/Arte-15.webp";
+import arte16 from "../Assets/IMGS/Arte/Arte-16.webp";
+import escultura1 from "../Assets/IMGS/Esculturas/escultura-1.webp";
+import escultura2 from "../Assets/IMGS/Esculturas/escultura-2.webp";
+import escultura3 from "../Assets/IMGS/Esculturas/escultura-3.webp";
+import escultura4 from "../Assets/IMGS/Esculturas/escultura-4.webp";
+import escultura5 from "../Assets/IMGS/Esculturas/escultura-5.webp";
+import escultura6 from "../Assets/IMGS/Esculturas/escultura-6.webp";
+import escultura7 from "../Assets/IMGS/Esculturas/escultura-7.webp";
+import escultura8 from "../Assets/IMGS/Esculturas/escultura-8.webp";
+import escultura9 from "../Assets/IMGS/Esculturas/escultura-9.webp";
+import escultura10 from "../Assets/IMGS/Esculturas/escultura-10.webp";
+import escultura11 from "../Assets/IMGS/Esculturas/escultura-11.webp";
+import extra1 from "../Assets/IMGS/Extras/Extra-1.webp";
+import extra2 from "../Assets/IMGS/Extras/Extra-2.webp";
+import extra3 from "../Assets/IMGS/Extras/Extra-3.webp";
+import extra4 from "../Assets/IMGS/Extras/Extra-4.webp";
+import extra5 from "../Assets/IMGS/Extras/Extra-5.webp";
+import extra6 from "../Assets/IMGS/Extras/Extra-6.webp";
+import extra7 from "../Assets/IMGS/Extras/Extra-7.webp";
+import extra8 from "../Assets/IMGS/Extras/Extra-8.webp";
+import extra9 from "../Assets/IMGS/Extras/Extra-9.webp";
+import extra10 from "../Assets/IMGS/Extras/Extra-10.webp";
+import extra11 from "../Assets/IMGS/Extras/Extra-11.webp";
+import banda1 from "../Assets/IMGS/Banda/Banda-1.webp";
+import banda2 from "../Assets/IMGS/Banda/Banda-2.webp";
+import banda3 from "../Assets/IMGS/Banda/Banda-3.webp";
+import banda4 from "../Assets/IMGS/Banda/Banda-4.webp";
+import banda5 from "../Assets/IMGS/Banda/Banda-5.webp";
+import banda6 from "../Assets/IMGS/Banda/Banda-6.webp";
+import banda7 from "../Assets/IMGS/Banda/Banda-7.webp";
+import banda8 from "../Assets/IMGS/Banda/Banda-8.webp";
+import banda9 from "../Assets/IMGS/Banda/Banda-9.webp";
+import banda10 from "../Assets/IMGS/Banda/Banda-10.webp";
+import banda11 from "../Assets/IMGS/Banda/Banda-11.webp";
+import banda12 from "../Assets/IMGS/Banda/Banda-12.webp";
+import banda13 from "../Assets/IMGS/Banda/Banda-13.webp";
+import banda14 from "../Assets/IMGS/Banda/Banda-14.webp";
+import banda15 from "../Assets/IMGS/Banda/Banda-15.webp";
+import banda16 from "../Assets/IMGS/Banda/Banda-16.webp";
+import banda17 from "../Assets/IMGS/Banda/Banda-17.webp";
+import banda18 from "../Assets/IMGS/Banda/Banda-18.webp";
+import banda19 from "../Assets/IMGS/Banda/Banda-19.webp";
+import banda20 from "../Assets/IMGS/Banda/Banda-20.webp";
+import banda21 from "../Assets/IMGS/Banda/Banda-21.webp";
+
 
 export default function Gallery() {
   const { t } = useTranslation("gallery");
   const slidesFotografia = [
-    { url: "https://i.ibb.co/zSLF0dj/Fotografia-1.webp" },
-    { url: "https://i.ibb.co/ykBYNvv/Fotografia-2.webp" },
-    { url: "https://i.ibb.co/Db3g7rT/Fotografia-3.webp" },
-    { url: "https://i.ibb.co/3yF9xy1/Fotografia-4.webp" },
-    { url: "https://i.ibb.co/sF7Nmv8/Fotografia-5.webp" },
-    { url: "https://i.ibb.co/jJDzYdk/Fotografia-6.webp" },
-    { url: "https://i.ibb.co/R0qwhQ5/Fotografia-7.webp" },
-    { url: "https://i.ibb.co/PTNh7T0/Fotografia-8.webp" },
+    { url: foto1 },
+    { url: foto2 },
+    { url: foto3 },
+    { url: foto4},
+    { url: foto5 },
+    { url: foto6 },
+    { url: foto7 },
+    { url: foto8 },
   ];
 
   const slidesArte = [
-    { url: "https://i.ibb.co/7VkqcKB/Arte-1.webp" },
-    { url: "https://i.ibb.co/X4wSkpM/Arte-2.webp" },
-    { url: "https://i.ibb.co/qDmQ46D/Arte-3.webp" },
-    { url: "https://i.ibb.co/z2CrhXw/Arte-4.webp" },
-    { url: "https://i.ibb.co/9rzkmP2/Arte-5.webp" },
-    { url: "https://i.ibb.co/02Dm3tr/Arte-6.webp" },
-    { url: "https://i.ibb.co/qksmGPH/Arte-7.webp" },
-    { url: "https://i.ibb.co/Wn0mrGn/Arte-8.webp" },
-    { url: "https://i.ibb.co/qmyDBbV/Arte-9.webp" },
-    { url: "https://i.ibb.co/TkjWbnm/Arte-10.webp" },
-    { url: "https://i.ibb.co/85H5rsK/Arte-11.webp" },
-    { url: "https://i.ibb.co/hf7g9cq/Arte-12.webp" },
-    { url: "https://i.ibb.co/TLCS4ZL/Arte-13.webp" },
-    { url: "https://i.ibb.co/RvBjx0d/Arte-14.webp" },
-    { url: "https://i.ibb.co/yQgWwC2/Arte-15.webp" },
-    { url: "https://i.ibb.co/NFg5ccc/Arte-16.webp" },
+    { url: arte1 },
+    { url: arte2 },
+    { url: arte3 },
+    { url: arte4 },
+    { url: arte5 },
+    { url: arte6 },
+    { url: arte7 },
+    { url: arte8 },
+    { url: arte9 },
+    { url: arte10 },
+    { url: arte11 },
+    { url: arte12 },
+    { url: arte13 },
+    { url: arte14 },
+    { url: arte15 },
+    { url: arte16 },
   ];
 
   const slidesEsculturas = [
-    { url: "https://i.ibb.co/PCMgGQy/escultura-2.webp" },
-    { url: "https://i.ibb.co/jkB5H7R/escultura-1.webp" },
-    { url: "https://i.ibb.co/PDTXBdq/escultura-3.webp" },
-    { url: "https://i.ibb.co/BsxP47k/escultura-4.webp" },
-    { url: "https://i.ibb.co/drqcxsm/escultura-6.webp" },
-    { url: "https://i.ibb.co/Z88Ftmv/escultura-5.webp" },
-    { url: "https://i.ibb.co/rwLnmq1/escultura-7.webp" },
-    { url: "https://i.ibb.co/CWbJXGz/escultura-8.webp" },
-    { url: "https://i.ibb.co/1qZ1sXk/escultura-10.webp" },
-    { url: "https://i.ibb.co/C555jgg/escultura-9.webp" },
-    { url: "https://i.ibb.co/sPzDL3M/escultura-11.webp" },
+    { url: escultura1 },
+    { url: escultura2 },
+    { url: escultura3 },
+    { url: escultura4 },
+    { url: escultura5 },
+    { url: escultura6 },
+    { url: escultura7 },
+    { url: escultura8 },
+    { url: escultura9 },
+    { url: escultura10 },
+    { url: escultura11},
   ];
 
   const slidesExtras = [
-    { url: "https://i.ibb.co/Q69Xncw/Automotriz.webp" },
-    { url: "https://i.ibb.co/GRrqrqM/Gimnasio.webp" },
-    { url: "https://i.ibb.co/pbg3yHG/Gym-inside.webp" },
-    { url: "https://i.ibb.co/Pm5D02w/outside.webp" },
-    { url: "https://i.ibb.co/6ZPQNQG/Pasillo.webp" },
-    { url: "https://i.ibb.co/6X7wfSW/Aula.webp " },
-    { url: "https://i.ibb.co/pQf26ng/Automotriz-inside-v2.webp " },
-    { url: "https://i.ibb.co/LvYVCt5/Automotriz-inside.webp" },
-    { url: "https://i.ibb.co/gwpRW5N/Explanada.webp " },
-    { url: "https://i.ibb.co/pLJRMKd/Pasillo-2.webp " },
-    { url: "https://i.ibb.co/zJXqTsM/soda.webp " },
+    { url: extra1 },
+    { url: extra2 },
+    { url: extra3 },
+    { url: extra4 },
+    { url: extra5 },
+    { url: extra6 },
+    { url: extra7 },
+    { url: extra8 },
+    { url: extra9 },
+    { url: extra10 },
+    { url: extra11 },
   ];
   const slidesBanda = [
-    { url: "https://i.ibb.co/z6zyH8b/Banda-12.webp" },
-    { url: "https://i.ibb.co/tzfJCbv/Banda-13.webp" },
-    { url: "https://i.ibb.co/BcQ9pLN/Banda-14.webp" },
-    { url: "https://i.ibb.co/Z1wWRxx/Banda-15.webp" },
-    { url: "https://i.ibb.co/m5hG22T/Banda-16.webp" },
-    { url: "https://i.ibb.co/KytJVCP/Banda-17.webp" },
-    { url: "https://i.ibb.co/2hKMHwT/Banda-18.webp" },
-    { url: "https://i.ibb.co/3TpZ1SW/Banda-19.webp" },
-    { url: "https://i.ibb.co/9vSCXjh/Banda-20.webp" },
-    { url: "https://i.ibb.co/dLs9Xbt/Banda-21.webp" },
-    { url: "https://i.ibb.co/dcYqWbV/Banda-1.webp" },
-    { url: "https://i.ibb.co/YD30zrp/Banda-2.webp" },
-    { url: "https://i.ibb.co/LZvQ9dg/Banda-3.webp" },
-    { url: "https://i.ibb.co/CngdWmj/Banda-4.webp" },
-    { url: "https://i.ibb.co/kmzd0qN/Banda-5.webp" },
-    { url: "https://i.ibb.co/yNx7P9b/Banda-6.webp" },
-    { url: "https://i.ibb.co/gRSzjVS/Banda-7.webp" },
-    { url: "https://i.ibb.co/m9Y08th/Banda-8.webp" },
-    { url: "https://i.ibb.co/9pHdFS8/Banda-9.webp" },
-    { url: "https://i.ibb.co/jRxt9ZM/Banda-10.webp" },
-    { url: "https://i.ibb.co/Ng0F2Ds/Banda-11.webp" },
+    { url: banda1 },
+    { url: banda2 },
+    { url: banda3 },
+    { url: banda4 },
+    { url: banda5 },
+    { url: banda6 },
+    { url: banda7 },
+    { url: banda8 },
+    { url: banda9 },
+    { url: banda10 },
+    { url: banda11 },
+    { url: banda12 },
+    { url: banda13 },
+    { url: banda14 },
+    { url: banda15 },
+    { url: banda16 },
+    { url: banda17 },
+    { url: banda18 },
+    { url: banda19 },
+    { url: banda20 },
+    { url: banda21 },
   ];
   const slidesDanger = [
     { url:  fotoDanger1},
