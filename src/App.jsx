@@ -14,7 +14,6 @@ import Especialidades from "./Pages/Especialidades";
 import Bolsa from "./Pages/BolsaTrabajo";
 import Login from "./Components/Loginform";
 import PrivateRoute from "./PrivateRoute";
-
 function App() {
   const location = useLocation(); // Obtenemos la ruta actual
 
